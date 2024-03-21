@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset style="border: 5px solid; border-color: cornflowerblue;">
+    <h1><b>Reservation Request</b></h1>
+    <form action="">
+        <fieldset>
+            <legend style="color: cornflowerblue;">General Information</legend>
+            <label for="">Arrival date:</label>
+            <input type="date"><span style="color: red;"> Arrival date is invalid</span><br><br>
+            <label for="">Nights:</label>
+            <input type="number"><span style="color: red;"> Nights must be a number</span><br><br>
+            <label for="">Adults:</label>
+            <input type="number"><br><br>
+            <label for="">Children:</label>
+            <input type="number">
+        </fieldset>
+        <fieldset>
+            <legend style="color: cornflowerblue;">Preference</legend>
+            <label for="">Room type:</label>
+            <input type="radio" name="radio" value="Standard">Standard
+            <input type="radio" name="radio" value="Business">Business
+            <input type="radio" name="radio" value="Suite">Suite <br><br> 
+            <label for="">Bed type:</label>
+            <input type="checkbox" name="cha1" value="King">King
+            <input type="checkbox" name="cha1" value="Double Double">Double Double
+            <input type="checkbox" name="cha1" value="Smoking">Smoking
+        </fieldset>
+        <fieldset>
+            <legend style="color: cornflowerblue;">Contact Information</legend>
+            <label for="">Name:</label>
+            <input type="text" placeholder="enter your name">
+            <span style="color: red;">Name is required</span><br><br>         
+            <label for="">Email:</label>
+            <input type="email" placeholder="enter your email">
+            <span style="color: red;">Email address is invalid</span><br><br>
+            <label for="">Phone:</label>
+            <input type="tel" placeholder="enter ypur phone number">
+            <span style="color: red;">Phone number is invalid</span>
+        </fieldset>
+        <br>
+        <input type="submit" value="Submit Reservation">
+        <input type="submit" value="Clear">
+    </form>
+</fieldset>
+</body>
+</html>

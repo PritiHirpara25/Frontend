@@ -1,0 +1,9 @@
+input{
+    background-color: cornflowerblue;
+}
+fieldset{
+    background-color: rgb(222, 200, 200);
+}
+legend{
+    color: fuchsia;    
+}

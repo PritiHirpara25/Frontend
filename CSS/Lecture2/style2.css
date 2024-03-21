@@ -1,0 +1,32 @@
+/* Comments */
+
+/* div p{
+    background-color: darkmagenta;
+    color: chartreuse;
+} */
+
+/* p{
+    background-color: rgb(184, 170, 197);
+    color: cadetblue;
+} */
+
+#para1{
+    color: darkturquoise;
+}
+#para2{
+    color: blueviolet;
+}
+#para3{
+    background-color: darkturquoise;
+}
+#para4{
+    background-color: yellow;
+    color: darkturquoise;
+}
+
+.loop{
+    background-color: deeppink;
+}
+.ola{
+    background-color: darkgrey;
+}
