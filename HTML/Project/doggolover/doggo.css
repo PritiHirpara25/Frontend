@@ -1,0 +1,21 @@
+span{
+    color: blue;
+}
+#pa1{
+    height: 250px;
+    width: 300px;
+    float: right;
+}
+#pa2{
+    text-align: right;
+}
+ul{
+    float: right;
+}
+table{
+    border: 2px solid;
+}
+tr{
+    border-bottom: 2px;
+}
+

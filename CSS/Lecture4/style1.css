@@ -1,0 +1,27 @@
+h2{
+    background-color: blue;
+}
+p{
+    color: aquamarine;
+    background-color: brown;
+    border: 3px dashed pink;
+    font-size: 30px;
+}   
+.mop{
+    color: crimson;
+}
+#para{
+    background-color: darkgoldenrod;
+}
+a:link{
+    color: blue;
+}
+a:hover{
+    background-color: brown;
+}
+a:visited{
+    background-color: yellow;
+}
+a:active{
+    background-color: coral;
+}

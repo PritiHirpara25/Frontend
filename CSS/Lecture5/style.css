@@ -1,0 +1,26 @@
+    /* color name */
+.color{
+    background-color: blueviolet;
+}
+
+    /* rgb */
+.color{
+    background-color: rgb(246, 214, 214);
+}
+
+    /* rgba */
+.color{
+    background-color: rgba(122,145,23,0.6);
+}
+
+    /* hex */
+.color{
+    background-color: #0fff0f;
+}
+
+    /* background image */
+.image{
+    background-image: url(images.jpeg);
+}
+
+

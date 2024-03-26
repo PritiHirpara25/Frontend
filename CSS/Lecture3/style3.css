@@ -4,6 +4,9 @@ p{
 }
 
     /* Universal Selctor */
+*{
+    background-color: red;
+}
 body{
-    color: blueviolet;
+    background-color: yellowgreen;
 }

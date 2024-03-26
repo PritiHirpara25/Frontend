@@ -1,0 +1,34 @@
+h1{
+    color: yellowgreen;
+}
+span{
+    font-size: 25px;
+}
+table,th,td{
+    border: 2px solid;
+}
+footer{
+    text-align: center;
+}
+fieldset{
+    width: 300px;
+}
+ul{
+    float: right;
+}
+#pa2{
+    text-align: right;
+}
+#pa1{
+    border: 2px;
+}
+header{
+    background-color: red;
+    text-align: center;
+}
+#pa3{
+    color:black;
+}
+#pa4{
+    font-family: cursive;
+}

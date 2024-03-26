@@ -1,0 +1,43 @@
+body{
+    background-color: rgba(61, 49, 49, 0.389);
+}
+span{
+    color: crimson;
+}
+i{
+    color: crimson;
+}
+h1{
+    color: indianred;
+}
+.city{
+    color: brown;
+}
+.color{
+    color: chocolate;
+}
+.green{
+    color: deeppink;
+}
+input{
+    background-color: antiquewhite;
+}
+textarea{
+    background-color: antiquewhite;
+}
+footer{
+    text-align: center;
+}
+table,th,td{
+    border: 2px solid;
+}
+header{
+    background-color: cadetblue;
+    text-align: center;
+}
+#pa3{
+    color:black;
+}
+#pa4{
+    font-family: cursive;
+}

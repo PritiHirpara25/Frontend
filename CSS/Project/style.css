@@ -1,0 +1,31 @@
+h1{
+    text-align: center;
+    color: rgb(98, 83, 77);
+    background-color: indianred;
+}
+nav{
+    text-align: right;
+}
+footer{
+    text-align: left;
+}
+#pa1{
+    height: 20px;
+    width: 80px;
+    float: right;
+    background-color:beige ;
+}
+#pa2{
+    height: 400px;
+    width: 800px;
+}
+#pa3{
+    height: 350px;
+    float: right;
+}
+article{
+    text-align: right;
+    font-variant: small-caps;
+    color: brown;
+    font-size: xx-large;
+}
