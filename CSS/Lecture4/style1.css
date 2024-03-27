@@ -25,3 +25,5 @@ a:visited{
 a:active{
     background-color: coral;
 }
+
+@import "style3.css";

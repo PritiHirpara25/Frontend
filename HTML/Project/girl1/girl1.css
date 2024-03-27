@@ -34,6 +34,10 @@ table,th,td{
 header{
     background-color: cadetblue;
     text-align: center;
+    height: 105px;
+    width: 350px;
+    margin-left: 35%;
+    margin-right: 35%;
 }
 #pa3{
     color:black;

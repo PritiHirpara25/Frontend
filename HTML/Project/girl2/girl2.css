@@ -1,3 +1,6 @@
+body{
+    background-color:mistyrose;
+}
 h1{
     color: yellowgreen;
 }
@@ -20,11 +23,19 @@ ul{
     text-align: right;
 }
 #pa1{
-    border: 2px;
+    border: 2px black solid;
+    margin-left: 85%; 
+    background-color: rgb(221, 244, 119);  
+    margin-right: 5%;
+    padding-bottom: 100px;
+    padding-right: 45px;
 }
 header{
     background-color: red;
-    text-align: center;
+    height: 105px;
+    width: 350px;
+    margin-left: 35%;
+    margin-right: 35%;
 }
 #pa3{
     color:black;

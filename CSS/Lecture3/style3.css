@@ -4,9 +4,9 @@ p{
 }
 
     /* Universal Selctor */
-*{
-    background-color: red;
-}
+/* *{
+    background-color: rgb(228, 197, 197);
+} */
 body{
     background-color: yellowgreen;
 }

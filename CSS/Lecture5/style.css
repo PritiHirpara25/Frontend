@@ -20,7 +20,37 @@
 
     /* background image */
 .image{
-    background-image: url(images.jpeg);
+    background-image: url(image.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+}
+
+    /* border */
+/* .border{
+    font-size: 50px;
+    border: 2px green solid;
+} */
+ /* .border{
+    font-size: 50px;
+    border: 2px red dashed;
+} */
+/*
+.border{
+    font-size: 50px;
+    border: 2px violet dotted;
+}*/
+.border{
+    font-size: 50px;
+    border: 8px double red;
+} 
+
+/* border radius */
+.radius{
+    font-size: x-large;
+    background-color: crimson;
+    border-radius: 10px;
 }
 
 
