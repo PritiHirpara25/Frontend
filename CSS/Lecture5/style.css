@@ -20,11 +20,11 @@
 
     /* background image */
 .image{
-    background-image: url(image.jpeg);
+    background-image: url(../Lecture5/image.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 300px;
 }
 
     /* border */

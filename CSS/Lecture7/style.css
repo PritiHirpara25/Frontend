@@ -1,0 +1,75 @@
+.outline{
+    background-color: yellowgreen;
+    border: 2px solid black;
+    height: 250px;
+    width: 400px;
+    /* outline: 2px dotted green; */ /*sorthand property*/
+    outline-offset: 5px;
+    outline-width: 5px;
+    outline-color: red;
+    outline-style: solid;
+}
+.outline{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    font-size: 30px;
+    font-weight: 500;
+    font-style: italic;
+}
+.text{
+    text-align: center;
+    color:hotpink;
+    text-transform: capitalize;
+    /* letter-spacing: 15px; */
+    word-spacing: 10px;
+    /* text-transform: lowercase; */
+    /* text-transform: uppercase; */
+    /* text-shadow: 2px 2px black; */
+    /* direction:rtl; */
+    /* direction:ltr; */
+    /* text-decoration-style: dotted; */
+    /* text-decoration-style: dashed; */
+    /* text-decoration-style: solid; */
+    /* text-decoration-style: double; */
+    /* text-decoration-style: wavy; */
+    /* text-decoration: line-through; */
+    /* text-decoration-line: dotted black; */  
+}
+.margin{
+    background-color: beige;
+    height: 200px;
+    width: 300px;
+    /* margin: 20px; */
+    margin:10px 20px 50px 60px;
+}
+#padding{
+    background-color:aqua;
+    height: 200px;
+    width: 300px;
+    padding: 20px 10px 50px 70px;
+}
+
+p{
+    color: blue;
+    background-color: aquamarine;   
+}
+p span{
+    vertical-align: sub;
+    /* vertical-align: super; */
+    /* vertical-align: top; */
+    /* vertical-align: text-top;        */
+    /* vertical-align: text-bottom; */
+    /* vertical-align: middle; */
+    /* vertical-align: bottom; */
+    /* vertical-align: 0px; */
+    /* vertical-align: 10px; */
+    /* vertical-align: 25px; */
+    /* vertical-align: -25px; */
+}
+
+.outline{
+    /* visibility: hidden; */
+    visibility: visible;
+}
+
+

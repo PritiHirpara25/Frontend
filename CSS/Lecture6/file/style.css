@@ -1,0 +1,123 @@
+b{
+    font-size: larger;
+}
+/* BACKGROUND COLOR */
+#color1{
+    background-color: blue;
+}
+#color2{
+    background-color: rgb(172, 76, 76);
+}
+#color3{
+    background-color: rgba(212, 250, 154,0.6);
+}
+#color4{
+    background-color: hsl(0,100%,50%);
+}
+#color5{
+    background-color: #36847b;
+}
+
+/* BACKGROUND IMAGE */
+.bg_img{
+    background-image: url(../assets/images.jpeg);
+    height: 200px;
+    width: 200px;
+}
+.bg_img{
+    height: 500px;
+    width: 500px;
+    /* background-position: left top; */
+    /* background-position: left center; */
+    /* background-position: left bottom; */
+    /* background-position: right top; */
+    /* background-position: right center; */
+    /* background-position: right bottom; */
+    /* background-position: center top; */
+    /* background-position: 10% 40%; */
+    /* background-position: 50px 100px; */
+}
+#grad1 {
+    width: 200px;
+    height: 200px;
+    background-image: linear-gradient(red, yellow, blue);
+  }
+.bg_img{
+    /* background-repeat: repeat; */
+    background-repeat: no-repeat;
+    /* background-repeat: repeat-x; */
+    /* background-repeat: repeat-y; */
+    /* background-repeat: space; */
+    /* background-repeat: round;     */
+}
+.bg_img{
+    /* background-size: auto; */
+    /* background-size: contain; */
+    /* background-size: cover; */
+    /* background-size: 50%; */
+    /* background-size: 30px; */
+    /* background-size: 60px; */
+}
+/* #color6{
+    border:10px dotted black;
+    padding: 50px;
+    background: lightblue;
+    text-align: center;
+    font-size: x-large;
+    background-clip: border-box;
+    /* background-clip: padding-box; */
+    /* background-clip: content-box; */
+/* } */ */
+
+#color6{
+    border:10px dotted pink;
+    padding: 50px;
+    text-align: center;
+    font-size: x-large;
+    background-image: url(../assets/images.jpeg);
+    color: #ffffff;
+    /* background-origin: border-box; */
+    /* background-origin: padding-box; */
+    background-origin: content-box;
+}
+#border1{
+    border-style: solid;
+}
+#border2{
+    border-style: dotted;
+}#border3{
+    border-style: dashed;
+}#border4{
+    border-style: inset;
+}#border5{
+    border-style: outset;
+}#border6{
+    border-style: ridge;
+}#border7{
+    border-style: groove;
+}#border8{
+    border-style: double;
+}#border9{
+    border-style: none;
+}#border10{
+    border-style: hidden;
+}
+#demo{
+    border: 5px double yellowgreen;
+    border-radius: 25px;
+    text-align: center;
+    font-size: larger;
+}
+#opa1{
+    color: blue;
+    opacity: 0.5;
+}
+.scroll{
+    /* background-color: aquamarine; */
+    background-image: url(../assets/lifequotes.png);
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-attachment: scroll;
+    height: 500px;
+    width: 500px;
+}

@@ -1,0 +1,35 @@
+.list-style_ul{
+    /* list-style-type:lower-alpha; */
+    /* list-style-position: inside; */
+    /* list-style-image: url(https://picsum.photos/20); */
+    list-style: none inside url(https://picsum.photos/20);
+}
+.list-style_ol{
+    /* list-style-type:lower-alpha; */
+    /* list-style-position: inside; */
+    /* list-style-image: url(https://picsum.photos/20); */
+    list-style: none outside url(https://picsum.photos/20);
+}
+.box{
+    background-color: chartreuse;
+    height: 200px;
+    width: 250px;
+    box-shadow: 2px 2px 5px 10px red,2px 2px 5px 20px green;
+}
+.shadow{
+    background-color: aquamarine;
+    height: 250px;
+    width: 300px;
+    box-shadow: 2px 2px 6px 10px blue;
+}
+.min_width{
+    background-color: blanchedalmond;
+    min-width: 50px;
+    max-width: 70px;
+}
+.height{
+    background-color: aquamarine;
+    min-height: 70px;
+    max-height: 80px;
+
+}
