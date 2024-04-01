@@ -1,0 +1,27 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+div{
+    background-color: rosybrown;
+    display: inline;
+}
+ul{
+    /* border: 2px solid red; */
+    display: inline;
+    display: list-item;
+    margin-left: 50px;
+}
+li{
+    border: 1px dashed green;
+    display: inline;
+    /* display: list-item; */
+}
+span{
+    background-color: brown;
+    display: block;
+}
+a{
+    color: palevioletred;
+    /* display: none; */
+}

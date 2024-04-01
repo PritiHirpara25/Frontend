@@ -20,7 +20,7 @@ span{
 .facebook{
     height: 10px;
     width: 10px;
-    padding-left: 50px;
+    padding-left: 120px;
 }
 .twitter{
     height: 10px;
@@ -58,4 +58,9 @@ span{
     margin-top: -150px;
     margin-right: 25px;
     margin-bottom: 90px;
+}
+a{
+    color: black;
+    font-size: 10px;
+    padding: 0px 18px;
 }
