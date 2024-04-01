@@ -1,7 +1,61 @@
 body{
     margin: 0px;
     padding: 0px;
+    background-image: url(../Task2/Banner-Back.png);
 }
-.header{
-    float: left;
+header{
+    height: 40px;
+    background-color: white;
+}
+.logo{
+    height: 15px;
+    width: 60px;
+    padding-right: 140px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+span{
+    padding-right: 20px;
+}
+.facebook{
+    height: 10px;
+    width: 10px;
+    padding-left: 50px;
+}
+.twitter{
+    height: 10px;
+    width: 10px;
+}
+.youtube{
+    height: 10px;
+    width: 10px;
+}
+.instagram{
+    height: 10px;
+    width: 10px;
+}
+.threeline{
+    height: 10px;
+    width: 10px;
+}
+span{
+    color: palevioletred;
+    margin-left: 10px;
+}
+.h2h5{
+    padding-left: 50px;
+    padding-top: 80px;
+}
+.submit{
+    background-color: palevioletred;
+    height: 30px;
+    border: none;
+}
+.image{
+    height: 450px;
+    width: 450px;
+    float: right;
+    margin-top: -150px;
+    margin-right: 25px;
+    margin-bottom: 90px;
 }
