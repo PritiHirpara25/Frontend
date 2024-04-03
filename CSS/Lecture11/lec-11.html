@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- 1 way  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- 2 way -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+
+</head>
+<body>
+    <!-- 1.CSS font(@font-face) 
+        -online font
+        -offline font
+        -import link font
+        -->
+    
+        <!-- 1.way (link)
+        search on google -> google font -> go to website -> select font -> on web -> link -> copy HTML code and CSS code
+         ->paste HTML code in head section -> paste CSS code in CSS file  
+        -->
+
+        <p class="online">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+
+        <!-- 2.way (import)
+        search on google -> google font -> go to website -> select font -> on web -> import -> copy HTML code and CSS code
+         ->paste HTML code in head section -> paste CSS code in CSS file  
+        -->
+        <p class="import">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+
+        <!-- 3.way 
+        search on google -> google font -> go to website -> select font -> download -> extract downloaded file -> move (copy-paste) 
+        this font file to html font folder -> then do code (@font-face).
+        -->
+        <p class="offline">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+
+
+        <!-- display properties  
+            1.none
+            2.inline
+            3.block
+            4.inline-block
+            5.list-item
+            6.inherite
+            7.initial
+            8.flex
+            9.inline-flex
+         -->
+
+         <!-- 1.None -->
+         <p class="display-none">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         </p>
+
+         <p class="display-inline">
+            Lorem ipsum dolor sit amet <span>consectetur</span> adipisicing elit.
+         </p>
+
+         <p class="display-block">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         </p>
+
+         <div class="container">
+            <div class="item1">one</div>
+            <div class="item2">two</div>
+            <div class="item3">three</div>
+            <div class="item4">four</div>
+         </div>
+
+</body>
+</html>
