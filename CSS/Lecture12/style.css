@@ -1,0 +1,61 @@
+    /* order property */
+.order{
+    background-color: gray;
+    padding: 50px;
+    display: inline flex;
+    justify-content: space-between;
+}
+.order1{
+    background-color: blueviolet;
+    height: 100px;
+    width: 100px;
+    order: 3;
+}
+.order2{
+    background-color: skyblue;
+    height: 100px;
+    width: 100px;
+    order: 1;
+}
+.order3{
+    background-color: rgb(214, 62, 2);
+    height: 100px;
+    width: 100px;
+    /* order: -1; */
+    order: 4;
+}
+.order4{
+    background-color: darkgoldenrod;
+    height: 100px;
+    width: 100px;
+    order: 2;
+}
+
+
+   /* flex property */
+   .flex{
+    background-color: yellowgreen;
+    padding: 50px;
+    display: inline flex;
+    justify-content: space-between;
+}
+.flex div{
+    width: 100px;
+    height: 100px;
+    /* flex: 1 0 auto; */
+ }
+.flex1{
+    background-color: blueviolet;
+    flex-basis: 200px;
+}
+.flex2{
+    background-color: skyblue;
+    flex-shrink: 5;
+}
+.flex3{
+    background-color: rgb(214, 62, 2);
+    flex-grow: 2;
+}
+.flex4{
+    background-color: darkgoldenrod;
+}

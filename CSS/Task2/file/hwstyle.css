@@ -1,7 +1,7 @@
 body{
     margin: 0px;
     padding: 0px;
-    background-image: url(../Task2/Banner-Back.png);
+    background-image: url(../Task2/image/Banner-Back.png);
 }
 header{
     height: 40px;
@@ -42,7 +42,7 @@ span{
     color: palevioletred;
     margin-left: 10px;
 }
-.h2h5{
+.h{
     padding-left: 50px;
     padding-top: 80px;
 }
