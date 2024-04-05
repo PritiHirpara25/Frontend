@@ -1,0 +1,56 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+.container{
+
+    border: 3px dashed hotpink;
+    background-color: #9932cc;
+    display:flex;
+    margin:20px;
+    height: 200px;
+
+        /* flex container properties */
+
+    /* flex-direction: row; */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+
+        /* flex-wrap */
+
+    /* flex-wrap: nowrap; */
+    flex-wrap: wrap;
+    /* flex-wrap: wrap-reverse; */
+
+        /* flex-flow */
+
+    /* flex-flow - sorthand (flex-direction and flex-wrap) */
+    /* flex-flow: column nowrap; */
+
+        /* justify-content - main-axis */
+
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    /* justify-content: center; */
+    /* justify-content: flex-start; */
+    /* justify-content: flex-end; */
+
+        /* align-items - cross-axis */
+
+    /* align-items: center; */
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+
+        /* align-content */
+
+    /* align-content: flex-start; */
+    /* align-content: flex-end; */
+    /* align-content: center; */
+}
+.container div{
+    border:2px solid greenyellow; 
+    width: 100px;
+    /* height: 200px; */
+}
+

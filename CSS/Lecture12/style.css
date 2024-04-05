@@ -50,11 +50,11 @@
 }
 .flex2{
     background-color: skyblue;
-    flex-shrink: 5;
+    flex-shrink: 2;
 }
 .flex3{
     background-color: rgb(214, 62, 2);
-    flex-grow: 2;
+    flex-grow: 5;
 }
 .flex4{
     background-color: darkgoldenrod;
