@@ -1,0 +1,35 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+section{
+    background-color: lightblue;
+    height: 500px;
+    border: 2px solid black;
+}
+h2{
+    text-align: center;
+    background-color: skyblue;
+    border: 2px double black;
+}
+aside{
+    float: left;
+    background-color:palevioletred;
+    height: 270px;
+    width: 150px;
+    padding-left: 10px;
+}
+ol{
+    list-style-position: inside;
+    list-style-type: disc;
+}
+img{
+    height: 250px;
+    width: 250px;
+    /* float: right; */
+}
+article{
+    width: 300px;
+    float: right;
+    padding-right: 30px;
+}
