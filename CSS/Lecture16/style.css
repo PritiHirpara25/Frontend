@@ -1,0 +1,43 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.div{
+    border: 2px solid green;
+    height: 350px;
+}
+img{
+    height: 250px;
+    width: 300px;
+    /* float: right; */
+    float: left;
+}
+.clear{
+    /* clear: right; */
+    clear: left;
+}
+.overflow{
+    border: 2px double red;
+    width: 350px;
+    height: 400px;
+    /* overflow: auto; */
+    /* overflow: hidden; */
+    /* overflow: scroll; */
+    overflow-x: visible;
+    overflow-y: hidden;
+    /* overflow-x: hidden;
+    overflow-y: visible; */
+}
+.wrap{
+    background-color: blueviolet;
+    height: 550px;
+    width: 50px;
+    border: 2px solid red;
+    overflow-wrap: normal;
+    /* overflow-wrap: break-word; */
+}
+.cursor{
+    background-color: aqua;
+    cursor: help;
+    /* cursor: alias; */
+}
