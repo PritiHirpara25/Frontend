@@ -64,7 +64,7 @@ b{
     background: lightblue;
     text-align: center;
     font-size: x-large;
-    background-clip: border-box;
+    /* background-clip: border-box; */
     /* background-clip: padding-box; */
     /* background-clip: content-box; */
 /* } */ */
@@ -78,7 +78,7 @@ b{
     color: #ffffff;
     /* background-origin: border-box; */
     /* background-origin: padding-box; */
-    background-origin: content-box;
+    /* background-origin: content-box; */
 }
 #border1{
     border-style: solid;

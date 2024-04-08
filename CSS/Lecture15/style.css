@@ -15,7 +15,8 @@
 }
 
 #box2{
-
+    background-color: bisque;
+    
     /* relative position */
     /* position: relative;
     top: 20px;
@@ -27,9 +28,9 @@
     left: 30px; */
 
     /* fixed position */
-    /* position: fixed;
+    position: fixed;
     top: 20px;
-    left: 30px;  */
+    left: 30px; 
 
     /* stickey position */
     /* position: sticky;
