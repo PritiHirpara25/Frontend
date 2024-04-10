@@ -1,0 +1,100 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* scale CSS */
+.container1{
+    background-color: cadetblue;
+    border: 2px solid black;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.transform1{
+    background-color: crimson;
+    height: 150px;
+    width: 150px;
+    border: 3px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.transform1:hover{
+    transform: scale(1.5);
+}
+
+/* Rotate CSS */
+.container2{
+    background-color: burlywood;
+    border: 2px solid black;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.transform2{
+    background-color: chocolate;
+    height: 150px;
+    width: 150px;
+    border: 3px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.transform2:hover{
+    transform: rotate(160deg);
+}
+
+/* skew CSS */
+.container3{
+    background-color: chartreuse;
+    border: 2px solid black;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.transform3{
+    background-color: cornflowerblue;
+    height: 150px;
+    width: 150px;
+    border: 3px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.transform3:hover{
+    transform: skew(160deg);
+}
+
+.container{
+    background-color: darkgreen;
+    border: 5px dotted red;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.transition{
+    background-color: blanchedalmond;
+    border: 3px double darkred;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    transition-delay: 1s;
+}
+.transition:hover{
+    background-color: coral;
+    color: brown;
+    transform: scale(1.5);
+    border-radius: 50px;
+    outline: 2px solid blueviolet; 
+    width: max-content;
+}

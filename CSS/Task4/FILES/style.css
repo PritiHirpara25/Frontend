@@ -1,0 +1,136 @@
+*{
+    margin:0px;
+    padding: 0px;
+    text-decoration-line: none;
+    color: black;
+}
+.first_page{
+    background-image: url(../assets/asset\ 1.jpeg);
+    background-size: cover;
+    height: 750px;
+    filter: brightness(80%);
+    /* opacity: 0.7; */
+}
+
+/* MENU */
+#sec1{
+    display: inline;
+    padding-left: 400px;
+    word-spacing: 20px;
+    font-size: 20px;
+}
+a{
+    color: #ffffff;
+}
+
+/* THREE LINE AT RIGHT CORNER */
+img{
+    height: 15px;
+    width: 15px;
+    vertical-align: -3px;
+    float: right;
+    margin-top: 15px;
+    margin-right: 5px;
+    opacity: 0.8;
+}
+
+/* FULL HEADER */
+header{
+    height: 70px;
+    a:hover{
+        color: grey;
+        text-decoration-line: underline;
+        text-decoration-color: #ffbf00;
+    }
+    align-content: center;
+}
+
+/* OUR CAST in menu */
+.para_1{
+    word-spacing: 2px;
+}
+
+.para2{
+    word-spacing: -2px;
+}
+
+/* MEGAONE */
+.para{
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 35px;
+}
+
+/* ALL FONTS */
+.fonts{   
+    text-align: center;
+    padding-top: 250px;
+    font-size: larger;
+}
+#sec2 p{
+    color: #ffffff;
+}
+
+/* DREAM SCALPES */
+#head1{
+    font-size: 70px;
+    font-weight: 800;
+}
+
+/* BUTTON(watch trailer) */
+.button1{
+    background-color: #ffbf00;
+    margin-top: 8px;
+    height: 40px;
+    width: 100px;
+    border: none;
+    font-size: medium;
+}
+
+
+.secondpage{
+    margin-top: 150px;
+    margin-left: 150px;
+}
+.span1{
+    color: #ffbf00;
+    font-size: 20px;
+}
+.Story{
+    padding-top: 10px;
+    font-size: 30px;
+}
+#head2{
+    padding-top: 20px;
+    font-size: 20px;
+    width: 450px;
+}
+.button2{
+    background-color: #ffbf00;
+    border: none;
+    width: 130px;
+    height: 40px;
+    font-size: medium;
+    color: #ffffff;
+    margin-top: 15px;
+}
+#About{
+        height: 300px;
+        width: 500px;
+        float: right;
+        margin-top: -175px;
+        margin-right: 250px;
+        opacity: 0.8;
+}
+
+#production{
+    margin-top: 250px;
+    font-style: bold;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+}
