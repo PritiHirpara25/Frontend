@@ -85,10 +85,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transition-property: all;
-    transition-duration: 1s;
-    transition-timing-function: linear;
-    transition-delay: 1s;
+    /* transition-property: all; */
+    /* transition-duration: 1s; */
+    /* transition-timing-function: linear; */
+    /* transition-timing-function: ease; */
+    /* transition-timing-function: ease-in; */
+    /* transition-timing-function: ease-out; */
+    /* transition-timing-function: ease-in-out; */
+    /* transition-delay: 1s; */
+    transition: all 1s ease 2s;       
+       /* (sorthand property) */
 }
 .transition:hover{
     background-color: coral;

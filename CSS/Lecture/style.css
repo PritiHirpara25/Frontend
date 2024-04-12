@@ -1,0 +1,12 @@
+.fa-brands{
+    font-size: 80px !important;
+    color: chartreuse;
+    display: flex;
+    justify-content: space-between;
+}
+.material-symbols-outlined{
+    color: aqua;
+    font-size: 80px !important;
+    display: flex;
+    justify-content: space-between; 
+}

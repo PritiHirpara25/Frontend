@@ -90,23 +90,29 @@ header{
 }
 
 
+/* secondpage margin */
 .secondpage{
     margin-top: 150px;
     margin-left: 150px;
 }
+/* Basic Info About Shop */
 .span1{
     color: #ffbf00;
     font-size: 20px;
 }
+/* ABOUT US STORY  */
 .Story{
     padding-top: 10px;
     font-size: 30px;
 }
+/* paragraph */
 #head2{
     padding-top: 20px;
     font-size: 20px;
     width: 450px;
+    font-family: Roboto, sans-serif;
 }
+/* READ MORE button */
 .button2{
     background-color: #ffbf00;
     border: none;
@@ -116,6 +122,7 @@ header{
     color: #ffffff;
     margin-top: 15px;
 }
+/* image */
 #About{
         height: 300px;
         width: 500px;
@@ -123,9 +130,103 @@ header{
         margin-top: -175px;
         margin-right: 250px;
         opacity: 0.8;
+        font-family: Oswald, sans-serif;
 }
 
+
+
+/* THIRD PAGE */
+.thirdpage{
+    margin-top: 280px;
+}
+/* OUR PRODUCTION */
 #production{
+    font-style: bold;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+    text-decoration-color: #ffbf00;
+}
+/* TV */
+#div_1{
+    margin-top: 80px;
+    float: left;
+    margin-left: 250px;
+}
+.our1{
+    height: 80px;
+    width: 80px;
+    display: flex;
+    /* margin-top: 80px; */
+}
+.TV{
+    font-family: Oswald, sans-serif;
+    margin-top: 100px;
+}
+/* AWARDS */
+#div_2{
+    margin-top: 45px;
+    float: left;
+    margin-left: 120px;
+}
+.our2{
+    height: 150px;
+    width: 150px;
+}
+.AWARDS{
+    font-family: Oswald, sans-serif;
+    padding-top: -20px;
+}
+/* MOVIES */
+#div_3{
+    margin-top: 60px;
+    float: left;
+    margin-left: 120px;
+}
+.our3{
+    height: 100px;
+    width: 100px;
+} 
+.MOVIES{
+    font-family: Oswald, sans-serif;
+}
+/* FESTIVALS */
+#div_4{
+    float: left;
+    margin-top: 70px;
+    margin-left: 120px;
+}
+.our4{
+    height: 80px;
+    width: 80px;
+}
+.FESTIVALS{
+    font-family: Oswald, sans-serif;
+} 
+
+
+
+
+
+
+
+
+/* #our5{
+    font-family: Oswald, sans-serif;
+    display: flex;
+    word-spacing: 50px;
+}*/
+
+
+ 
+
+
+
+
+
+/* #cast{
     margin-top: 250px;
     font-style: bold;
     display: flex;
@@ -133,4 +234,22 @@ header{
     font-size: 50px;
     text-decoration-line: underline;
     text-decoration-style: double;
+    text-decoration-color: #ffbf00;
 }
+#container{
+    grid-template-columns: auto auto auto auto;
+    grid-template-columns: 250px 250px 250px;
+    border: 2px solid black;
+}
+#grid1{
+    background-image: url(../assets/asset\ 3.jpeg);
+}
+#grid2{
+    
+}
+#grid3{
+    background-image: url(../assets/asset\ 4.jpeg);
+}
+#grid4{
+    
+} */

@@ -1,0 +1,23 @@
+body{
+    background-image: url(../Lecture18/img.jpeg);
+}
+p{
+    font-size: 100px;
+    color: blue;
+    /* backdrop-filter: blur(5px); */
+    /* backdrop-filter: brightness(50%); */
+    /* backdrop-filter: contrast(60%); */
+    /* backdrop-filter: grayscale(60%); */
+    /* backdrop-filter: invert(100%); */
+}
+img{
+    height: 300px;
+    width: 300px;
+}
+#img{
+    /* filter: blur(5px); */
+    /* filter: brightness(50%); */
+    /* filter: contrast(60%); */
+    /* filter: grayscale(40%); */
+    /* filter: invert(100%); */
+}

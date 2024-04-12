@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(../Task5/images/pexels-photo-674010.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    width: 800px;
+}
+img{
+    margin-left: 500px;
+    margin-top: 230px;
+    height: 300px;
+    width: 400px;
+    /* filter: blur(5px); */
+}
+p{
+    padding-left: 550px;
+    padding-top: 360px;
+    position: absolute;
+    color: chartreuse;
+    display: inline-flex;
+    /* display: none; */
+}
+p:hover{
+    /* display: block; */
+    text-decoration-line: underline;
+    text-decoration-color: brown;
+}
