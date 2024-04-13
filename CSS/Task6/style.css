@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: grey;
+}
+.head{
+    height: 80px;
+    display: inline-flex;
+    align-items: center;
+}
+.menu{
+    margin-left: 250px;
+}
+.material-symbols-outlined{
+    font-size: 50px !important;
+    padding-left: 5px;
+}
+a{
+    text-decoration-line: none;
+    color: black;
+    padding: 10px;
+    font-size: 20px;
+}
+a:hover{
+    background-color:white ;
+}
+.button{
+    display: flex;
+    float: right;
+    margin-left: 550px;
+}
+.button button{
+    width: 100px;
+    height: 30px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+.login:hover{
+    background-color: darkgrey;
+}
+.register{
+    margin-left: 10px;
+}
+.register:hover{
+    background-color: darkgrey;
+}
+
+.container{
+    height: 550px;
+}
+
+/* footer */
+.fa-brands {
+    font-size: 30px !important;
+    padding-right: 8px;
+}
+.fa-solid{
+    font-size: 30px !important;
+}
+.icon{
+    padding-top: 8px;
+    display: flex;
+    justify-content: center;
+}
+.copy{
+    /* display: inline;
+    justify-content: center;
+    align-items: center; */
+    font-size: larger;
+    padding-left: 620px;
+}

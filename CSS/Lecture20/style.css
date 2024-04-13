@@ -21,8 +21,8 @@
 
 /* mask image */
 .mask1 {
-    -webkit-mask-image: url(image/logo2.png);
-    mask-image: url(image/logo2.png);
+    -webkit-mask-image: url(../Lecture20/image/logo2.png);
+    mask-image: url(../Lecture20/image/logo2.png);
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
 }
