@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* pagination */
+.pagination{
+    border: 2px double orangered;
+    border-radius: 20px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+.pagination a{
+    color: black;
+    text-decoration-line: none;
+    font-size: 20px;
+    padding: 10px 30px;
+}
+.pagination a:hover{    
+    color: bisque;
+    background-color: brown;
+    border-radius: 20px;
+}
+.pagination a.page2{
+    background-color: blueviolet;
+    color: aquamarine;
+}
+
+/* aspect ratio */
+
+/* .aspect_ratio_container{
+    background-color: cornflowerblue;
+    width: 200px;
+    height: 200px;
+} */
+.aspect_ratio_container{
+    background-color: cornflowerblue;
+    width: 200px;
+    aspect-ratio: 1/2;
+    
+
+    /* height: 200px;
+    aspect-ratio: 2/1; */
+    
+}

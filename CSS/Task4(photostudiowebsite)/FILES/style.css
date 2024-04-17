@@ -2,46 +2,64 @@
     margin:0px;
     padding: 0px;
     text-decoration-line: none;
-    color: black;
+    font-family: 'Roboto', sans-serif;
 }
 .first_page{
     background-image: url(../assets/asset\ 1.jpeg);
+    filter: brightness(100%);
     background-size: cover;
-    height: 750px;
+    height: 850px;
     filter: brightness(80%);
-    /* opacity: 0.7; */
+}
+
+header .active{
+   border-bottom: 2px solid #FFBF00;
+}
+header{
+    
+}
+.Megaone{
+    padding-top: 25px;
+    padding-left: 30px;
+    height: 50px;
+    width: 250px;
+    float: left;
 }
 
 /* MENU */
-#sec1{
+ #sec1{
     display: inline;
-    padding-left: 400px;
-    word-spacing: 20px;
-    font-size: 20px;
+    padding-left: 200px;
+    padding-top: 20px;
+    word-spacing: 40px;
+    font-size: 18px;
+    padding-top: 80px;
+    /* font-weight: 700; */
 }
 a{
     color: #ffffff;
 }
 
-/* THREE LINE AT RIGHT CORNER */
-img{
-    height: 15px;
-    width: 15px;
-    vertical-align: -3px;
+/* Menu line(Three Line) */
+.menu_line{
+    display: inline;
     float: right;
-    margin-top: 15px;
-    margin-right: 5px;
-    opacity: 0.8;
+    margin-top: 30px;
+    margin-right: 50px;
+    color: #ffffff;
 }
 
 /* FULL HEADER */
 header{
-    height: 70px;
-    a:hover{
+    height: 90px;
+    position: sticky;
+    top: 0%;
+    /* padding-top: 50px; */
+    /* a:hover{
         color: grey;
         text-decoration-line: underline;
         text-decoration-color: #ffbf00;
-    }
+    } */
     align-content: center;
 }
 
@@ -75,19 +93,39 @@ header{
 
 /* DREAM SCALPES */
 #head1{
-    font-size: 70px;
-    font-weight: 800;
+    font-size: 90px;
+    font-weight: 900;
 }
 
 /* BUTTON(watch trailer) */
 .button1{
     background-color: #ffbf00;
+    color: #ffffff;
     margin-top: 8px;
-    height: 40px;
-    width: 100px;
+    height: 50px;
+    width: 200px;
     border: none;
     font-size: medium;
+    word-spacing: 2px;
+    letter-spacing: 2px;
 }
+.button1:hover{
+    background-color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* secondpage margin */
@@ -135,9 +173,25 @@ header{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* THIRD PAGE */
 .thirdpage{
     margin-top: 280px;
+    height: 400px;
 }
 /* OUR PRODUCTION */
 #production{
@@ -163,7 +217,9 @@ header{
 }
 .TV{
     font-family: Oswald, sans-serif;
-    margin-top: 100px;
+    /* margin-top: 100px; */
+    margin-top: 30px;
+
 }
 /* AWARDS */
 #div_2{
@@ -213,21 +269,14 @@ header{
 
 
 
-/* #our5{
-    font-family: Oswald, sans-serif;
-    display: flex;
-    word-spacing: 50px;
-}*/
-
-
- 
 
 
 
 
 
-/* #cast{
-    margin-top: 250px;
+
+#cast{
+    margin-top: 220px;
     font-style: bold;
     display: flex;
     justify-content: center;
@@ -235,21 +284,36 @@ header{
     text-decoration-line: underline;
     text-decoration-style: double;
     text-decoration-color: #ffbf00;
+    margin-bottom: 50px;
 }
 #container{
-    grid-template-columns: auto auto auto auto;
-    grid-template-columns: 250px 250px 250px;
-    border: 2px solid black;
+    /* grid-template-columns: auto auto auto auto; */
+    grid-template-columns: 250px 250px ;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
 }
 #grid1{
     background-image: url(../assets/asset\ 3.jpeg);
+    /* height: 250px;
+    background-repeat: no-repeat; */
+    /* height: 250px;
+    aspect-ratio: 1/1; */
+    height: 250px;
+    width: 250px;
 }
 #grid2{
-    
+
 }
 #grid3{
     background-image: url(../assets/asset\ 4.jpeg);
+    height: 250px;
+    width: 250px;
+    /* background-repeat: no-repeat; */ 
 }
 #grid4{
     
-} */
+}
+.lopez1{
+    width: 250px;
+}
