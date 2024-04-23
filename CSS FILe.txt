@@ -1,0 +1,102 @@
+CSS FILe
+
+.thirdpage{
+    /* width: max-content; */
+    margin-top: 280px;
+    height: 400px;
+}
+/* OUR PRODUCTION */
+#production{
+    font-style: bold;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+    text-decoration-color: #ffbf00;
+}
+/* TV */
+#div_1{
+    margin-top: 80px;
+    float: left;
+    margin-left: 125px;
+    width: 250px;
+}
+.TV{
+    font-family: Oswald, sans-serif;
+    margin-top: 30px;
+}
+.material-symbols-outlined{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+/* AWARDS */
+#div_2{
+    margin-top: 80px;
+    float: left;
+    margin-left: 70px;
+    width: 250px;
+}
+.AWARDS{
+    font-family: Oswald, sans-serif;
+    margin-top: 30px;
+
+}
+
+/* MOVIES */
+#div_3{
+    margin-top: 80px;
+    float: left;
+    margin-left: 70px;
+    width: 250px;
+}
+.MOVIES{
+    font-family: Oswald, sans-serif;
+    margin-top: 30px;
+
+}
+
+
+
+/* FESTIVALS */
+#div_4{
+    margin-top: 80px;
+    float: left;
+    margin-left: 70px;
+    width: 250px;
+}
+.FESTIVALS{
+    font-family: Oswald, sans-serif;
+    margin-top: 30px;
+}
+
+HTML FILE
+<div class="thirdpage">
+    <h1 id="production">OUR PRODUCTION</h1>
+    <div id="div_1">
+        <span class="material-symbols-outlined">home</span>
+        <h2 class="TV">TV SHOWS.</h2>
+        <p>Lorem ipsum dolor sit amet, conse ctetur adipiscing nu elit sed do eiusmod tem.</p>
+    </div>
+
+    <div id="div_2">
+        <span class="material-symbols-outlined">home</span>
+        <h2 class="AWARDS">AWARDS.</h2>
+        <p>Lorem ipsum dolor sit amet, conse ctetur adipiscing nu elit sed do eiusmod tem.</p>
+        
+    </div>
+
+    <div id="div_3">
+        <span class="material-symbols-outlined">home</span>
+        <h2 class="MOVIES">MOVIES.</h2>
+        <p>Lorem ipsum dolor sit amet, conse ctetur adipiscing nu elit sed do eiusmod tem.</p>
+    </div>
+
+    <div id="div_4">
+        <span class="material-symbols-outlined">home</span>
+        <h2 class="FESTIVALS">FESTIVALS.</h2>
+        <p>Lorem ipsum dolor sit amet, conse ctetur adipiscing nu elit sed do eiusmod tem.</p>
+    </div> 
+    
+</div>
