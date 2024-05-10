@@ -20,13 +20,13 @@ body{
         /* flex-wrap */
 
     /* flex-wrap: nowrap; */
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     /* flex-wrap: wrap-reverse; */
 
         /* flex-flow */
 
     /* flex-flow - sorthand (flex-direction and flex-wrap) */
-    /* flex-flow: column nowrap; */
+    flex-flow: column wrap;
 
         /* justify-content - main-axis */
 
