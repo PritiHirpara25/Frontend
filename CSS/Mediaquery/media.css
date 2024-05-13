@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: blanchedalmond;
+    color: darkgoldenrod;
+}
+
+
+@media (width:900px){
+    body{
+        background-color: brown;
+        color: #ffffff;
+        font-size: 32px;
+    }
+}
+
+@media (width <= 900px){
+    .main{
+        background-color: aquamarine;
+        color: black;
+        border: 10px solid;
+    }
+}
+
+@media (width >= 600) and (width <=900){
+    .main{
+        background-color: blue;
+        color: aquamarine;
+        height: 250px;
+    }
+}
+
+/* @media (orientation:landscape) and (width <= 600px){
+    body{
+        background-color: yellow;
+    }
+    .main{
+        background-color: yellowgreen;
+        color: black;
+        height: 200px;
+    }
+} */
+
+@media (orientation:landscape){
+    @media (width<=600px){
+        body{
+            background-color: yellow;
+        }
+        .main{
+            background-color: yellowgreen;
+            color: black;
+            height: 200px;
+        }
+    }
+}

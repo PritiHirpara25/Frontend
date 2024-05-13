@@ -894,6 +894,9 @@
     font-size: 50px;
     padding-bottom: 20px
 }
+.for_human_diet p{
+    color: #666;
+}
 .ring{
     display: flex;
     justify-content: space-between;
@@ -910,6 +913,11 @@
     color: #7fbb00;
     font-size: 30px;
 }
+.ring1 span{
+    color: 4A4A4A;
+    font-size: 12px;
+    font-family: Roboto;
+}
 
 .ring2{
     background-image: url("../Assets/asset\ 27.png");
@@ -921,6 +929,11 @@
 #hour0{
     color: #7fbb00;
     font-size: 30px;
+}
+.ring2 span{
+    color: 4A4A4A;
+    font-size: 12px;
+    font-family: Roboto;
 }
 
 .ring3{
@@ -934,6 +947,11 @@
     color: #7fbb00;
     font-size: 30px;
 }
+.ring3 span{
+    color: 4A4A4A;
+    font-size: 12px;
+    font-family: Roboto;
+}
 
 .ring4{
     background-image: url("../Assets/asset\ 27.png");
@@ -945,6 +963,11 @@
 #second0{
     color: #7fbb00;
     font-size: 30px;
+}
+.ring4 span{
+    color: 4A4A4A;
+    font-size: 12px;
+    font-family: Roboto;
 }
 
 
@@ -1093,36 +1116,46 @@
     background-position: center center;
     background-repeat: no-repeat;
     height: 380px;
-    width: auto;
+    width: 1475px;
 }
 .eightpage #num_container{
     display: flex;
     padding-top: 195px;
-    /* align-items: center; */
+}
+.happycustomer{
+    display: flex;
 }
 .happycustomer h4{
     font-weight: 400;
     font-family: "Pacifico", cursive;
     font-style: normal;
     font-size: 18px;
-    padding-left: 255px;
 }
-.xsicon{
-    font-family: marketo-icons !important;
-    position: relative;
+.happycustomer p{
+    font-weight: 500;
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 35px;
 }
-.xsicon::before{
-    position: absolute;
-    z-index: 1;
-    content: "*";
+.happycustomer .fa-solid{
+    background-color: transparent;
     color: #ffffff;
+    font-size: 55px;
+    padding-left: 200px;
 }
+
 .Customersatisfaction h4{
     font-weight: 400;
     font-family: "Pacifico", cursive;
     font-style: normal;
     font-size: 18px;
     padding-left: 150px;
+}
+.Customersatisfaction p{
+    font-weight: 500;
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 35px;
 }
 .organicproducts h4{
     font-weight: 400;
@@ -1131,12 +1164,24 @@
     font-size: 18px;
     padding-left: 150px;
 }
+.organicproducts p{
+    font-weight: 500;
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 35px;
+}
 .awardswinning h4{
     font-weight: 400;
     font-family: "Pacifico", cursive;
     font-style: normal;
     font-size: 18px;
     padding-left: 150px;
+}
+.awardswinning p{
+    font-weight: 500;
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 35px;
 }
 
 
@@ -1355,6 +1400,11 @@ input[type="email"]{
     line-height: 10px;
     display: flex;
 }
+#address a button:hover{
+    background-color: #222222;
+    color: #ffffff;
+    cursor: pointer;
+}
 #address a{
     text-decoration-line: none;
 }
@@ -1366,7 +1416,6 @@ input[type="email"]{
     color: #ffffff;
     font-family: Roboto;
     padding-top: 5px;
-
 }
 
 .payments{
