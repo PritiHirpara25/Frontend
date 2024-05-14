@@ -602,7 +602,7 @@
     cursor: pointer;
 }
 #go_shop2:hover{
-    transition: all .6s ease;
+    transition: all .6  s ease;
     border: 2px solid black;
 }
 
@@ -1062,6 +1062,7 @@
 }
 .imgData #name:hover{
     color: #0056b3;
+    cursor: pointer;
 }
 .imgData #rupees{
     color: #83b735;
@@ -1075,6 +1076,9 @@
     font-family: Roboto;
     background: linear-gradient(to right, #f7f6f2 0, #f7f6f2 20%, #fff 20%, #fff 100%);
     position: relative;
+}
+#con1:hover{
+    opacity: 0.8;
 }
 #con1::before{
     position: absolute;
@@ -1156,6 +1160,12 @@
     font-family: Roboto;
     font-style: normal;
     font-size: 35px;
+}
+.Customersatisfaction .fa-solid{
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 55px;
+    padding-left: 200px;
 }
 .organicproducts h4{
     font-weight: 400;
@@ -1283,17 +1293,18 @@
 
 .Logopage{
     margin-top: 100px;
-    padding-left: 180px;
-    padding-right: 180px;
+    padding-left: 245px;
 }
 #logo{
+    height: 104px;
+    width: 1140px;
     display: flex;
-    justify-content: space-between;
 }
 .logo1,.logo2,.logo3,.logo4,.logo5{ 
     opacity: 0.5;
     width: 100px;
     height: 84px;
+    padding-right: 230px;
 }
 .logo1:hover,.logo2:hover,.logo3:hover,.logo4:hover,.logo5:hover{
     opacity: 1;
@@ -1317,6 +1328,7 @@
 }
 #detail{
     padding-top: 90px;
+    padding-left: 110px;
 }
 #detail span{
     font-family: Roboto;
@@ -1331,7 +1343,10 @@
 }
 #input{
     padding-top: 90px;
-    padding-left: 250px;
+    padding-left: 147px;
+}
+.email{
+    border: none;
 }
 input[type="email"]{
     padding: 0px 8px 0px 30px;
@@ -1339,6 +1354,7 @@ input[type="email"]{
     width: 417px;
     border: 1px solid #d5d5d5;
     background-color: transparent;
+    border-radius: 5px;
 }
 .submit{
     padding: 0px 35px;
@@ -1352,6 +1368,8 @@ input[type="email"]{
     color: #fff;
     cursor: pointer;
     transition: all .4s ease;
+    margin-left: -5px;
+    border-radius: 2px;
 }
 .submit:hover{
     background-color: #7fbb00;
