@@ -1,4 +1,4 @@
-*{
+     *{
     padding: 0;
     margin: 0;
 }
@@ -23,9 +23,9 @@ body{
         color: black;
         border: 10px solid;
     }
-}
+} 
 
-@media (width >= 600) and (width <=900){
+@media (width > 600px) and (width <=900px){
     .main{
         background-color: blue;
         color: aquamarine;
