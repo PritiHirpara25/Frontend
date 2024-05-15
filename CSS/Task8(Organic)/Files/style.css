@@ -1153,45 +1153,67 @@
     font-family: "Pacifico", cursive;
     font-style: normal;
     font-size: 18px;
-    padding-left: 150px;
+    padding-left: 165px;
+    margin-top: -60px;
 }
 .Customersatisfaction p{
     font-weight: 500;
     font-family: Roboto;
     font-style: normal;
     font-size: 35px;
+    font-size: 35px;
+    padding-left: 170px;
 }
-.Customersatisfaction .fa-solid{
-    background-color: transparent;
+.Customersatisfaction svg{
     color: #ffffff;
     font-size: 55px;
-    padding-left: 200px;
+    margin-left: 100px;
 }
+
 .organicproducts h4{
     font-weight: 400;
     font-family: "Pacifico", cursive;
     font-style: normal;
     font-size: 18px;
-    padding-left: 150px;
+    padding-left: 157px;
+    margin-top: -56px;
 }
 .organicproducts p{
     font-weight: 500;
     font-family: Roboto;
     font-style: normal;
     font-size: 35px;
+    padding-left: 165px;
 }
+.organicproducts .fa-brands{
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 55px;
+    padding-left: 90px;
+}
+
 .awardswinning h4{
     font-weight: 400;
     font-family: "Pacifico", cursive;
     font-style: normal;
     font-size: 18px;
-    padding-left: 150px;
+    padding-left: 155px;
+    margin-top: -56px;
+
 }
 .awardswinning p{
     font-weight: 500;
     font-family: Roboto;
     font-style: normal;
     font-size: 35px;
+    padding-left: 165px;
+}
+.awardswinning .fa-solid{
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 65px;
+    padding-left: 90px;
+
 }
 
 
