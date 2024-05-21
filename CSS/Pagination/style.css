@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* Pagination 1 */
+.pagination1{
+    display: flex;
+    margin-top: 20px;
+}
+.pagination1 a{
+    text-decoration: none;
+    color: black;
+}
+.num1 a{
+    border: 2px solid gray;
+    padding: 10px;
+}
+.num1 a:hover{
+    background-color: black;
+    color: #ffffff;
+}
+/* Pagination 2 */
+.pagination2{
+    display: flex;
+    margin-top: 20px;
+    background-color: cornflowerblue;
+    height: 60px;
+    width: 250px;
+}
+.pagination2 a{
+    text-decoration: none;
+    color: black;
+}
+.num2{
+    padding-top: 20px;
+}
+.num2 a{
+    border: 2px solid rgb(230, 162, 72);
+    padding: 10px;
+    background-color: rgb(234, 233, 228);
+}
+.num2 a:hover{
+    background-color: blueviolet;
+    color: #ffffff;
+    border-radius: 15px;
+}
+.pagination2 .material-symbols-outlined{
+    padding-top: 15px;
+}
+/* Pagination 3 */
+.pagination3{
+    display: flex;
+    margin-top: 20px;
+    background-color: black;
+    width: 400px;
+    height: 100px;
+}
+.pagination3:hover{
+    /* background-color: white; */
+}
+.num3 a{
+    text-decoration: none;
+    color: black;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 100px;
+}
+.num3 a:hover{
+    color: white;
+    background-color: black;
+}
+.num3{
+    padding-top: 40px;
+    padding-left: 50px;
+}
+.pagination3 .material-symbols-outlined{
+    padding-top: 40px;
+    color: #ffffff;
+}
+.pagination3 .material-symbols-outlined:hover{
+    color: black;
+}
+#back{
+    padding-left: 20px;
+    margin-right: -20px;
+}
+#next{
+    padding-left: 20px;
+     
+}
+/* Pagination 4 */
+.pagination4{
+    display: flex;
+    margin-top: 20px;
+    background-color: rgb(231, 53, 53);
+    width: 590px;
+    height: 100px;
+}
+.num4 a{
+    text-decoration: none;
+    color: black;
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.num4 a:hover{
+    background-color: rgb(231, 53, 53);
+    color: #ffffff;
+} 
+.num4{
+    padding-top: 40px;
+    padding-left: 40px;
+}
+.pagination4 i{
+    color: black;
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    padding: 17px;
+    margin-top: 21px;
+    margin-left: 40px;
+    font-size: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.pagination4 i:hover{
+    background-color: rgb(231, 53, 53);
+    color: #ffffff;
+} 
+/*  Pagination 5 */
+.pagination5{
+    display: flex;
+    margin-top: 20px;
+    background-color: darkgray;
+    width: 300px;
+    height: 50px;
+}
+.pagination5 a{
+    text-decoration: none;
+    color: dimgrey;
+    padding-right: 30px;
+    display: flex;
+    align-items: center;
+}
+.pagination5 a:hover{
+    background-color: lightblue;
+}

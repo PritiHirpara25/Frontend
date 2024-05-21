@@ -3,7 +3,7 @@
     border: 2px solid black;
     height: 250px;
     width: 400px;
-    /* outline: 2px dotted green; */ /*sorthand property*/
+    /* outline: 2px dotted green; */      /*sorthand property*/
     outline-offset: 5px;
     outline-width: 5px;
     outline-color: red;
@@ -24,7 +24,7 @@
     word-spacing: 10px;
     /* text-transform: lowercase; */
     /* text-transform: uppercase; */
-    /* text-shadow: 2px 2px black; */
+    text-shadow: 2px 2px black;
     /* direction:rtl; */
     /* direction:ltr; */
     /* text-decoration-style: dotted; */

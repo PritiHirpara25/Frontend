@@ -76,7 +76,7 @@ b{
     font-size: x-large;
     background-image: url(../assets/images.jpeg);
     color: #ffffff;
-    /* background-origin: border-box; */
+    background-origin: border-box;
     /* background-origin: padding-box; */
     /* background-origin: content-box; */
 }
@@ -117,7 +117,8 @@ b{
     background-image: url(../assets/lifequotes.png);
     background-repeat: no-repeat;
     /* background-attachment: fixed; */
-    background-attachment: scroll;
+    /* background-attachment: local; */
+    /* background-attachment: scroll; */
     height: 500px;
     width: 500px;
 }
