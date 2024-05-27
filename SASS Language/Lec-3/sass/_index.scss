@@ -1,0 +1,16 @@
+@use './variable' as *;
+.nav-items{
+    background-color: $bg-color-5;
+    padding: $p-1;
+}
+
+.links{
+    display: $flex;
+    list-style-type: none;
+    justify-content: $justify-se;
+}
+
+.links li a{
+    text-decoration: none;
+    color: $color-1;
+}

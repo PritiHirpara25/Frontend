@@ -1,0 +1,23 @@
+/* bg-color */
+/* text-color */
+/* flex-container */
+/* misellensious */
+/* height */
+/* width */
+/* padding */
+/* margin */
+.nav-items {
+  background-color: yellowgreen;
+  padding: 10px;
+}
+
+.links {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-evenly;
+}
+
+.links li a {
+  text-decoration: none;
+  color: red;
+}/*# sourceMappingURL=main.css.map */
