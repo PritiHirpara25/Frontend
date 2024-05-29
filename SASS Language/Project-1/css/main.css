@@ -1,0 +1,85 @@
+/* bg-color */
+/* text-color */
+/* flex-container */
+/* font-size */
+/* font-weight */
+/* font-family */
+/* misellensious */
+/* float */
+/* height */
+/* width */
+/* padding */
+/* padding-top */
+/* padding-left */
+/* padding-right */
+/* padding-bottom */
+/* margin */
+/* margin-top */
+/* margin-left */
+/* margin-right */
+/* margin-bottom */
+/* text-align */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  font-family: Roboto;
+}
+
+.img img {
+  height: 693px;
+  width: 500px;
+  float: right;
+}
+
+.written-part {
+  padding-left: 20px;
+}
+
+.container .plant h1 {
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+.greeny {
+  font-size: 50px;
+  padding-top: 250px;
+}
+
+.greeny span {
+  color: green;
+}
+
+.theory {
+  width: 900px;
+  padding-top: 10px;
+  font-size: 18px;
+}
+
+.button button {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.footer {
+  background-color: black;
+  margin-top: 188.3px;
+}
+
+.footer footer {
+  color: white;
+  font-family: Roboto;
+  font-size: small;
+  text-align: center;
+}
+
+.footer footer span {
+  text-decoration-line: underline;
+}/*# sourceMappingURL=main.css.map */

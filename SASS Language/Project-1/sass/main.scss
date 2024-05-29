@@ -1,0 +1,66 @@
+@import "./variable.scss";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    font-family: $fontfamily-1;
+}
+
+.img img{
+    height: 693px;
+    width: $w-5;
+    float: $float-r;
+}
+
+.written-part{
+    padding-left: $pl-2;
+}
+
+.container .plant h1{
+    font-weight: $fontweight-bold;
+    padding-top: $pt-2;
+}
+
+.greeny{
+    font-size: $fontsize-50;
+    padding-top: 250px;
+}
+
+.greeny span{
+    color: $bg-color-3;
+}
+
+.theory{
+    width: $w-9;
+    padding-top: $pt-1;
+    font-size: $fontsize-18;
+}
+
+.button button{
+    background-color: $bg-color-3;
+    color: $bg-color-11;
+    border: none;
+    padding: 15px;
+    font-size: $fontsize-20;
+    margin-top: $mt-3;
+}
+
+.footer{
+    background-color: $bg-color-10;
+    margin-top: 188.3px;
+}
+.footer footer{
+    color: $bg-color-11;
+    font-family: $fontfamily-1;
+    font-size: $fontsize-small;
+    text-align: $text-align-c;
+}
+.footer footer span{
+    text-decoration-line: $text-d-underline;
+}
+

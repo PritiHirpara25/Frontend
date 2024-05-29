@@ -1,0 +1,135 @@
+/* bg-color */
+/* text-color */
+/* flex-container */
+/* font-size */
+/* font-weight */
+/* font-family */
+/* misellensious */
+/* float */
+/* border */
+/* border radius */
+/* height */
+/* width */
+/* padding */
+/* margin */
+/* text-align */
+/* grid-template-column */
+/* grid-template-column */
+/* grid-gap */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto;
+}
+
+.coffee {
+  background-color: cornflowerblue;
+  height: 400px;
+  width: auto;
+}
+
+.img img {
+  border-radius: 20px;
+  float: right;
+  height: 250px;
+  margin-right: 200px;
+  margin-top: 60px;
+}
+
+.written {
+  padding-left: 200px;
+  padding-top: 100px;
+}
+.written h1 {
+  color: white;
+}
+.written p {
+  color: white;
+  padding-top: 10px;
+}
+.written button {
+  color: cornflowerblue;
+  border: none;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 60px;
+}
+
+.products {
+  padding-left: 200px;
+  padding-right: 200px;
+}
+.products h2 {
+  padding-top: 40px;
+}
+.products .grid {
+  display: grid;
+  grid-template-columns: 350px 350px 350px;
+  grid-template-rows: 330px 350px;
+  grid-gap: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.products .grid1 {
+  box-shadow: 0px 1px 12px 0px;
+  border-radius: 20px;
+}
+.products .grid1 img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  height: 200px;
+  width: 350px;
+}
+.products .grid2 {
+  box-shadow: 0px 1px 12px 0px;
+  border-radius: 20px;
+}
+.products .grid2 img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  height: 200px;
+  width: 350px;
+}
+.products .grid3 {
+  box-shadow: 0px 1px 12px 0px;
+  border-radius: 20px;
+}
+.products .grid3 img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  height: 200px;
+  width: 350px;
+}
+.products .grid4 {
+  box-shadow: 0px 1px 12px 0px;
+  border-radius: 20px;
+}
+.products .grid4 img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  height: 200px;
+  width: 350px;
+}
+
+.info4, .info3, .info2, .info1 {
+  padding: 10px;
+}
+
+.info1 p, .info2 p, .info3 p, .info4 p {
+  font-size: 12px;
+  padding-top: 10px;
+}
+
+.dollar {
+  display: flex;
+  padding-top: 10px;
+}
+.dollar button {
+  background-color: cornflowerblue;
+  color: white;
+  border-radius: 60px;
+  border: none;
+  padding: 10px;
+  margin-left: 200px;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,135 @@
+@import './variable';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $fontfamily-1;
+}
+
+.coffee{
+    background-color: $bg-color-12;
+    height: $h-4;
+    width: $w-auto;
+}
+
+.img{
+    img{
+        border-radius: $b-radius-2;
+        float: $float-r;
+        height: $h-250;
+        margin-right: $m-200;
+        margin-top: $m-6;
+    }
+}
+
+.written{
+    padding-left: $p-200;
+    padding-top: $p-100;
+    h1{
+        color: $color-11;
+    }
+    p{
+        color: $color-11;
+        padding-top: $p-1;
+    }
+    button{
+        color: $color-12;
+        border:$border-none;
+        padding: $p-1;
+        margin-top: $m-2;
+        border-radius: $b-radius-6;
+    }
+}
+
+.products{
+    padding-left: $p-200;
+    padding-right: $p-200;
+    h2{
+        padding-top: $p-4;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: $grid-t-c-350 $grid-t-c-350 $grid-t-c-350;
+        grid-template-rows: 330px $grid-t-r-350;
+        grid-gap:$grid-gap-2;
+        margin-top: $m-3;
+        margin-bottom: $m-3;
+    }
+    .grid1{
+        box-shadow: 0px 1px 12px 0px;
+        border-radius: $b-radius-2;
+        img{
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            height: $h-2;
+            width: $w-350;
+        }
+    }
+    .grid2{
+        box-shadow: 0px 1px 12px 0px;
+        border-radius: $b-radius-2;
+        img{
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            height: $h-2;
+            width: $w-350;
+        }
+    }
+    .grid3{
+        box-shadow: 0px 1px 12px 0px;
+        border-radius: $b-radius-2;
+        img{
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            height: $h-2;
+            width: $w-350;
+        }
+    }
+    .grid4{
+        box-shadow: 0px 1px 12px 0px;
+        border-radius: $b-radius-2;
+        img{
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            height: $h-2;
+            width: $w-350;
+        }
+    }
+}
+
+%info{
+        padding: $p-1;
+    }
+    .info1{
+        @extend %info;
+    }
+    .info2{
+        @extend %info;
+    }
+    .info3{
+        @extend %info;
+    }
+    .info4{
+        @extend %info;
+    }
+    
+.info1,.info2,.info3,.info4{
+    p{
+        font-size: $fontsize-12;
+        padding-top: $p-1;
+    }
+}
+
+.dollar{
+    display: flex;
+    padding-top: $p-1;
+    button{
+        background-color: $bg-color-12;
+        color: $color-11;
+        border-radius: $b-radius-6;
+        border: $border-none;
+        padding: $p-1;
+        margin-left: $m-200;
+    }
+}
