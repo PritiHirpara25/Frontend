@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* flex-container */
 
 $flex:flex;
@@ -10,4 +11,18 @@ $justify-e:flex-end;
 $justify-c:center;
 $justify-sb:space-between;
 $justify-sa:space-around;
+=======
+/* flex-container */
+
+$flex:flex;
+$flex-dr:row;
+$flex-dc:column;
+$flex-drr:row-reverse;
+$flex-dcr:column-reverse;
+$justify-s:flex-start;
+$justify-e:flex-end;
+$justify-c:center;
+$justify-sb:space-between;
+$justify-sa:space-around;
+>>>>>>> 1e314b6dab41829ccf25c07f43d1b221c9f35010
 $justify-se:space-evenly;
