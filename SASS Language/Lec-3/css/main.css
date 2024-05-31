@@ -1,9 +1,53 @@
 /* bg-color */
 /* text-color */
+/* bg-color */
+/* text-color */
 /* flex-container */
+/* flex-container */
+/* misellensious */
 /* misellensious */
 /* height */
 /* width */
+/* height */
+/* width */
+/* padding */
+/* margin */
+/* padding */
+/* margin */
+/* Sass Nesting  ,  @Mixin , @extend , @function  , @at-root*/
+/* @at-root */
+/* @mixin */
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 500px;
+}
+
+/* @extend */
+/* @function */
+/* bg-color */
+/* text-color */
+/* bg-color */
+/* text-color */
+/* flex-container */
+/* flex-container */
+/* misellensious */
+/* misellensious */
+/* height */
+/* width */
+/* height */
+/* width */
+/* padding */
+/* margin */
 /* padding */
 /* margin */
 /* Sass Nesting  ,  @Mixin , @extend , @function  , @at-root*/

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @use './variable' as *;
 .nav-items{
     background-color: $bg-color-5;
@@ -14,7 +13,7 @@
 .links li a{
     text-decoration: none;
     color: $color-1;
-=======
+}
 @use './variable' as *;
 .nav-items{
     background-color: $bg-color-5;
@@ -30,5 +29,4 @@
 .links li a{
     text-decoration: none;
     color: $color-1;
->>>>>>> 1e314b6dab41829ccf25c07f43d1b221c9f35010
 }
