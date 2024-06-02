@@ -17,41 +17,17 @@
 /* Sass Nesting  ,  @Mixin , @extend , @function  , @at-root*/
 /* @at-root */
 /* @mixin */
-.parent {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100px;
+/* @extend */
+.box, .parent {
+  background-color: yellow;
+  color: green;
+  height: 200px;
+  width: 400px;
 }
 
-.box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100px;
-  width: 500px;
+.box, .parent {
+  padding: 10px;
+  margin: 20px;
 }
 
-/* @extend */
-/* @function */
-/* bg-color */
-/* text-color */
-/* bg-color */
-/* text-color */
-/* flex-container */
-/* flex-container */
-/* misellensious */
-/* misellensious */
-/* height */
-/* width */
-/* height */
-/* width */
-/* padding */
-/* margin */
-/* padding */
-/* margin */
-/* Sass Nesting  ,  @Mixin , @extend , @function  , @at-root*/
-/* @at-root */
-/* @mixin */
-/* @extend */
 /* @function *//*# sourceMappingURL=main.css.map */

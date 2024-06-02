@@ -553,3 +553,43 @@ video {
   --tw-contain-paint:  ;
   --tw-contain-style:  ;
 }
+
+.grid {
+  display: grid;
+}
+
+.h-\[230px\] {
+  height: 230px;
+}
+
+.w-\[340px\] {
+  width: 340px;
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.border-2 {
+  border-width: 2px;
+}
+
+.border-solid {
+  border-style: solid;
+}
+
+.p-5 {
+  padding: 1.25rem;
+}
+
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
+
+.pt-7 {
+  padding-top: 1.75rem;
+}

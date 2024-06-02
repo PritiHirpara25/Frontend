@@ -1,16 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
-  content: ["./1.404error/**/*.{html,js}"], 
-  content: ["./2.Plant/**/*.{html,js}"], 
-  content: ["./3.Breadcrumbs/**/*.{html,js}"], 
-  content: ["./4.call-to-actio-section/**/*.{html,js}"], 
-  content: ["./5.card-grid/**/*.{html,js}"], 
+  content: [
+  "./src/**/*.{html,js}",
+  "./1.error/**/*.{html,js}", 
+  "./2.Plant/**/*.{html,js}", 
+  "./3.Breadcrumbs/**/*.{html,js}", 
+  "./4.call-to-action-section/**/*.{html,js}", 
+  "./5.card-grid/**/*.{html,js}", 
+  './6.cards/**/*.{html,js}', 
+],
   darkMode: 'selector',
   theme: {
-    screens:{
-        sm:'500px'
-    },
     extend: {},
   },
   plugins: [],

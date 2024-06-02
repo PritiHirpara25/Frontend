@@ -23,99 +23,12 @@
 
 /* @mixin */
 
-@mixin flex-container($height:100px){
-    display: $flex;
-    justify-content: $justify-c;
-    align-items: $align-c;
-    height: $height;
-    @content;
-}
-
-.parent{
-    @include flex_container();
-}
-
-.box{
-    @include flex-container(){
-    
-        width: $w-5;
-    };
-}
-
-
-/* @extend */
-
-// %sizes{
-//     background-color: $bg-color-2;
-//     color: $color-3;
-//     height: $h-2;
-//     width: $w-4;
-// }
-
-// %spacing{
-//     padding: $p-1;
-//     margin: $m-2;
-// }
-
-// .parent{
-//     @extend %sizes,%spacing;
-//     // @extend %spacing;
-// }
-
-// .box{
-//     @extend %sizes,%spacing;
-//     // @extend %spacing;
-// }
-
-/* @function */
-
-// $containerSize:100px;
-
-// @function container(){
-//     @return $containerSize * 2
-// };
-
-// .parent{
-//     width: container();
-// }
-
-// @function container2(){
-//     @return $containerSize * 5
-// }
-
-// .box{
-//     width: container2();
-@import './variable';
-/* Sass Nesting  ,  @Mixin , @extend , @function  , @at-root*/
-
-/* @at-root */
-// .nav-items{
-//     background-color: $bg-color-2;
-//     padding: $p-1;
-//     @at-root
-//     .links{
-//         display: $flex;
-//         list-style-type: $list-none;
-//         justify-content: $justify-se;
-//         @at-root
-//         li{
-//             a{
-//                 text-decoration: $text-d-none;
-//                 color: $color-1;
-//             }
-//         }
-//     }
-// }
-
-
-/* @mixin */
-
 // @mixin flex-container($height:100px){
 //     display: $flex;
 //     justify-content: $justify-c;
 //     align-items: $align-c;
 //     height: $height;
-//     // @content;
+//     @content;
 // }
 
 // .parent{
@@ -123,36 +36,36 @@
 // }
 
 // .box{
-//     @include flex-container();
-//     // {
-//     //     width: $w-5;
-//     // }
+//     @include flex-container(){
+    
+//         width: $w-5;
+//     };
 // }
 
 
 /* @extend */
 
-// %sizes{
-//     background-color: $bg-color-2;
-//     color: $color-3;
-//     height: $h-2;
-//     width: $w-4;
-// }
+%sizes{
+    background-color: $bg-color-2;
+    color: $color-3;
+    height: $h-2;
+    width: $w-4;
+}
 
-// %spacing{
-//     padding: $p-1;
-//     margin: $m-2;
-// }
+%spacing{
+    padding: $p-1;
+    margin: $m-2;
+}
 
-// .parent{
-//     @extend %sizes,%spacing;
-//     // @extend %spacing;
-// }
+.parent{
+    @extend %sizes,%spacing;
+    // @extend %spacing;
+}
 
-// .box{
-//     @extend %sizes,%spacing;
-//     // @extend %spacing;
-// }
+.box{
+    @extend %sizes,%spacing;
+    // @extend %spacing;
+}
 
 /* @function */
 
@@ -172,4 +85,3 @@
 
 // .box{
 //     width: container2();
-// }
