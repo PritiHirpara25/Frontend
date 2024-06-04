@@ -8,11 +8,16 @@ module.exports = {
   "./4.call-to-action-section/**/*.{html,js}", 
   "./5.card-grid/**/*.{html,js}", 
   './6.cards/**/*.{html,js}', 
+  './7.file-upload-form/**/*.{html,js}', 
+  './8.Footer/**/*.{html,js}', 
+  './10.Hero-section/**/*.{html,js}', 
 ],
+corePlugins: {
+  preflight: false
+},
   darkMode: 'selector',
   theme: {
     extend: {},
-  },
   plugins: [],
 }
-
+}
