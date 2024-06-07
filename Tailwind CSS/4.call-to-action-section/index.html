@@ -7,29 +7,35 @@
     <link rel="stylesheet" href="output.css">
 </head>
 <body>
+    <div class="absolute inset-0">
+        <div class="blur-[106px] h-56 bg-gradient-to-br from-teal-100 to-teal-100"></div>
+        </div>
+    </div>
+
     <div class="flex flex-col justify-center">
-        <div class="flex -space-x-1 justify-center">
-            <img class="inline-block h-6 w-6 rounded-full" src="./images/img1.jpeg" alt="image">
-            <img class="inline-block h-8 w-8 rounded-full" src="./images/img2.jpeg" alt="image">
-            <img class="inline-block h-10 w-10 rounded-full" src="./images/img3.jpeg" alt="image">
-            <img class="inline-block h-8 w-8 rounded-full" src="./images/img4.jpeg" alt="image">
-            <img class="inline-block h-6 w-6 rounded-full" src="./images/img5.jpeg" alt="image">
-        </div>
-
-        <div>
-            <div class="flex justify-center">
-                <h1 class="font-bold text-4xl">Get started now</h1>
+        <div class="relative">
+            <div class="flex -space-x-1 justify-center mt-2">
+                <img class="inline-block h-7 w-7 rounded-full pt-1" src="./images/img1.jpeg" alt="image">
+                <img class="inline-block h-9 w-9 rounded-full pt-1" src="./images/img2.jpeg" alt="image">
+                <img class="inline-block h-11 w-11 rounded-full" src="./images/img3.jpeg" alt="image">
+                <img class="inline-block h-9 w-9 rounded-full pt-1" src="./images/img4.jpeg" alt="image">
+                <img class="inline-block h-7 w-7 rounded-full pt-1" src="./images/img5.jpeg" alt="image">
             </div>
-            <div class="flex justify-center">
-                <p class="w-[530px] -mt-3">Be part of millions people around the world using tailus inr modern user Interface.</p>
+
+            <div>
+                <div class="text-center">
+                    <h1 class="font-bold text-4xl ">Get started now</h1>
+                </div>
+                <div class="flex justify-center">
+                    <p class="w-[530px] -mt-3">Be part of millions people around the world using tailus inr modern user Interface.</p>
+                </div>
+            </div>
+
+            <div class="flex flex-row justify-center">
+                    <button class="text-white  bg-teal-500 w-32 rounded-3xl p-2 mr-5 border-none">Get started</button>
+                    <button class="text-teal-500 bg-teal-400 bg-opacity-10 w-32 rounded-2xl p-2 border-none">More about</button>
             </div>
         </div>
-
-        <div class="flex flex-row justify-center">
-                <button class="text-white  bg-teal-400 w-32 rounded-3xl p-2 mr-5 border-none">Get started</button>
-                <button class="text-teal-400 bg-teal-400 bg-opacity-10 w-32 rounded-2xl p-2 border-none">More about</button>
-        </div>
-        
     </div>
 </body>
 </html>

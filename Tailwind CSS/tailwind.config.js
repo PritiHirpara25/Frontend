@@ -10,7 +10,16 @@ module.exports = {
   './6.cards/**/*.{html,js}', 
   './7.file-upload-form/**/*.{html,js}', 
   './8.Footer/**/*.{html,js}', 
+  './9.Frequently/**/*.{html,js}', 
   './10.Hero-section/**/*.{html,js}', 
+  './11.Landing-page/**/*.{html,js}', 
+  './12.Product-feature/**/*.{html,js}', 
+  './13.Product-watch/**/*.{html,js}', 
+  './14.Product-clothes/**/*.{html,js}', 
+  './15.Product-grid/**/*.{html,js}', 
+  './16.Registration-form/**/*.{html,js}', 
+  './17.User-avatars-grid/**/*.{html,js}', 
+  './18.Image-query/**/*.{html,js}', 
 ],
 corePlugins: {
   preflight: false
