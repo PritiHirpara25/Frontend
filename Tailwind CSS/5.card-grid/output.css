@@ -118,6 +118,186 @@
   inset: 0px
 }
 
+.top-\[500px\] {
+  top: 500px
+}
+
+.top-\[200px\] {
+  top: 200px
+}
+
+.top-\[250px\] {
+  top: 250px
+}
+
+.top-\[\] {
+  top: 
+}
+
+.top-\[200\] {
+  top: 200
+}
+
+.top-\[210px\] {
+  top: 210px
+}
+
+.top-\[220px\] {
+  top: 220px
+}
+
+.top-\[219px\] {
+  top: 219px
+}
+
+.top-\[218px\] {
+  top: 218px
+}
+
+.top-\[217px\] {
+  top: 217px
+}
+
+.top-\[217\.5px\] {
+  top: 217.5px
+}
+
+.left-80 {
+  left: 20rem
+}
+
+.left-96 {
+  left: 24rem
+}
+
+.left-\[\] {
+  left: 
+}
+
+.left-\[315px\] {
+  left: 315px
+}
+
+.left-\[3px\] {
+  left: 3px
+}
+
+.left-\[330px\] {
+  left: 330px
+}
+
+.left-\[400px\] {
+  left: 400px
+}
+
+.left-\[450px\] {
+  left: 450px
+}
+
+.left-\[480px\] {
+  left: 480px
+}
+
+.left-\[470px\] {
+  left: 470px
+}
+
+.top-2 {
+  top: 0.5rem
+}
+
+.top-3 {
+  top: 0.75rem
+}
+
+.top-4 {
+  top: 1rem
+}
+
+.top-\[215px\] {
+  top: 215px
+}
+
+.top-\[29px\] {
+  top: 29px
+}
+
+.top-\[209px\] {
+  top: 209px
+}
+
+.top-\[208px\] {
+  top: 208px
+}
+
+.top-\[207px\] {
+  top: 207px
+}
+
+.left-\[940px\] {
+  left: 940px
+}
+
+.left-\[1000px\] {
+  left: 1000px
+}
+
+.left-\[1050px\] {
+  left: 1050px
+}
+
+.left-\[1020px\] {
+  left: 1020px
+}
+
+.left-\[150px\] {
+  left: 150px
+}
+
+.left-\[1500px\] {
+  left: 1500px
+}
+
+.left-\[1600px\] {
+  left: 1600px
+}
+
+.left-\[1550px\] {
+  left: 1550px
+}
+
+.left-\[1570px\] {
+  left: 1570px
+}
+
+.left-\[900px\] {
+  left: 900px
+}
+
+.left-\[910px\] {
+  left: 910px
+}
+
+.left-\[920px\] {
+  left: 920px
+}
+
+.left-\[1400px\] {
+  left: 1400px
+}
+
+.left-\[1380px\] {
+  left: 1380px
+}
+
+.left-\[1350px\] {
+  left: 1350px
+}
+
+.left-\[1360px\] {
+  left: 1360px
+}
+
 .col-span-2 {
   grid-column: span 2 / span 2
 }
@@ -262,6 +442,10 @@
   margin-top: 2rem
 }
 
+.-mt-2 {
+  margin-top: -0.5rem
+}
+
 .inline-block {
   display: inline-block
 }
@@ -380,8 +564,8 @@
   height: 460px
 }
 
-.h-\[680px\] {
-  height: 680px
+.h-\[675px\] {
+  height: 675px
 }
 
 .h-\[703px\] {
@@ -398,6 +582,10 @@
 
 .h-screen {
   height: 100vh
+}
+
+.h-\[70px\] {
+  height: 70px
 }
 
 .w-1\/2 {
@@ -536,6 +724,10 @@
   width: 100%
 }
 
+.w-\[70px\] {
+  width: 70px
+}
+
 .list-none {
   list-style-type: none
 }
@@ -614,12 +806,20 @@
   margin-left: calc(1.75rem * calc(1 - var(--tw-space-x-reverse)))
 }
 
+.place-self-start {
+  place-self: start
+}
+
 .place-self-end {
   place-self: end
 }
 
 .place-self-center {
   place-self: center
+}
+
+.text-wrap {
+  text-wrap: wrap
 }
 
 .rounded {
@@ -804,6 +1004,16 @@
   background-color: rgb(234 179 8 / var(--tw-bg-opacity))
 }
 
+.bg-indigo-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(99 102 241 / var(--tw-bg-opacity))
+}
+
+.bg-indigo-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(67 56 202 / var(--tw-bg-opacity))
+}
+
 .bg-opacity-10 {
   --tw-bg-opacity: 0.1
 }
@@ -886,6 +1096,11 @@
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem
 }
 
 .pb-5 {
