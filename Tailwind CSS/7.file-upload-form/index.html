@@ -8,42 +8,45 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-
-    <div class="flex flex-col justify-center items-center">
-        <div class="leading-7">
-            <label class="">Send files to this email:</label><br>
-            <input type="email" name="email" placeholder="example@domain.com" class="w-[300px] p-2 flex justify-center">
+    <div>
+        <div class="absolute -z-50 blur-md ml-[500px]">
+            <img src="/Screenshot/file-upload.png" alt="image">
         </div>
-
-        <div class="pt-5">
-            <label class="">Upload File</label>
-            <div class="border-2 border-dashed border-gray-500 mt-6 pt-5 pb-8 w-[310px] flex flex-col justify-center items-center">
-                <h3 class="">Drop files here</h3>
-                <span class="">or</span><br>
-                <button class="bg-transparent p-2 rounded-md border-2 border-solid border-gray-500 w-16">Browse</button>
+        <div class="flex flex-col justify-center items-center">
+            <div class="leading-7">
+                <label class="">Send files to this email:</label><br>
+                <input type="email" name="email" placeholder="example@domain.com" class="w-[300px] p-2 flex justify-center">
             </div>
-        </div>
 
-        <div class="bg-slate-200 rounded-md h-12 flex items-center pl-3 w-[310px] mt-5">
-            <span>banner-design.png</span>
-            <i class="fa-solid fa-xmark pt-1 pl-40"></i>
-        </div>
+            <div class="pt-5">
+                <label class="">Upload File</label>
+                <div class="border-2 border-dashed border-gray-500 mt-6 pt-5 pb-8 w-[310px] flex flex-col justify-center items-center">
+                    <h3 class="">Drop files here</h3>
+                    <span class="">or</span><br>
+                    <button class="bg-transparent p-2 rounded-md border-2 border-solid border-gray-500 w-16">Browse</button>
+                </div>
+            </div>
 
-        <div class="bg-slate-200 rounded-md h-16 pl-3 w-[310px] mt-5">
-            <div class=" flex items-center pt-2">
+            <div class="bg-slate-200 rounded-md h-12 flex items-center pl-3 w-[310px] mt-5">
                 <span>banner-design.png</span>
                 <i class="fa-solid fa-xmark pt-1 pl-40"></i>
             </div>
-            <div>
-                <progress value="70" max="100" class="w-[290px] mt-1.5"></progress>
+
+            <div class="bg-slate-200 rounded-md h-16 pl-3 w-[310px] mt-5">
+                <div class=" flex items-center pt-2">
+                    <span>banner-design.png</span>
+                    <i class="fa-solid fa-xmark pt-1 pl-40"></i>
+                </div>
+                <div>
+                    <progress value="70" max="100" class="w-[290px] mt-1.5"></progress>
+                </div>
             </div>
-        </div>
 
-        <div>
-            <button class="bg-indigo-600 border-none text-white w-[320px] rounded-md h-12 flex items-center justify-center mt-4">Send File</button>
-        </div>
+            <div>
+                <button class="bg-indigo-600 border-none text-white w-[320px] rounded-md h-12 flex items-center justify-center mt-4">Send File</button>
+            </div>
 
+        </div>
     </div>
-
 </body>
 </html>
