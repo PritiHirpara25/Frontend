@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,39 +9,43 @@
 
 <body>
     <div>
-        <div class="flex pl-36 pr-36">
+        <div class="absolute -z-50 blur-md">
+            <img src="/Screenshot/image-query.png" alt="">
+        </div>
+        <div>
             <div>
-                <h2 class="text-2xl font-bold text-gray-800">Gallery</h2>
+                <div class="flex pl-36 pr-36">
+                    <div>
+                        <h2 class="text-2xl font-bold text-gray-800">Gallery</h2>
+                    </div>
+                    <div class="text-gray-500 pt-4 pl-10 w-1/2">
+                        <span>This is a section of some simple filler text,
+                            also known as placeholder text. It shares some characteristics of a real written text.</span>
+                    </div>
+                    <div class="pt-5 ml-96">
+                        <button class="rounded-lg border bg-white px-4 py-2 text-center text-sm font-semibold text-center text-gray-500 outline-none">More</button>
+                    </div>
+                </div>
             </div>
-            <div class="text-gray-500 pt-4 pl-10 w-1/2">
-                <span>This is a section of some simple filler text,
-                    also known as placeholder text. It shares some characteristics of a real written text.</span>
-            </div>
-            <div class="pt-5 ml-96">
-                <button class="rounded-lg border bg-white px-4 py-2 text-center text-sm font-semibold text-center text-gray-500 outline-none">More</button>
+            <div class="grid grid-cols-3 gap-4 pl-36 pr-36 pt-8">
+                <div class="h-60 rounded-lg shadow-lg">
+                    <img src="./assets/img1.avif" alt="image" class="absolute h-60 w-96">
+                    <span class="text-sm absolute top-[330px] left-40 text-white">VR</span>
+                </div>
+                <div class="h-60 col-span-2 rounded-lg shadow-lg">
+                    <img src="./assets/img2.avif" alt="image" class="absolute h-60 w-[785px]">
+                    <span class="text-sm absolute top-[330px] left-[560px] text-white">Tech</span>    
+                </div>
+                <div class="h-60 col-span-2 rounded-lg shadow-lg">
+                    <img src="./assets/img3.avif" alt="image" class="h-full w-full">
+                    <span class="text-sm absolute top-[585px] left-40 text-white">Dev</span>
+                </div>
+                <div class="h-60 rounded-lg shadow-lg">
+                    <img src="./assets/img4.avif" alt="image" class="h-full w-full">
+                    <span class="text-sm absolute top-[585px] left-[960px] text-white">Retro</span>
+                </div>
             </div>
         </div>
     </div>
-
-    <div class="grid grid-cols-3 gap-4 pl-36 pr-36 pt-8">
-        <div class="relative h-60 rounded-lg shadow-lg">
-            <img src="./assets/img1.avif" alt="image" class="h-full w-full">
-            <span class="text-sm">VR</span>
-        </div>
-        <div class="h-60 col-span-2 rounded-lg shadow-lg">
-            <img src="./assets/img2.avif" alt="image" class="h-full w-full">
-            <!-- <span>Tech</span>     -->
-        </div>
-        <div class="h-60 col-span-2 rounded-lg shadow-lg">
-            <img src="./assets/img3.avif" alt="image" class="h-full w-full">
-            <!-- <span>Dev</span> -->
-        </div>
-        <div class="h-60 rounded-lg shadow-lg">
-            <img src="./assets/img4.avif" alt="image" class="h-full w-full">
-            <!-- <span>Retro</span> -->
-        </div>
-    </div>
-
 </body>
-
 </html>

@@ -118,6 +118,34 @@
   inset: 0px
 }
 
+.left-\[1270px\] {
+  left: 1270px
+}
+
+.left-\[420px\] {
+  left: 420px
+}
+
+.left-\[850px\] {
+  left: 850px
+}
+
+.top-4 {
+  top: 1rem
+}
+
+.top-\[207px\] {
+  top: 207px
+}
+
+.top-\[250px\] {
+  top: 250px
+}
+
+.-z-50 {
+  z-index: -50
+}
+
 .col-span-2 {
   grid-column: span 2 / span 2
 }
@@ -140,6 +168,10 @@
 
 .-mt-0\.5 {
   margin-top: -0.125rem
+}
+
+.-mt-2 {
+  margin-top: -0.5rem
 }
 
 .-mt-20 {
@@ -178,6 +210,10 @@
   margin-left: 0.5rem
 }
 
+.ml-20 {
+  margin-left: 5rem
+}
+
 .ml-24 {
   margin-left: 6rem
 }
@@ -186,12 +222,24 @@
   margin-left: 0.75rem
 }
 
+.ml-32 {
+  margin-left: 8rem
+}
+
 .ml-44 {
   margin-left: 11rem
 }
 
+.ml-48 {
+  margin-left: 12rem
+}
+
 .ml-52 {
   margin-left: 13rem
+}
+
+.ml-72 {
+  margin-left: 18rem
 }
 
 .ml-9 {
@@ -200,6 +248,10 @@
 
 .ml-96 {
   margin-left: 24rem
+}
+
+.ml-\[500px\] {
+  margin-left: 500px
 }
 
 .mr-2 {
@@ -226,6 +278,10 @@
   margin-top: 0.375rem
 }
 
+.mt-12 {
+  margin-top: 3rem
+}
+
 .mt-14 {
   margin-top: 3.5rem
 }
@@ -238,8 +294,16 @@
   margin-top: 0.5rem
 }
 
+.mt-20 {
+  margin-top: 5rem
+}
+
 .mt-3 {
   margin-top: 0.75rem
+}
+
+.mt-32 {
+  margin-top: 8rem
 }
 
 .mt-4 {
@@ -260,58 +324,6 @@
 
 .mt-8 {
   margin-top: 2rem
-}
-
-.ml-36 {
-  margin-left: 9rem
-}
-
-.ml-6 {
-  margin-left: 1.5rem
-}
-
-.ml-60 {
-  margin-left: 15rem
-}
-
-.ml-72 {
-  margin-left: 18rem
-}
-
-.ml-\[500px\] {
-  margin-left: 500px
-}
-
-.ml-\[900px\] {
-  margin-left: 900px
-}
-
-.ml-\[600px\] {
-  margin-left: 600px
-}
-
-.mt-\[-1000px\] {
-  margin-top: -1000px
-}
-
-.mt-\[-2000px\] {
-  margin-top: -2000px
-}
-
-.mt-\[-5000px\] {
-  margin-top: -5000px
-}
-
-.mt-\[-500px\] {
-  margin-top: -500px
-}
-
-.mb-\[-500px\] {
-  margin-bottom: -500px
-}
-
-.mt-\[-600px\] {
-  margin-top: -600px
 }
 
 .inline-block {
@@ -424,20 +436,24 @@
   height: 40px
 }
 
-.h-\[450px\] {
-  height: 450px
+.h-\[420px\] {
+  height: 420px
 }
 
 .h-\[460px\] {
   height: 460px
 }
 
-.h-\[680px\] {
-  height: 680px
+.h-\[675px\] {
+  height: 675px
 }
 
 .h-\[703px\] {
   height: 703px
+}
+
+.h-\[70px\] {
+  height: 70px
 }
 
 .h-dvh {
@@ -450,18 +466,6 @@
 
 .h-screen {
   height: 100vh
-}
-
-.h-\[650px\] {
-  height: 650px
-}
-
-.h-\[670px\] {
-  height: 670px
-}
-
-.h-\[675px\] {
-  height: 675px
 }
 
 .w-1\/2 {
@@ -516,6 +520,10 @@
   width: 18rem
 }
 
+.w-80 {
+  width: 20rem
+}
+
 .w-9 {
   width: 2.25rem
 }
@@ -548,12 +556,12 @@
   width: 330px
 }
 
-.w-\[340px\] {
-  width: 340px
-}
-
 .w-\[350px\] {
   width: 350px
+}
+
+.w-\[360px\] {
+  width: 360px
 }
 
 .w-\[400px\] {
@@ -588,6 +596,10 @@
   width: 700px
 }
 
+.w-\[70px\] {
+  width: 70px
+}
+
 .w-\[900px\] {
   width: 900px
 }
@@ -598,6 +610,10 @@
 
 .w-full {
   width: 100%
+}
+
+.cursor-pointer {
+  cursor: pointer
 }
 
 .list-none {
@@ -676,6 +692,10 @@
   --tw-space-x-reverse: 0;
   margin-right: calc(1.75rem * var(--tw-space-x-reverse));
   margin-left: calc(1.75rem * calc(1 - var(--tw-space-x-reverse)))
+}
+
+.place-self-start {
+  place-self: start
 }
 
 .place-self-end {
@@ -866,11 +886,6 @@
 .bg-yellow-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(234 179 8 / var(--tw-bg-opacity))
-}
-
-.bg-indigo-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(165 180 252 / var(--tw-bg-opacity))
 }
 
 .bg-opacity-10 {
@@ -1129,6 +1144,10 @@
   vertical-align: middle
 }
 
+.font-sans {
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem
@@ -1184,6 +1203,10 @@
 
 .leading-10 {
   line-height: 2.5rem
+}
+
+.leading-3 {
+  line-height: .75rem
 }
 
 .leading-5 {
@@ -1316,8 +1339,24 @@
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)
 }
 
-.\*\:mt-\[-1000px\] > * {
-  margin-top: -1000px
+.blur-lg {
+  --tw-blur: blur(16px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)
+}
+
+.blur-md {
+  --tw-blur: blur(12px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)
+}
+
+.blur-sm {
+  --tw-blur: blur(4px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)
+}
+
+.brightness-75 {
+  --tw-brightness: brightness(.75);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)
 }
 
 .hover\:scale-105:hover {
@@ -1326,9 +1365,28 @@
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
 }
 
+.hover\:cursor-pointer:hover {
+  cursor: pointer
+}
+
+.hover\:bg-white:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity))
+}
+
 .hover\:bg-yellow-300:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(253 224 71 / var(--tw-bg-opacity))
+}
+
+.hover\:text-indigo-600:hover {
+  --tw-text-opacity: 1;
+  color: rgb(79 70 229 / var(--tw-text-opacity))
+}
+
+.hover\:brightness-100:hover {
+  --tw-brightness: brightness(1);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)
 }
 
 @media (min-width: 640px) {
