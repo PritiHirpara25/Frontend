@@ -10,8 +10,8 @@
 
 /*
 [2015-2016]
-Es5
-Es6
+Es5 var 
+Es6 let const
 */
 
 /* Variable Declaration var Keyword */
@@ -19,7 +19,7 @@ Es6
 // var x = 10;  //Javascript Statement
 
 //console.log()
-//Document.write
+//Document.write()
 //Console.warn()
 //alert()
 //document.getElementById("demo").innerHTML = content;

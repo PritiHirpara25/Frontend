@@ -1,3 +1,86 @@
+// Javascript var , let and const keyword Difference
+
+//let and const keyword Introduce (Es5 / Es6)(2015)
+
+//var Keyword(Global Variable)
+
+// var name = "skillqode"
+// {
+//     console.log(name);
+// }
+
+//var Declaration  /  var Hoisting Method
+
+// var a , b , c , d;
+
+// a = 10;
+// b = 20;
+// c = 30;
+// d = 40;
+
+// console.log(c);
+// console.log(a+b);
+// console.log(a-a);
+// console.log(c*a);
+// console.log(c + d * a - a);
+
+// a , b , c , d;
+
+// var a = 10;
+// var b = 20;
+// var c = 30;
+// var d = 40;
+
+// console.log(c);
+// console.log(a+b);
+// console.log(a-a);
+// console.log(c*a);
+// console.log(c + d * a - a);
+
+
+// Es6 let Keyword / let Hoisting / Blockscope Variables
+
+// a , b;
+
+// let a = 10
+// let b = 20
+
+// console.log(a)
+// console.log(b)
+
+// let a , b;
+
+// a = 10
+// b = 20
+
+// console.log(a)
+// console.log(b)
+
+// {
+//     let gift = "toys"
+//     gift = "car"
+//     console.log(gift);
+// }
+
+// {
+//     let gift = "car"
+//     console.log(gift)
+// }
+
+// Es6 const Keyword / const Hoisting / BlockScope Variables
+
+// const name = "This is Javascript!"
+// console.log(name);
+
+// const data;
+// const data = "This is Javascript!";
+// console.log(data);
+
+// {
+//     const prints = 'This is printer!';
+//     console.log(prints);
+// }
+
 /* Javascript  String */
 
 // let string1 ="This is String Data"
@@ -9,6 +92,8 @@
 // let string7 = 'this is \'string\' data'
 // // let string8 = `this is `string` data`
 // let string9 = `this is \`string\` data`
+
+// Javascipt Template Literals (`Back-tik`)
 
 // console.log(string1)
 // console.log(string2)
@@ -113,6 +198,27 @@
 //     console.log(typeof str3)    
 // }
 
+/* Null , Undefined , NAN-(Not A Number) */
+
+// var a;
+// console.log(a);
+
+// console.log(undefined);
+
+// let x = undefined;
+
+// console.log(x);
+
+// console.log(typeof x);
+
+// let y = null == undefined
+
+// console.log(y);
+
+// console.log(typeof y);
+
+
+
 /* Type Conversion */
 
 // let str = "100"
@@ -140,174 +246,54 @@
 // console.log(num2)
 
 
-/* Javascript Opeartors */
+//Javascript Datatypes
 
-/* arithmetic operator */
-/* conditional operator */
-/* assignment operator */
-/* bitwise operator */
-/* logical operator */
-/* ternory opearator */
+//Primitive Data //immutable
 
-/* arithmetic operator */
+/*
 
-/* Addition */
+string
+number
+Boolean
+Undefined
+null
+BigInt
+symbol
+
+*/
 
 // {
-//     let x = 10
-//     let y = 20
-//     let z = x + y
+//     let name = "Javascript Datatypes"
+//     console.log(name);
 
-//     console.log(z)
+//     name[10] = "y"
+//     console.log(name);
 // }
 
-/* substraction */
+//non-primitive Data //mutable
+
+/*
+
+object 
+array 
+
+*/
 
 // {
-//     let x = 10
-//     let y = 20
-//     let z = x - y
-    
-//     console.log(z)
-// }
-
-/* multiplication */
-
-// {
-//     let x = 10
-//     let y = 20
-//     let z = x * y
-    
-//     console.log(z)
-// }
-
-/* divison */
-
-// {
-//     let x = 10
-//     let y = 20
-//     let z = x / y
-    
-//     console.log(z)
-// }
-
-/* modulus */
-
-// {
-//     let x = 10
-//     let y = 20
-//     let z = x % y
-    
-//     console.log(z)
-// }
-
-/* Expontiation */
-
-// {
-//     let x = 4
-//     let y = 2      
-//     let z = x ** y   //4 x 4 = 16
-    
-//     console.log(z)
-// }
-
-
-/* conditional operator */
-
-/* Equal to */
-
-// {
-//     let x = 10
-//     let y = 20
-//     let z = x = y
-
-//     console.log(z)
-// }
-
-/* Equality operator */  /* compare of value */
-
-// {
-//     let x = 10
-//     let y = '20'
-//     let z = x == y
-
-//     console.log(z)
+//     let array = [10, 20 , 30]
+//     console.log(array);
+//     array[2]=50
+//     console.log(array);
 // }
 
 // {
-//     let xx = true
-//     let yy = 'false'
-//     let zz = xx == yy
-
-//     console.log(zz)
+//     let obj = {name1:"firstname" , name2:"lastname"}
+//     console.log(obj);
+//     obj.name1 = "lastname"
+//     console.log(obj);
 // }
 
-/* strict equality operator */   /* compare value and datatype */
 
-// {
-//     let x = 10
-//     let y = 10
-//     let z = x == y
 
-//     console.log(z)
-// }
 
-/* Not eqaul operator */
 
-// {
-//     let x = 10
-//     let y = 20
-//     let z = x != y
-
-//     console.log(z)
-// }
-
-/* Not strict eqaulity operator */
-
-// {
-//     let x = '10'
-//     let y = 10
-//     let z = x !== y
-
-//     console.log(z)
-// }
-
-/* Less than */
-
-// {
-//     let x = 10
-//     let y = 20
-//     let z = x < y
-
-//     console.log(z)
-// }
-
-/* Less than or eqaul to */
-
-// {
-//     let x = 20
-//     let y = 20
-//     let z = x <= y
-
-//     console.log(z)
-// }
-
-/* Grether than */
-
-// {
-//     let x = 20
-//     let y = 20
-//     let z = x > y
-
-//     console.log(z)
-// }
-
-/* Grether than or equal to*/
-
-// {
-//     let x = 20
-//     let y = 20
-//     let z = x >= y
-
-//     console.log(z)
-// }
