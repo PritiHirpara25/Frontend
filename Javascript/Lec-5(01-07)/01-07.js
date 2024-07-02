@@ -3,8 +3,8 @@
 /*
 
 if statement
-if ..else statement
-if ..else if statement
+if ...else statement
+if ...else if statement
 Switch statement
 
 */
