@@ -46,16 +46,33 @@
 
 /* 5. Sort three numbers */
 
-let num1 = parseInt(prompt("Enter First Number:"));
-let num2 = parseInt(prompt("Enter Second Number:"));
-let num3 = parseInt(prompt("Enter Third Number:"));
+// let x = parseInt(prompt("Enter First Number:"));
+// let y = parseInt(prompt("Enter Second Number:"));
+// let z = parseInt(prompt("Enter Third Number:"));
 
-if(num1 < num2){
-    console.log(`${num1}`);
-    if(num2 < num3){
-        console.log(`${num2}`);
-    }
-}
+// if(x < y && x < z){
+//     if(y < z){
+//         console.log(`${x} ${y} ${z}`);
+//     }else{
+//         console.log(`${x} ${z} ${y}`);
+//     }
+// }
+// else if(y < x && y < z){
+//     if(x < z){
+//         console.log(`${y} ${x} ${z}`);
+//     }else{
+//         console.log(`${y} ${z} ${x}`);
+//     }
+// }
+// else{
+//     if(y < x){
+//         console.log(`${z} ${y} ${x}`);
+//     }
+//     else{
+//         console.log(`${z} ${x} ${y}`);
+//     }
+// }
+
  
 
 
