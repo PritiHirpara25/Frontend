@@ -1,5 +1,12 @@
 /* Javascript for....of Loop / forEach Loop */
 
+// The for...of statement executes a loop that operates on a sequence of values sourced from an iterable object. Iterable objects include instances of built-ins such as Array, String, TypedArray, Map, Set, NodeList (and other DOM collections), as well as the arguments object, generators produced by generator functions, and user-defined iterables.
+
+/*
+for (variable of iterable)
+    statement
+*/  
+
 {
     // let Array = ['html' , 'css' , 'bootstrap' , 'sass' , 'tailwindcss' , 'javascript' , 'reactjs' , 'nextJs']
 
@@ -66,8 +73,13 @@
     //     document.getElementById('demo').innerHTML = 'Hi , How Are You!';
     // }
 
-    function css(){
-        document.getElementById('demo').style.backgroundColor = "purple";
-    }
+    // function css(){
+    //     document.getElementById('demo').style.backgroundColor = "purple";
+    //     document.getElementById('demo').style.paddingBottom = "10px";
+    //     document.getElementById('demo').style.color = 'white';
+    //     document.getElementById('demo').style.fontFamily = 'cursive';
+    //     document.getElementById('demo').style.textDecorationLine = 'underline';
+    //     document.getElementById('demo').style.textDecorationStyle = 'wavy';
+    // }
 
 }
