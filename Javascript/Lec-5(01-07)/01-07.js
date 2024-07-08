@@ -89,7 +89,7 @@ Switch statement
 //       statements
 //     case caseExpression2:
 //       statements
-//     // …
+//     …
 //     case caseExpressionN:
 //       statements
 //     default:

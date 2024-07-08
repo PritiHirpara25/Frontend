@@ -26,18 +26,18 @@
 /* Nested Loop */
 
 {
-    demo:for(i = 0 ; i < 10 ; i++){
-        if(i == 5){
-            break demo;
-        }
-        console.log('Main Loop');
-        for(i = 0 ; i < 4 ; i++){
-            if(i < 2){
-                continue;
-            }
-            console.log('Child Loop')
-        }
-    }
+    // demo:for(i = 0 ; i < 10 ; i++){
+    //     if(i == 5){
+    //         break demo;
+    //     }
+    //     console.log('Main Loop');
+    //     for(i = 0 ; i < 4 ; i++){
+    //         if(i < 2){           
+    //             continue;
+    //         }
+    //         console.log('Child Loop')
+    //     }
+    // }
 }
 
 /* CallBack Function */
@@ -64,7 +64,6 @@
     //     // a + b;
     // }
     
-
     // console.log(sum(20 , 30));
 }
 
@@ -179,8 +178,8 @@ charCodeAt(index)
 //     let str = 'Javascript string include!'
 //                01234567890123456789012345
 
-//     let Include = str.includes('a');
-//     console.log(Include);
+//     // let Include = str.includes('a');
+//     // console.log(Include);
 
 //     let Include1 = str.includes('s' , 10)
 //     console.log(Include1);

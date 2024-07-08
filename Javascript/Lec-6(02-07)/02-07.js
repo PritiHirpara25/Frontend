@@ -2,6 +2,7 @@
 
 // {
 //     let x = 10;
+
 //     console.log(++x);
 // }
 
@@ -58,7 +59,7 @@ do{
 
 /* For Loop */
 
-// for(Intialization;Condition;AfterThought){
+// for(Intialization; Condition; AfterThought){
     // statement;
 // }
 
@@ -112,16 +113,16 @@ do{
 // for (variable in object)
 //     statement
   
-{
-    let obj = {
-        a : 10 , 
-        b : 20 ,
-        c : 30 ,
-        d:[]
-    };
+// {
+//     let obj = {
+//         a : 10 , 
+//         b : 20 ,
+//         c : 30 ,
+//         d:[]
+//     };
 
-    for( let [key , value] in obj){
-        console.log(`${key} :${obj[key]}`);
-    }
-}
+//     for( let [key , value] in obj){
+//         console.log(`${key} :${obj[key]}`);
+//     }
+// }
 

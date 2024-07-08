@@ -33,14 +33,14 @@ for (variable of iterable)
 
 // Basic Function
 
-{
-    // let fun1 = function Java(){
-    //     console.log('Javascript Functions!');
-    // }
+// {
+//     let fun1 = function Java(){
+//         console.log('Javascript Functions!');
+//     }
 
-    // console.log(fun1);
-    // fun1();
-}
+//     // console.log(fun1);
+//     fun1();
+// }
 
 // Arrow Function
 
@@ -48,6 +48,7 @@ for (variable of iterable)
     // const fun1 = () => console.log('Hello Functions!');
 
     // console.log(fun1());
+    // fun1();
 }
 
 // Function with return keywords
