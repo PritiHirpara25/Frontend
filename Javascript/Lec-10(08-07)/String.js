@@ -42,11 +42,19 @@
 {
     // let str = 'This is string Search Method!'
 
-    // let Regex = /This/g
+    // let Regex = /string/g
 
-    // let Search = str[str.search(Regex)]
+    // let Search = [str.search(Regex)]
 
     // console.log(Search);
+}
+
+{
+    // let str = 'This is string search Method!'
+
+    // let result = str.search('string')
+
+    // console.log(result)
 }
 
 /* Javascript string.match() and String.matchAll() Method */
@@ -58,10 +66,10 @@
 //match(regexp)
 //matchAll(regexp)
 
-{
-    // let Str = 'This is String Match Method!'
+// {
+//     let Str = 'This is String Match Method!'
 
-    // let regex = /[A-Z]/g
+//     let regex = /[A-Z]/g
 
     // let Match = Str.match(regex)
 
@@ -70,7 +78,7 @@
     // console.log(Match);   //return Array
 
     // console.log(MatchAll);
-}
+// }
 
 {
     // let str = 'This is string'

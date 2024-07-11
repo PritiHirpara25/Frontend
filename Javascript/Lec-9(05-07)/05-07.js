@@ -63,12 +63,12 @@
 // The startsWith() method of String values determines whether this string begins with the characters of a specified string, returning true or false as appropriate.
 
 // The endsWith() method of String values determines whether a string ends with the characters of this string, returning true or false as appropriate.
+ 
+// startsWith(searchString)
+// startsWith(searchString, position)
 
 // endsWith(searchString)
 // endsWith(searchString, endPosition)
-
-// startsWith(searchString)
-// startsWith(searchString, position)
 
 {
     // let str = ' This is Javascript string Method! '
@@ -153,6 +153,14 @@
 }
 
 /* Javascript string.toUppercase() / string.toLowercase Method */
+
+// The toUpperCase() method of String values returns this string converted to uppercase.
+
+// toUpperCase()
+
+// The toLowerCase() method of String values returns this string converted to lower case.
+
+// toLowerCase()
 
 {
     // let str = 'Hello'
