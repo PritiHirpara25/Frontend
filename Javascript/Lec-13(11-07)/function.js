@@ -11,7 +11,7 @@
 // Funtion Hoisting
 // Self-invoking Funtion (IIFE)
 // Arrow Function
-// Function are object
+// Function as variable
 
 
 // Funtion Hoisting

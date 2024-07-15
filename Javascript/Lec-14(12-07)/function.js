@@ -2,10 +2,10 @@
 
 //function as object
 
-function text(a,b){
-    return arguments.length;
-}
-let test = text(1,2);
+// function text(a,b){
+//     return arguments.length;
+// }
+// let test = text(1,2);
 
 
 // function sumAll(){

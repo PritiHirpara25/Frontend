@@ -27,13 +27,13 @@
 //     console.log(a / b);
 // }
 // switch(operator){
-//     case '+' : console.log(Addition());
+//     case '+' : Addition();
 //     break;
-//     case '-' : console.log(Substraction());
+//     case '-' : Substraction();
 //     break;
-//     case '*' : console.log(Multiplication());
+//     case '*' : Multiplication();
 //     break;
-//     case '/' : console.log(Division());
+//     case '/' : Division();
 //     break;
 //     default : console.log("Invalid");
 // }
@@ -85,11 +85,23 @@
 // }
 // console.log(`${reverse}`);
 // }
-// console.log(reversestr("Hello World!",''))
+// reversestr("Hello World!",'')
 
 /* 7. Write a program to check if a string is a palindrome. */
 
-// let string = prompt("Enter string: ");
+// let palindrome = (str) =>{
+//     for(let i = 0;i<str.length/2 ; i++)
+//     {
+//         if(str[i]!==str[str.length-1-i]){
+//             console.log("not palindrome")
+//         }
+//         else{
+//             console.log("palindrome");
+//         }
+//     }
+// }
+
+// palindrome("syu");
 
 
 /* 8. Write a program to find the sum of the first n natural numbers. */
@@ -143,12 +155,19 @@
 //         }
 //     }
 // }
-// console.log(vowel("Hello World",0));
+// vowel("Hello World",0);
 
 
 
 /* 11. Write a program to check if a year is a leap year or not. */
 
-// let leapyear = new Function("if(year % 4 == 0) console.log(leap Year) else console.log(not leap Year)");
-// leapyear(2024);
+// (function leapyear(year)
+// {
+//     if(year %4 == 0){
+//         console.log("Leap year")
+//     }
+//         else{
+//             console.log("Not Leap year");
+//         }
+// })(2023)
 
