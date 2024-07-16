@@ -12,22 +12,20 @@
 // console.log(data[3]);
 // data[3] = 100;
 // console.log(data);
-// console.log(data[3]);
-
-/* Array length */
+// console.log(data[3])
 
 // let data = [10,20,30,40,50,110,220];
 // console.log(data);
 // console.log(data.length);
 
-/* Array push => insert into last index */
+/* Array.push() => insert into last index */
 
 // let data = [10,20,30,40,50,110,220];
 // data.push(60)
 // data.push(70,80,'Hello')
 // console.log(data)
 
-/* Array pop => remove into last position */
+/* Array.pop() => remove into last position */
 
 // let data = [10,20,30,40,50,110,220];
 // data.pop()
@@ -35,14 +33,14 @@
 // data.pop()
 // console.log(data)
 
-/* Array unshift => insert first position */
+/* Array.unshift() => insert first position */
 
 // let data = [10,20,30,40,50,60];
 // data.unshift(100);
 // data.unshift(200,300,400);
 // console.log(data);
 
-/* Array shift => remove first position */
+/* Array.shift() => remove first position */
 
 // let data = [10,20,30,40,50,60];
 // data.shift();
@@ -56,13 +54,13 @@
 // data[1]=50;
 // console.log(data)
 
-/* Array Merging (concatenating) */
+/* Array.concat() (Merging) */
 
 // let data = [10,20,30,40,50,60];
 // let data1 = [70,80,'Hello'];
 // console.log(data.concat(data1))
 
-/* Array splice() */
+/* Array.splice() */
 
 // splice(start , removecount , ...add)
 
@@ -71,7 +69,7 @@
 // data.splice(2,1,'cherry',50)
 // console.log(data)
 
-/* Array slice() */
+/* Array.slice() */
 
 // data.slice(start , end)
 
@@ -79,7 +77,7 @@
 // console.log(data.slice(1));
 // console.log(data.slice(1,3));
 
-/* Array Sort */
+/* Array.Sort() */
 
 //Alphabelt sort
 
@@ -92,7 +90,7 @@
 // console.log(data.sort((a,b)=>a-b))    //ascending
 // console.log(data.sort((a,b)=>b-a))    //descending
 
-/* Array reverse */
+/* Array.reverse() */
 
 // let data = [40,20,200,115,10,25]
 // console.log(data.reverse())
@@ -100,7 +98,7 @@
 // let data = ['Hello','World','Skill','Qode'];
 // console.log(data.reverse())
 
-/* Array Max */
+/* Array.Max() */
 
 // let data = [40,20,200,115,10,25]
 // const maxFun = (e) => {
@@ -108,7 +106,7 @@
 // }
 // console.log(maxFun(data))
 
-/* Array Min */
+/* Array.Min() */
 
 // let data = [40,20,200,115,10,25]
 // const minFun = (e) => {
@@ -116,7 +114,7 @@
 // }
 // console.log(minFun(data))
 
-/* Array Includes => check if element is exit or not */
+/* Array.Includes() => check if element is exit or not */
 
 // let data = [40,20,200,115,10,25]
 // console.log(data.includes(20))
@@ -125,3 +123,53 @@
 
 // let data = [10,20,30,40,50,110,200]
 // console.log(Array.isArray(data));
+
+/* Array.at() */
+
+// let data = ['html','CSS','Bootstrap','Sass','Tailwind','Javascript']
+//         //    0     1        2        3         4           5
+//         //    -6    -5        -4       -3        -2          -1 
+
+// console.log(data.at(-2))
+// console.log(data.at(4))
+
+/* Array.keys() */
+
+// let data = ['html','CSS','Bootstrap','Sass','Tailwind','Javascript']
+
+// let keys = data.keys()
+// console.log(keys.next().value);
+// console.log(keys.next().value);
+// console.log(keys.next().value);
+// console.log(keys.next().value);
+// console.log(keys.next().value);
+// console.log(keys.next().value);
+
+/* Array.keys() */
+
+// let data = ['html','CSS','Bootstrap','Sass','Tailwind','Javascript']
+
+// let values = data.values()
+// console.log(values.next().value);
+// console.log(values.next().value);
+// console.log(values.next().value);
+// console.log(values.next().value);
+// console.log(values.next().value);
+// console.log(values.next().value);
+
+/* Array.fill() */
+
+// let data = [32,25,12,50,41];
+
+// let fill = data.fill("Hello")
+// let fill1 = data.fill("Hello",2)
+// let fill2 = data.fill("Hello",1,3)
+
+// console.log(fill)
+// console.log(fill1)
+// console.log(fill2)
+
+// console.log(data.fill("Hello",1,3))
+// console.log(data.fill("Java"))
+// console.log(data.fill("Script"))
+// console.log(data.fill("Hello"))
