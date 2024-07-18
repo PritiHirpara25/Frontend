@@ -124,6 +124,19 @@
 // let data = [10,20,30,40,50,110,200]
 // console.log(Array.isArray(data));
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Array.at() */
 
 // let data = ['html','CSS','Bootstrap','Sass','Tailwind','Javascript']
@@ -173,3 +186,5 @@
 // console.log(data.fill("Java"))
 // console.log(data.fill("Script"))
 // console.log(data.fill("Hello"))
+
+
