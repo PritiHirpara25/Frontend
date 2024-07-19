@@ -15,6 +15,11 @@
 // let data = [10,20,[30,40,[50,[60,70]]]]
 // console.log(data.flat(Infinity));
 
+/* Javascript flatMap() Method */
+
+// let data = [10,20,30,40,50]
+// console.log(data.flatMap((ele)=>ele*2))
+
 /* Javascript array.foreach() Method */
 
 // let data = [10,20,30,40,50,60,70]
@@ -48,6 +53,18 @@
 
 // let data = [10,20,30,40,50,60,70]
 // data = data.findIndex((ele)=>ele>50)
+// console.log(data)
+
+/* Javascript array.findLastIndex () Method */
+
+// let data = [10,20,30,40,50,60,70]
+// data = data.findLastIndex((ele)=>ele<50)
+// console.log(data)
+
+/* Javascript array.findLast () Method */
+
+// let data = [10,20,30,40,50,60,70]
+// data = data.findLast((ele)=>ele<50)
 // console.log(data)
 
 /* Javascript array.every() Method */

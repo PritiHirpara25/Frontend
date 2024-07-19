@@ -158,7 +158,7 @@
 // console.log(keys.next().value);
 // console.log(keys.next().value);
 
-/* Array.keys() */
+/* Array.values() */
 
 // let data = ['html','CSS','Bootstrap','Sass','Tailwind','Javascript']
 
