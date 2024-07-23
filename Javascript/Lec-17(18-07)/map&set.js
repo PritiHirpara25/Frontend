@@ -3,7 +3,7 @@
 // A Map holds key-value pairs where the keys can be any datatype.
 // A Map remembers the original insertion order of the keys.
 
-// Map => key -value
+// Map => key - value
 
 /* new Map() Method */
 
@@ -214,4 +214,13 @@
 //     txt += val + '--->' + val + "\n";
 // });
 // console.log(txt);
+
+
+/* shallow Copy */
+
+// let data = [11,22,33,44,55];
+// let abc = data;
+// console.log(abc);
+
+/* deep copy */
 
