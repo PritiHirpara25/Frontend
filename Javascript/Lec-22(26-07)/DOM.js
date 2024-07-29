@@ -53,6 +53,7 @@
 
 //getElementsByTagName()
 
+
 {
     // const elements = document.getElementsByTagName("div");
     // console.log(elements);
