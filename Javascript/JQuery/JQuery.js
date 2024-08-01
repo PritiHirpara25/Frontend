@@ -51,7 +51,7 @@
 //     })
 // });
 
-
+/* 29-07-2024 */
 
 /* Fade Effect */
 
@@ -148,55 +148,55 @@
 
 // left to right
 
-$(function(){
-    $('.ani').click(function(){
-        $('.box1').animate({
-            left:'300px',
-            height:'250px',
-            width:'250px',
-            opacity:'0.7'
-        });
-    });
-});
+// $(function(){
+//     $('.ani').click(function(){
+//         $('.box1').animate({
+//             left:'300px',
+//             height:'250px',
+//             width:'250px',
+//             opacity:'0.7'
+//         });
+//     });
+// });
 
 //top to bottom
 
-$(function(){
-    $('.ani').click(function(){
-        $('.box2').animate({
-            top:'300px',
-            height:'250px',
-            width:'250px',
-            opacity:'0.7'
-        });
-    });
-});
+// $(function(){
+//     $('.ani').click(function(){
+//         $('.box2').animate({
+//             top:'300px',
+//             height:'250px',
+//             width:'250px',
+//             opacity:'0.7'
+//         });
+//     });
+// });
 
 // right to left
 
-$(function(){
-    $('.ani').click(function(){
-        $('.box3').animate({
-            left:'100px',
-            height:'250px',
-            width:'250px',
-            opacity:'0.7'
-        });
-    });
-});
+// $(function(){
+//     $('.ani').click(function(){
+//         $('.box3').animate({
+//             left:'100px',
+//             height:'250px',
+//             width:'250px',
+//             opacity:'0.7'
+//         });
+//     });
+// });
 
 //bottom to top
 
-$(function(){
-    $('.ani').click(function(){
-        $('.box4').animate({
-            top:'200px',
-            height:'250px',
-            width:'250px',
-            opacity:'0.7'
-        });
-    });
-});
+// $(function(){
+//     $('.ani').click(function(){
+//         $('.box4').animate({
+//             top:'200px',
+//             height:'250px',
+//             width:'250px',
+//             opacity:'0.7'
+//         });
+//     });
+// });
 
 /* callback */
 
@@ -207,3 +207,130 @@ $(function(){
 //         })
 //     })
 // })
+
+
+/* Get Method */
+
+// $(function(){
+//     $('#get').click(function(){
+//         alert($('#firstHeading').text())
+//     })
+// })
+
+// $(function(){
+//     $('#get').click(function(){
+//         alert($('#firstHeading').html())
+//     })
+// })
+
+// $(function(){
+//     $('#get').click(function(){
+//         alert($('#inputs').val())
+//     })
+// })
+
+/* SET method */
+
+// $(function(){
+//     $('#set').click(function(){
+//         $('#firstHeading').text('Hello Javascript')
+//     })
+// })
+
+// $(function(){
+//     $('#set').click(function(){
+//         $('#firstHeading').html('<span>set</span>')
+//     })
+// })
+
+// $(function(){
+//     $('#set').click(function(){
+//         $('#inputs').val("DUCK")
+//     })
+// })
+
+/* add method */
+
+// append()
+
+// $(function(){
+//     $('#add').click(function(){
+//         $('#firstHeading').append('Paragraph')
+//     })
+// })
+
+// prepend()
+
+// $(function(){
+//     $('#add').click(function(){
+//         $('#firstHeading').prepend('Paragraph')
+//     })
+// })
+
+// after()
+
+// $(function(){
+//     $('#add').click(function(){
+//         $('#firstHeading').after('Paragraph')
+//     })
+// })
+
+// before()
+
+// $(function(){
+//     $('#add').click(function(){
+//         $('#firstHeading').before('Paragraph')
+//     })
+// })
+
+
+/* remove method */
+
+// $(function(){
+//     $('#remove').click(function(){
+//         $('#box').remove()
+//     })
+// })
+
+// $(function(){
+//     $('#remove').click(function(){
+//         $('#box').empty()
+//     })
+// })
+
+/* CSS classes */
+
+// addClass()
+
+// $(function(){
+//     $('#class1').click(function(){
+//         $('#div-1').addClass('para')
+//     })
+// })
+
+// removeClass()
+
+// $(function(){
+//     $('#class2').click(function(){
+//         $('#div-1').removeClass('para')
+//     })
+// })
+
+// toggleclass()
+
+// $(function(){
+//     $('#class3').click(function(){
+//         $('#div-1').toggleClass('para')
+//     })
+// })
+
+/* css() Method */
+
+// $(function(){
+//     $('#CSS').click(function(){
+//         $('#lorem1').css({"background-color" : "yellow", 'color' : 'red'})  //multi-line CSS
+//         $('#lorem2').css({"font-size" : "larger", 'color' : 'purple'})  //multi-line CSS
+//         $('#lorem3').css("background-color","brown") // single line CSS
+//     })
+// })
+

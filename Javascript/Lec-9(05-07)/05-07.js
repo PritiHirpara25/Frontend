@@ -83,7 +83,7 @@
     // let result3 = str.endsWith(' ')
     // console.log(result3);
 
-    // let result4 = str.endsWith(' ' , 33)
+    // let result4 = str.endsWith(' ' , 34)
     // console.log(result4);
 }
 

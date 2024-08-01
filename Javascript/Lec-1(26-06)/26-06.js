@@ -9,9 +9,8 @@
 // Version Defination
 
 /*
-[2015-2016]
-Es5 var 
-Es6 let const
+Es5 var [1995-2015]
+Es6 let const[2015-2016]
 */
 
 /* Variable Declaration var Keyword */

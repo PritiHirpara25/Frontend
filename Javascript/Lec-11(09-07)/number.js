@@ -58,7 +58,6 @@
 // console.log(parseInt("yes 10"))
 // console.log(parseInt("10yes"))
 
-
 /* Javascript Number Object Method */
 
 // Number.isInteger()
@@ -77,7 +76,7 @@
 
 /* Number.parseInt() */
 
-console.log(Number.parseInt(1231654.814))
+// console.log(Number.parseInt(1231654.814))
 
 /* Number.parseFloat() */
 

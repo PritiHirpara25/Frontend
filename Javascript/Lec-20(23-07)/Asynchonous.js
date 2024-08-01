@@ -195,21 +195,21 @@
 
 // Program with a Promise
 
-{
-    // const count = false;
+// {
+//     const count = true;
 
-    // let countValue = new Promise(function (resolve, reject) {
-    //     if (count) {
-    //         resolve("There is a count value.");
-    //     } else {
-    //         reject("There is no count value");
-    //     }
-    // });
-    // countValue
-    // .then((result)=>{console.log(result)})
-    // .catch((err)=>{console.warn(err)});
-    // console.log(countValue);
-}
+//     let countValue = new Promise(function (resolve, reject) {
+//         if (count) {
+//             resolve("There is a count value.");
+//         } else {
+//             reject("There is no count value");
+//         }
+//     });
+//     countValue
+//     .then((result)=>{console.log(result)})
+//     .catch((err)=>{console.warn(err)});
+//     console.log(countValue);
+// }
 
 // JavaScript Promise Chaining
 
@@ -238,8 +238,7 @@
     
     // // executes when promise is resolved successfully
     
-    // countValue
-    //     .then(function successValue(result) {
+    // countValue.then(function successValue(result) {
     //     console.log(result);
     //     })
     
@@ -256,26 +255,26 @@
 
 // The catch() method is used with the callback when the promise is rejected or if an error occurs.
 
-{
-    // // returns a promise
-    // let countValue = new Promise(function (resolve, reject) {
-    //     reject('Promise rejected'); 
-    // });
+// {
+//     // // returns a promise
+//     let countValue = new Promise(function (resolve, reject) {
+//         reject('Promise rejected'); 
+//     });
     
-    // // executes when promise is resolved successfully
-    // countValue.then(
-    //     function successValue(result) {
-    //         console.log(result);
-    //     },
-    // )
+//     // executes when promise is resolved successfully
+//     countValue.then(
+//         function successValue(result) {
+//             console.log(result);
+//         }
+//     )
     
-    // // executes if there is an error
-    // .catch(
-    //     function errorValue(result) {
-    //         console.log(result);
-    //     }
-    // );
-}
+//     // executes if there is an error
+//     .catch(
+//         function errorValue(result) {
+//             console.log(result);
+//         }
+//     );
+// }
 
 // JavaScript Promise Versus Callback
 
@@ -325,22 +324,22 @@
 {
     // // You can also use the finally() method with promises. The finally() method gets executed when the promise is either resolved successfully or rejected.
     
-    // // returns a promise
-    // let countValue = new Promise(function (resolve, reject) {
-    //     // could be resolved or rejected   
-    //     // resolve('Promise resolved'); 
-    //     reject('Promise rejected'); 
-    // });
+    // returns a promise
+    let countValue = new Promise(function (resolve, reject) {
+        // could be resolved or rejected   
+        // resolve('Promise resolved'); 
+        reject('Promise rejected'); 
+    });
 
-    // // add other blocks of code
-    // countValue
-    // .then((data)=>console.log(data))
-    // .catch((err)=>console.warn(err))
-    // .finally(
-    //     function greet() {
-    //         console.log('This code is executed.');
-    //     }   
-    // );
+    // add other blocks of code
+    countValue
+    .then((data)=>console.log(data))
+    .catch((err)=>console.warn(err))
+    .finally(
+        function greet() {
+            console.log('This code is executed.');
+        }   
+    );
 }
 
 {

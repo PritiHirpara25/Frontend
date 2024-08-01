@@ -38,6 +38,10 @@ function red(one){
         y.addEventListener("mouseover", RespondMouseOver);
         y.addEventListener("mouseout", RespondMouseOut);
           
+        function RespondClick() {
+            document.getElementById("effect").innerHTML +=
+                      "Click Event" + "<br>";
+        }
         function RespondMouseOver() {
             document.getElementById("effect").innerHTML +=
                        "MouseOver Event" + "<br>";
@@ -48,8 +52,4 @@ function red(one){
                       "MouseOut Event" + "<br>";
         }
           
-        function RespondClick() {
-            document.getElementById("effect").innerHTML +=
-                      "Click Event" + "<br>";
-        }
 }

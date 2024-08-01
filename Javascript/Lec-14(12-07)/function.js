@@ -6,6 +6,7 @@
 //     return arguments.length;
 // }
 // let test = text(1,2);
+// console.log(test);
 
 
 // function sumAll(){
@@ -13,7 +14,7 @@
 //     for (let i=0; i<arguments.length; i++)
 //         total += arguments[i];
 //     // return total;
-//     return arguments[2];
+//     // return arguments[1];
 // }
 
 // console.log(sumAll(4,2,5))
@@ -47,15 +48,15 @@
 
 //this keyword
 
-// let person ={
-//     FirstName : 'Virat',
-//     LastName : 'Kohli',
-//     Age : 34 , 
-//     Hobbies : ['Cricket', 'Music' , 'Dancing'],
-//     test : function(){
-//         console.log(`Player Info: ${this.FirstName} ${this.LastName}.
-//                      He is ${this.Age} year old.
-//                      His Hobbies are ${this.Hobbies} `); 
-//     }
-// }
-// person.test()
+let person ={
+    FirstName : 'Virat',
+    LastName : 'Kohli',
+    Age : 34 , 
+    Hobbies : ['Cricket', 'Music' , 'Dancing'],
+    test : function(){
+        console.log(`Player Info: ${this.FirstName} ${this.LastName}.
+                     He is ${this.Age} year old.
+                     His Hobbies are ${this.Hobbies} `); 
+    }
+}
+person.test()

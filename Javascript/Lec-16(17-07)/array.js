@@ -70,7 +70,7 @@
 /* Javascript array.every() Method */
 
 // let data = [10,20,30,40,50,60,70]
-// data = data.every((ele)=>ele<70)
+// data = data.every((ele)=>ele<80)
 // console.log(data)
 
 /* Javascript array.some() Method */

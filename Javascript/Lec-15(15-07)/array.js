@@ -2,8 +2,7 @@
 // [size]
 
 // An array is a special variable, which can hold more than one value.
-// An array can hold many values under a single name, and you can access the
-// values by referring to an index number.
+// An array can hold many values under a single name, and you can access the values by referring to an index number.
 
 // let data = [];
 // let data = new  Array('Hello','World','Skill','Qode');
@@ -65,7 +64,7 @@
 // splice(start , removecount , ...add)
 
 // let data = ['Banana','Kiwi','Orange','Apple']
-// // data.splice(2,1)
+// data.splice(2,1)
 // data.splice(2,1,'cherry',50)
 // console.log(data)
 

@@ -40,7 +40,7 @@
 
 /* Date Set Methods */
 
-let date = new Date();
+// let date = new Date();
 
 // date.setFullYear(2025);
 // date.setMonth(2)
@@ -50,6 +50,6 @@ let date = new Date();
 // date.setSeconds(45)
 // date.setMilliseconds(104)
 // date.setTime(2512598552684547)
- console.log(date);
+//  console.log(date);
 
 

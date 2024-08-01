@@ -1,21 +1,21 @@
 /* Math Object */
 
-let math = Math.E;
-console.log(math);
+// let math = Math.E;
+// console.log(math);
 
-console.log(Math.PI);
+// console.log(Math.PI);
 
-console.log(Math.SQRT2);
+// console.log(Math.SQRT2);
 
-console.log(Math.SQRT1_2);
+// console.log(Math.SQRT1_2);
 
-console.log(Math.LN10);
+// console.log(Math.LN10);
 
-console.log(Math.LN2);
+// console.log(Math.LN2);
 
-console.log(Math.LOG2E);
+// console.log(Math.LOG2E);
 
-console.log(Math.LOG10E);
+// console.log(Math.LOG10E);
 
 /* Javascript Math Method */
 
@@ -66,6 +66,6 @@ sqrt
 // console.log(Math.floor(2.6))
 // console.log(Math.floor(2.4))
 // console.log(Math.floor(-15.2))
-console.log(Math.ceil(2.6))
-console.log(Math.ceil(5.1))
-console.log(Math.ceil(-2.3))
+// console.log(Math.ceil(2.6))
+// console.log(Math.ceil(5.1))
+// console.log(Math.ceil(-2.3))

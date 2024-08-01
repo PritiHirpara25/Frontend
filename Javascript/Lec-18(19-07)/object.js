@@ -15,17 +15,17 @@
 // let data = new Object();
 // console.log(typeof data)
 
-// let data = {
-//     name : "John",
-//     age : 25,
-//     hobbies : ['Music' , 'Dance'],
-//     marks : {
-//         maths : 25,
-//         science : 28,
-//         gujarati : 24
-//     },
-//     hello : () => ('Hello Guys...')
-// }
+let data = {
+    name : "John",
+    age : 25,
+    hobbies : ['Music' , 'Dance'],
+    marks : {
+        maths : 25,
+        science : 28,
+        gujarati : 24
+    },
+    hello : () => ('Hello Guys...')
+}
 // console.log(data)
 // console.log(data.hello())
 // console.log(data.hobbies[0])

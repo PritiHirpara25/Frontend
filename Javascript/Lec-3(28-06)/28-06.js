@@ -66,7 +66,7 @@
 //     let x = 4
 //     let y = 2      
 //     let z = x ** y   //4 x 4 = 16
-    
+//     let z1 = y ** x   // 2 x 2 x 2 x 2 = 16
 //     console.log(z)
 // }
 

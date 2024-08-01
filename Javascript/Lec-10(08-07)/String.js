@@ -14,9 +14,11 @@
     // let regex1 = /dog/i;
     // let regex2 = /dog/g;
 
-    // let Replace =str.replace(regex1 , 'cat')
+    // let Replace1 =str.replace(regex1 , 'cat')
+    // let Replace2 =str.replace(regex2 , 'cat')
 
-    // console.log(Replace);   
+    // console.log(Replace1);   
+    // console.log(Replace2);   
 }
 
 /* javascript string.replaceAll() Method */
