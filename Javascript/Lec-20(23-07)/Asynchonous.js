@@ -68,13 +68,13 @@
 
     //     console.log(time)
 
-        // display the time after 3 seconds
-        // setTimeout(showTime, 3000);
+    //     // display the time after 3 seconds
+    //     // setTimeout(showTime, 3000);
     // }
 
-    // calling the function
+    // // calling the function
     // showTime();
-    // setInterval(showTime, 2000);
+    // setInterval(showTime, 1000);
 }
 
 // The setTimeout() method calls the function only once after the time interval (here 3 seconds).

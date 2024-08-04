@@ -1,0 +1,29 @@
+#main{
+    background-color: black;
+    height: 500px;
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid cyan;
+}
+#digital{
+    color: cyan;
+    border: 2px solid cyan;
+    box-shadow: 10px 10px cyan;
+    text-shadow: 2px 2px 4px cyan;
+    padding: 20px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+body{
+    height:90vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    /* margin: 100px; */
+}

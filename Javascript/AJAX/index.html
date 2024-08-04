@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="contentajax">Ajax Data</div>
+    <button onclick="ajaxdata()">Click for Data</button>
+    <script>
+        function ajaxdata(){
+            let https = new XMLHttpRequest();
+            https.onreadystatechange = function(){
+                if(this.readyState == 4 && this.status == 200){
+                    document.getElementById('contentajax').innerHTML = this.responseText
+                }
+            }
+            https.open('GET' , 'demo.txt' , true)
+            https.send()
+        }
+    </script>
+</body>
+</html>
