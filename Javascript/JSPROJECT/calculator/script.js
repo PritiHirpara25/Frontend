@@ -1,11 +1,11 @@
-function clear(){
-    document.getElementById('result').value = ''
+function clearAll(){
+    document.querySelector('#result').value = "0";
 }
 
 function display(val){
     document.getElementById('result').value += val;
 }
 
-function sum(){
-    
+function operate(){
+    document.getElementById('result').value = eval(document.getElementById('result').value)
 }

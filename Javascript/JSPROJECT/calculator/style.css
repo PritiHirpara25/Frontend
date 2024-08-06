@@ -1,7 +1,5 @@
 table { 
     border: 2px solid black; 
-    /* margin-left: auto;  
-    margin-right: auto;  */
     padding: 20px;
 } 
 #container{
@@ -9,31 +7,6 @@ table {
     justify-content: center;
     align-items: center;
     height: 90vh;
-}
-/* 
-input[type="button"] { 
-    width: 100%; 
-    padding: 20px 40px; 
-    background-color: green; 
-    color: white; 
-    font-size: 24px; 
-    font-weight: bold; 
-    border: none; 
-    border-radius: 5px; 
-}  */
-
-/* input[type="text"] { 
-    padding: 20px 30px; 
-    font-size: 24px; 
-    font-weight: bold; 
-    border: none; 
-    border-radius: 5px; 
-    border: 2px solid black; 
-}  */
-
-td{
-    height: 50px;
-    width: 70px;
 }
 #result{
     border: 2px solid black;
@@ -47,8 +20,13 @@ input[type="button"]{
 }
 
 input[type="text"]{
-    width: 250px;
+    width: 235px;
     padding: 20PX 25PX;
     font-size: 40PX;
     font-weight: 500;
+}
+td input{
+    background-color: lightslategrey;
+    height: 70px;
+    width: 70px;
 }

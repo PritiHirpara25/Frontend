@@ -1,0 +1,20 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+div{
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blanchedalmond;
+    border: 5px solid burlywood;
+}
+p{
+    font-size: 100px;
+    font-weight: bolder;
+    color: burlywood;
+}

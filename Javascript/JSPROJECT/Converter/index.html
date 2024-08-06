@@ -7,48 +7,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="part1">
-            <div class="dropdown">
-                <a href="" class="dropbtn">From</a>
-                <div class="dropdown-content">
-                    <a href="#">Celcius</a>
-                    <a href="#">Meter</a>
-                    <a href="#">Gram</a>
-                    <a href="#">Minutes</a>
-                </div>
-            </div>
-            <div class="To">
-                <span>To</span>
-            </div>
-            <div>
-                <div class="dropdown1">
-                    <a href="" class="dropbtn1">To</a>
-                    <div class="dropdown-content1">
-                        <a href="#">Fahrenhiet</a>
-                        <a href="#">KilloMeter</a>
-                        <a href="#">KilloGram</a>
-                        <a href="#">Seconds</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="inputpart">
-            <div class="inputypefrom">
-                <input type="number" class="input" placeholder="From">
-            </div>
-            <div class="inputypeto">
-                <input type="number" class="input" placeholder="To">
-            </div>
-        </div>
-        <div class="convert">
-            <button>Convert</button>
-        </div>
-        <div class="inputype">
-            <input type="text" class="input" placeholder="Output">
-        </div>
-    </div>
-
-
+      <div id="container">
+        <h2>Converter</h2>
+        <label>Celcius:</label>
+        <input type="number" id="celsius" >
+        <label>Fahrenheit:</label>
+        <input type="number" id="fahrenheit" onchange="cel" oninput="cel">
+      </div>
+<script src="script.js"></script>
 </body>
 </html>
