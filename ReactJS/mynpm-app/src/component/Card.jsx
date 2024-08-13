@@ -1,17 +1,21 @@
 import React from 'react'
-import { ArrowUpRight } from 'lucide-react'
+import image1 from './image.jpeg';
+// import { ArrowUpRight } from 'lucide-react'
+// import {Hellostyle} from './style.css';
+import styles from './style.module.css';
 
 export function CardThree() {
   return (
     <div className="w-[300px] rounded-md border">
       <img
-        src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGJsb2d8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
+        src={image1}
         alt="Laptop"
         className="h-[200px] w-full rounded-t-md object-cover"
       />
       <div className="p-4">
         <h1 className="inline-flex items-center text-lg font-semibold">
-          About Macbook &nbsp; <ArrowUpRight className="h-4 w-4" />
+          About Macbook &nbsp; 
+          {/* <ArrowUpRight className="h-4 w-4" /> */}
         </h1>
         <p className="mt-3 text-sm text-gray-600">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, debitis?
@@ -32,8 +36,11 @@ export function CardThree() {
           className="mt-4 w-full rounded-sm bg-black px-2 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
         >
           Read
-        </button>
+        </button><br />
       </div>
+        {/* <button className='Hello' style={{backgroundColor:"red",padding:"10px", color:'white', border:"4px solid blue" , marginTop:"10px"}}>Click Me</button> */}
+        <button className={styles.Hello} >Click Me</button>
+
     </div>
   )
 }

@@ -3,13 +3,13 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { CardThree } from './component/Card';
+// import { CardThree } from './Component/Card';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
-    <CardThree />
+    {/* <CardThree/> */}
   </React.StrictMode>
 );
 
