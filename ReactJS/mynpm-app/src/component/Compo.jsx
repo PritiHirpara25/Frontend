@@ -1,5 +1,4 @@
 import React from 'react'
-// import image2 from './gregorio.jpeg'
 
 const Compo = () => {
     return (

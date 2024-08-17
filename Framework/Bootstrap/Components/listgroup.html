@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <style>
-        div{
-            border: 4px solid black;
+        #list {
+            border: 3px solid black;
             margin: 10px;
         }
     </style>
 </head>
+
 <body>
-    <div>
+    <div id="list">
         <ul class="list-group">
             <li class="list-group-item">item1</li>
             <li class="list-group-item">item2</li>
@@ -24,7 +26,7 @@
         </ul>
     </div>
 
-    <div>
+    <div id="list">
         <ul class="list-group">
             <li class="list-group-item">item1</li>
             <li class="list-group-item active">item2</li>
@@ -35,7 +37,7 @@
         </ul>
     </div>
 
-    <div>
+    <div id="list">
         <ul class="list-group">
             <li class="list-group-item">item1</li>
             <li class="list-group-item">item2</li>
@@ -46,46 +48,182 @@
         </ul>
     </div>
 
-    
-        <div class="list-group">
-            <a class="list-group-item list-group-item-action" href="#">item1</a>
-            <a class="list-group-item list-group-item-action active" href="#">item2</a>
-            <a class="list-group-item list-group-item-action" href="#">item3</a>
-            <a class="list-group-item list-group-item-action" href="#">item4</a>
-            <a class="list-group-item list-group-item-action disabled" href="#">item5</a>
-            <a class="list-group-item list-group-item-action" href="#">item6</a>
-        </div>
-    
-        <div class="list-group">
-            <button class="list-group-item list-group-item-action" href="#">item1</button>
-            <button class="list-group-item list-group-item-action active" href="#">item2</button>
-            <button class="list-group-item list-group-item-action" href="#">item3</button>
-            <button class="list-group-item list-group-item-action" href="#">item4</button>
-            <button class="list-group-item list-group-item-action disabled" href="#">item5</button>
-            <button class="list-group-item list-group-item-action" href="#">item6</button>
-        </div>
 
-        <div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">item1</li>
-                <li class="list-group-item">item2</li>
-                <li class="list-group-item">item3</li>
-                <li class="list-group-item">item4</li>
-                <li class="list-group-item">item5</li>
-                <li class="list-group-item">item6</li>
-            </ul>
-        </div>
+    <div class="list-group" id="list">
+        <a class="list-group-item list-group-item-action" href="#">item1</a>
+        <a class="list-group-item list-group-item-action active" href="#">item2</a>
+        <a class="list-group-item list-group-item-action" href="#">item3</a>
+        <a class="list-group-item list-group-item-action" href="#">item4</a>
+        <a class="list-group-item list-group-item-action disabled" href="#">item5</a>
+        <a class="list-group-item list-group-item-action" href="#">item6</a>
+    </div>
 
-        <div>
-            <ul class="list-group list-group-numbered">
-                <li class="list-group-item">item1</li>
-                <li class="list-group-item">item2</li>
-                <li class="list-group-item">item3</li>
-                <li class="list-group-item">item4</li>
-                <li class="list-group-item">item5</li>
-                <li class="list-group-item">item6</li>
-            </ul>
-        </div>
+    <div class="list-group" id="list">
+        <button class="list-group-item list-group-item-action" href="#">item1</button>
+        <button class="list-group-item list-group-item-action active" href="#">item2</button>
+        <button class="list-group-item list-group-item-action" href="#">item3</button>
+        <button class="list-group-item list-group-item-action" href="#">item4</button>
+        <button class="list-group-item list-group-item-action disabled" href="#">item5</button>
+        <button class="list-group-item list-group-item-action" href="#">item6</button>
+    </div>
+
+    <div id="list">
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">item1</li>
+            <li class="list-group-item">item2</li>
+            <li class="list-group-item">item3</li>
+            <li class="list-group-item">item4</li>
+            <li class="list-group-item">item5</li>
+            <li class="list-group-item">item6</li>
+        </ul>
+    </div>
+
+    <div id="list">
+        <ul class="list-group list-group-numbered">
+            <li class="list-group-item">item1</li>
+            <li class="list-group-item">item2</li>
+            <li class="list-group-item">item3</li>
+            <li class="list-group-item">item4</li>
+            <li class="list-group-item">item5</li>
+            <li class="list-group-item">item6</li>
+        </ul>
+    </div>
+
+    <div style="width: 18rem;" id="list">
+        <ol class="list-group list-group-numbered">
+            <li class="list-group-item d-flex align-items-center">
+                <div class="ms-3 me-auto">
+                    <div class="fw-bolder">Subheading</div>
+                    Cras justo odio
+                </div>
+                <span class="bagde bg-info rounded-pill">10</span>
+            </li>
+            <li class="list-group-item d-flex align-items-center">
+                <div class="ms-3 me-auto">
+                    <div class="fw-bolder">Subheading</div>
+                    Cras justo odio
+                </div>
+                <span class="bagde bg-info rounded-pill">12</span>
+            </li>
+            <li class="list-group-item d-flex align-items-center">
+                <div class="ms-3 me-auto">
+                    <div class="fw-bolder">Subheading</div>
+                    Cras justo odio
+                </div>
+                <span class="bagde bg-info rounded-pill">14</span>
+            </li>
+        </ol>
+    </div>
+
+    <div id="list" style="width: fit-content;">
+        <ol class="list-group list-group-horizontal">
+            <li class="list-group-item">Punjabi</li>
+            <li class="list-group-item">SouthIndian</li>
+            <li class="list-group-item">Gujarati</li>
+            <li class="list-group-item">Chinese</li>
+        </ol>
+        <ol class="list-group list-group-horizontal">
+            <li class="list-group-item">Punjabi</li>
+            <li class="list-group-item">SouthIndian</li>
+            <li class="list-group-item">Gujarati</li>
+            <li class="list-group-item">Chinese</li>
+        </ol>
+        <ol class="list-group list-group-horizontal">
+            <li class="list-group-item">Punjabi</li>
+            <li class="list-group-item">SouthIndian</li>
+            <li class="list-group-item">Gujarati</li>
+            <li class="list-group-item">Chinese</li>
+        </ol>
+        <ol class="list-group list-group-horizontal">
+            <li class="list-group-item">Punjabi</li>
+            <li class="list-group-item">SouthIndian</li>
+            <li class="list-group-item">Gujarati</li>
+            <li class="list-group-item">Chinese</li>
+        </ol>
+        <ol class="list-group list-group-horizontal">
+            <li class="list-group-item">Punjabi</li>
+            <li class="list-group-item">SouthIndian</li>
+            <li class="list-group-item">Gujarati</li>
+            <li class="list-group-item">Chinese</li>
+        </ol>
+        <ol class="list-group list-group-horizontal">
+            <li class="list-group-item">Punjabi</li>
+            <li class="list-group-item">SouthIndian</li>
+            <li class="list-group-item">Gujarati</li>
+            <li class="list-group-item">Chinese</li>
+        </ol>
+        <ol class="list-group list-group-horizontal">
+            <li class="list-group-item">Punjabi</li>
+            <li class="list-group-item">SouthIndian</li>
+            <li class="list-group-item">Gujarati</li>
+            <li class="list-group-item">Chinese</li>
+        </ol>
+    </div>
+
+    <div id="list" style="width: 22rem;">
+        <ul class="list-group">
+            <li class="list-group-item">default List Group</li>
+            <li class="list-group-item list-group-item-primary">Primary List Group</li>
+            <li class="list-group-item list-group-item-secondary">Secondary List Group</li>
+            <li class="list-group-item list-group-item-success">Success List Group</li>
+            <li class="list-group-item list-group-item-danger">Danger List Group</li>
+            <li class="list-group-item list-group-item-warning">Warning List Group</li>
+            <li class="list-group-item list-group-item-info">Info List Group</li>
+            <li class="list-group-item list-group-item-light">Light List Group</li>
+            <li class="list-group-item list-group-item-dark">Dark List Group</li>
+        </ul>
+    </div>
+
+    <div class="list-group" id="list"  style="width: 28rem;">
+        <a href="#" class="list-group-item list-group-item-action active">
+            <div class="d-flex justify-content-between">
+                <h4>Daily Rotine Items</h4>
+                <span>2 days ago</span>
+            </div>
+            <p class="mb-1">Lorem ipsum dolor sit amet.</p>
+            <span>Lorem ipsum dolor sit.</span>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+            <div class="d-flex justify-content-between">
+                <h4>Daily Rotine Items</h4>
+                <span>2 days ago</span>
+            </div>
+            <p class="mb-1">Lorem ipsum dolor sit amet.</p>
+            <span>Lorem ipsum dolor sit.</span>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+            <div class="d-flex justify-content-between">
+                <h4>Daily Rotine Items</h4>
+                <span>2 days ago</span>
+            </div>
+            <p class="mb-1">Lorem ipsum dolor sit amet.</p>
+            <span>Lorem ipsum dolor sit.</span>
+        </a>
+    </div>
+
+    <div id="list">
+        <ul class="list-group">
+            <li class="list-group-item">
+                <input type="checkbox" class="form-check-input"> HTML
+            </li>
+            <li class="list-group-item">
+                <input type="checkbox" class="form-check-input"> CSS
+            </li>
+            <label class="list-group-item">
+                <input type="checkbox" class="form-check-input"> Sass
+            </label>
+            <label class="list-group-item">
+                <input type="checkbox" class="form-check-input"> Tailwind
+            </label>
+            <li class="list-group-item">
+                <input type="radio" class="form-check-input"> Javascript
+            </li>
+            <label class="list-group-item">
+                <input type="radio" class="form-check-input"> ReactJs
+            </label>
+        </ul>
+    </div>
     <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
