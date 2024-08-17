@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+
+<body>
+    <div>
+        <p>
+            <a href="#collapseexample" class="btn btn-dark" data-bs-toggle="collapse">Link with href</a>
+            <button class="btn btn-dark" data-bs-toggle="collapse" data-bs-target="#collapseexample" type="button">btn
+                with data-bs-toggle</button>
+        </p>
+        <div class="collapse" id="collapseexample">
+            <div class="card card-body">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam commodi ipsa possimus molestiae amet
+                quisquam.
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <p>
+            <a href="#multiplecollapseexample1" class="btn btn-dark" data-bs-toggle="collapse">btn with First element</a>
+            <button class="btn btn-dark" data-bs-toggle="collapse" data-bs-target="#multiplecollapseexample2" type="button">btn with Second element</button>
+            <button class="btn btn-dark" data-bs-toggle="collapse" data-bs-target=".multi-collapse" type="button">btn Both element</button>
+        </p>
+        <div class="row">
+            <div class="col">
+              <div class="collapse multi-collapse" id="multiplecollapseexample1">
+                <div class="card card-body">
+                  Some placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="collapse multi-collapse" id="multiplecollapseexample2">
+                <div class="card card-body">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod adipisci perferendis rerum reprehenderit aspernatur tempora voluptatum id voluptates iusto molestias.
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
