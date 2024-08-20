@@ -7,6 +7,28 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
 </head>
 <body>
+    <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#ModalExample">
+        Click for Modal
+    </button>
+    <div class="modal fade" id="ModalExample">
+        <div class="modal-dialog" >
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Password</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Do you want to change Password??</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-success" data-bs-dismiss="modal">Cancel</button>
+                    <button class="btn btn-success">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
     <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

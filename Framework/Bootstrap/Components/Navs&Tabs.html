@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <style>
+        div{
+            border: 2px solid black;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Base nav</h2>
+    <div style="width: fit-content;">
+        <ul class="nav">
+            <li class="nav-item">
+                <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link active">Menu</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Theme</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link disabled">Blog</a>
+            </li>
+        </ul>
+    </div>
+
+    <div style="width: fit-content;">
+        <nav class="nav">
+            <a href="#" class="nav-link">Home</a>
+            <a href="#" class="nav-link active">Menu</a>
+            <a href="#" class="nav-link">Theme</a>
+            <a href="#" class="nav-link disabled">Blog</a>
+
+        </nav>
+    </div>
+
+    <h2>Horizontal alignment</h2>
+    <div>
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link active">Menu</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Theme</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link disabled">Blog</a>
+            </li>
+        </ul>
+    </div>
+
+    <div>
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link active">Menu</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Theme</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link disabled">Blog</a>
+            </li>
+        </ul>
+    </div>
+
+    <h2>Vertical</h2>
+    <div style="width: 15rem;">
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link active">Menu</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Theme</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link disabled">Blog</a>
+            </li>
+        </ul>
+    </div>
+
+    <div style="width: 15rem;">
+        <nav class="nav flex-column">
+            <a href="#" class="nav-link">Home</a>
+            <a href="#" class="nav-link active">Menu</a>
+            <a href="#" class="nav-link">Theme</a>
+            <a href="#" class="nav-link disabled">Blog</a>
+
+        </nav>
+    </div>
+
+    <h2>Tabs</h2>
+    <div style="width: fit-content; border: none;">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Menu</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link active">Theme</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link disabled">Blog</a>
+            </li>
+        </ul>
+    </div>
+
+    <h2>Pills</h2>
+    <div style="width: fit-content; border: none;">
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link active">Menu</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Theme</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link disabled">Blog</a>
+            </li>
+        </ul>
+    </div>
+
+    <h2>Fill and justify</h2>
+    <div style="padding: 10px;">
+        <ul class="nav nav-pills nav-fill">
+            <li class="nav-item">
+                <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link active">Menu</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Theme</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link disabled">Blog</a>
+            </li>
+        </ul>
+    </div>
+
+    <div style="padding: 10px;">
+        <ul class="nav nav-pills nav-justified">
+            <li class="nav-item">
+                <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link active">Menu</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Theme</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link disabled">Blog</a>
+            </li>
+        </ul>
+    </div>
+
+    <h2>Working with flex utilities</h2>
+    <div style="padding: 10px;">
+        <ul class="nav nav-pills flex-column flex-sm-row">
+            <li class="nav-item">
+                <a href="#" class="flex-sm-fill text-sm-center nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="flex-sm-fill text-sm-center nav-link active">Menu</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="flex-sm-fill text-sm-center nav-link">Theme</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="flex-sm-fill text-sm-center nav-link disabled">Blog</a>
+            </li>
+        </ul>
+    </div>
+
+
+    <h2>Tabs with dropdowns</h2>
+    <div style="padding: 10px;">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Menu</a>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item">HTML</li>
+                    <li class="dropdown-item">CSS</li>
+                    <li class="dropdown-item">Sass</li>
+                    <li class="dropdown-divider"></li>
+                    <li class="dropdown-item">Javascript</li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Theme</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link disabled">Blog</a>
+            </li>
+        </ul>
+    </div>
+
+    <h2>Pills with dropdowns</h2>
+    <div style="padding: 10px;">
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Menu</a>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item">HTML</li>
+                    <li class="dropdown-item">CSS</li>
+                    <li class="dropdown-item">Sass</li>
+                    <li class="dropdown-divider"></li>
+                    <li class="dropdown-item">Javascript</li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Theme</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link disabled">Blog</a>
+            </li>
+        </ul>
+    </div>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

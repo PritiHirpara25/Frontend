@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+
+<body>
+    <h2>Toggle start offcanvas</h2>
+    <a href="#exoffcanvas" class="btn btn-warning" data-bs-toggle="offcanvas" data-bs-target="#startoffcanvas">Click
+        Button</a>
+    <button class="btn btn-danger" data-bs-toggle="offcanvas" data-bs-target="#exoffcanvas">
+        Click for dropdown
+    </button>
+    <div class="offcanvas offcanvas-start" id="startoffcanvas">
+        <div class="offcanvas-header">
+            <h4 class="offcanvas-title">Offcanvas</h4>
+            <button class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti voluptatibus, est quia sapiente
+                possimus
+                ullam.
+            </div>
+            <div class="dropdown mt-5">
+                <button class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">dropdown button</button>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item">Item1</li>
+                    <li class="dropdown-item">Item2</li>
+                    <li class="dropdown-item">Item3</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <h2>Toggle end offcanvas</h2>
+    <button class="btn btn-info" data-bs-toggle="offcanvas" data-bs-target="#endoffcanvas">
+        Toggle end offcanvas
+    </button>
+    <div class="offcanvas offcanvas-end" id="endoffcanvas">
+        <div class="offcanvas-header">
+            <h4 class="offcanvas-title">Offcanvas</h4>
+            <button class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti voluptatibus, est quia sapiente
+                possimus
+                ullam.
+            </div>
+            <div class="dropdown mt-4">
+                <button class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">dropdown button</button>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item">Item1</li>
+                    <li class="dropdown-item">Item2</li>
+                    <li class="dropdown-item">Item3</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <h2>Toggle top offcanvas</h2>
+    <button class="btn btn-success" data-bs-toggle="offcanvas" data-bs-target="#topoffcanvas">
+        Toggle top offcanvas
+    </button>
+    <div class="offcanvas offcanvas-top" id="topoffcanvas">
+        <div class="offcanvas-header">
+            <h4 class="offcanvas-title">Offcanvas</h4>
+            <button class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti voluptatibus, est quia sapiente
+                possimus
+                ullam.
+            </div>
+            <div class="dropdown mt-4">
+                <button class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">dropdown button</button>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item">Item1</li>
+                    <li class="dropdown-item">Item2</li>
+                    <li class="dropdown-item">Item3</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <h2>Toggle bottom offcanvas</h2>
+    <button class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#bottomoffcanvas">
+        Toggle bottom offcanvas
+    </button>
+    <div class="offcanvas offcanvas-bottom" id="bottomoffcanvas">
+        <div class="offcanvas-header">
+            <h4 class="offcanvas-title">Offcanvas</h4>
+            <button class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti voluptatibus, est quia sapiente
+                possimus
+                ullam.
+            </div>
+            <div class="dropdown mt-4">
+                <button class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">dropdown button</button>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item">Item1</li>
+                    <li class="dropdown-item">Item2</li>
+                    <li class="dropdown-item">Item3</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <h2>Backdrop</h2>
+    <button class="btn btn-secondary" data-bs-toggle="offcanvas" data-bs-target="#scrolloffcanvas">
+        With Body Scrolling
+    </button>
+    <button class="btn btn-secondary" data-bs-toggle="offcanvas" data-bs-target="#defaultoffcanvas">
+        default
+    </button>
+    <button class="btn btn-secondary" data-bs-toggle="offcanvas" data-bs-target="#bothtoffcanvas">
+        both
+    </button>
+    <!-- With Body Scrolling -->
+    <div class="offcanvas offcanvas-start" id="scrolloffcanvas" data-bs-scroll="true" data-bs-backdrop="false">
+        <div class="offcanvas-header">
+            <h4 class="offcanvas-title">Offcanvas</h4>
+            <button class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti voluptatibus, est quia sapiente
+                possimus
+                ullam.
+            </div>
+            <div class="dropdown mt-4">
+                <button class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">dropdown button</button>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item">Item1</li>
+                    <li class="dropdown-item">Item2</li>
+                    <li class="dropdown-item">Item3</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- default -->
+    <div class="offcanvas offcanvas-start" id="defaultoffcanvas">
+        <div class="offcanvas-header">
+            <h4 class="offcanvas-title">Offcanvas</h4>
+            <button class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti voluptatibus, est quia sapiente
+                possimus
+                ullam.
+            </div>
+            <div class="dropdown mt-4">
+                <button class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">dropdown button</button>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item">Item1</li>
+                    <li class="dropdown-item">Item2</li>
+                    <li class="dropdown-item">Item3</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- both -->
+    <div class="offcanvas offcanvas-start" id="bothtoffcanvas" data-bs-scroll="true" data-bs-backdrop="false">
+        <div class="offcanvas-header">
+            <h4 class="offcanvas-title">Offcanvas</h4>
+            <button class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti voluptatibus, est quia sapiente
+                possimus
+                ullam.
+            </div>
+            <div class="dropdown mt-4">
+                <button class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">dropdown button</button>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item">Item1</li>
+                    <li class="dropdown-item">Item2</li>
+                    <li class="dropdown-item">Item3</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
