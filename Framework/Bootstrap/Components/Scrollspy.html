@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar" id="navbarex">
+        <a href="#" class="navbar-brand">Navbar</a>
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a href="#scrollheading1" class="nav-link">First</a>
+            </li>
+            <li class="nav-item">
+                <a href="#scrollheading2" class="nav-link">Second</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Dropdown</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#scrollheading3">Third</a></li>
+                    <li><a class="dropdown-item" href="#scrollheading4">Fourth</a></li>
+                    <li><a class="dropdown-item" href="#scrollheading5">Fifth</a></li>
+                    <li><a class="dropdown-item" href="#scrollheading6">sixth</a></li>
+                    <li><a class="dropdown-item" href="#scrollheading7">seventh</a></li>
+                    <li><a class="dropdown-item" href="#scrollheading8">eighth</a></li>
+                    <li><a class="dropdown-item" href="#scrollheading9">nineth</a></li>
+                    <li><a class="dropdown-item" href="#scrollheading10">tenth</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div data-bs-spy="scroll" data-bs-target="#navbarex">
+        <h4 id="scrollheading1">First Heading</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae commodi provident dolore delectus
+            reprehenderit et unde, consequuntur maiores pariatur alias?</p>
+        <h4 id="scrollheading2">Second Heading</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae commodi provident dolore delectus
+            reprehenderit et unde, consequuntur maiores pariatur alias?</p>
+        <h4 id="scrollheading3">Third Heading</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae commodi provident dolore delectus
+            reprehenderit et unde, consequuntur maiores pariatur alias?</p>
+        <h4 id="scrollheading4">Fourth Heading</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae commodi provident dolore delectus
+            reprehenderit et unde, consequuntur maiores pariatur alias?</p>
+        <h4 id="scrollheading5">Fifth Heading</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae commodi provident dolore delectus
+            reprehenderit et unde, consequuntur maiores pariatur alias?</p>
+        <h4 id="scrollheading6">Sixth Heading</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae commodi provident dolore delectus
+            reprehenderit et unde, consequuntur maiores pariatur alias?</p>
+        <h4 id="scrollheading7">Seventh Heading</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae commodi provident dolore delectus
+            reprehenderit et unde, consequuntur maiores pariatur alias?</p>
+        <h4 id="scrollheading8">Eighth Heading</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae commodi provident dolore delectus
+            reprehenderit et unde, consequuntur maiores pariatur alias?</p>
+        <h4 id="scrollheading9">Nineth Heading</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae commodi provident dolore delectus
+            reprehenderit et unde, consequuntur maiores pariatur alias?</p>
+        <h4 id="scrollheading10">Tenth Heading</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae commodi provident dolore delectus
+            reprehenderit et unde, consequuntur maiores pariatur alias?</p>
+    </div>
+
+
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+
+    <h2>Nested Nav</h2>
+    <nav class="navbar flex-column align-items-start navbar-light bg-light" id="nestednav">
+        <a href="#" class="navbar-brand">Navbar</a>
+        <nav class="nav nav-pills flex-column">
+            <a href="#scrollingheading1" class="nav-link">First</a>
+            <nav class="nav nav-pills flex-column">
+                <a href="#item1.1">Item1.1</a>
+                <a href="#item1.2">Item1.2</a>
+            </nav>
+            <a href="#scrollingheading2" class="nav-link">Second</a>
+            <a href="#scrollingheading3" class="nav-link">Third</a>
+            <nav class="nav nav-pills flex-column">
+                <a href="#item3.1">Item3.1</a>
+                <a href="#item3.2">Item3.2</a>
+            </nav>
+        </nav>
+    </nav>
+    <div data-bs-spy="scroll" data-bs-target="#nestednav">
+        <h4 id="scrollingheading1">First Heading</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae commodi provident dolore delectus
+            reprehenderit et unde, consequuntur maiores pariatur alias?</p>
+            <h4 id="item1.1">1.1</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae commodi provident dolore delectus
+            reprehenderit et unde, consequuntur maiores pariatur alias?</p>
+            <h4 id="item1.2">1.2</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae commodi provident dolore delectus
+            reprehenderit et unde, consequuntur maiores pariatur alias?</p>
+        <h4 id="scrollingheading2">Second Heading</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae commodi provident dolore delectus
+            reprehenderit et unde, consequuntur maiores pariatur alias?</p>
+        <h4 id="scrollingheading3">Third Heading</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae commodi provident dolore delectus
+            reprehenderit et unde, consequuntur maiores pariatur alias?</p>
+            <h4 id="item3.1">3.1</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae commodi provident dolore delectus
+            reprehenderit et unde, consequuntur maiores pariatur alias?</p>
+            <h4 id="item3.2">3.2</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae commodi provident dolore delectus
+            reprehenderit et unde, consequuntur maiores pariatur alias?</p>
+    </div>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
