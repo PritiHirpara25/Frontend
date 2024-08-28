@@ -7,11 +7,11 @@ export const Hello = {
     'border': '2px solid black',
     'padding': '10px'
 }
-const Button = () => {
+const Button = (props) => {
 
     return (
         <div>
-            <button className="{styles.Hello}">Click Me</button>
+            <button className="name">{props}</button>
         </div>
     )
 }
