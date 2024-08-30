@@ -5,6 +5,8 @@ import Compo from './Component/Compo';
 import { TodoList } from './Component/Compo';
 import { TodoList1 } from './Component/Compo';
 import { TodoList2 } from './Component/Compo';
+import Props from './Lec-3/Props';
+import Practice from './Lec-3/Practice';
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
       <TodoList/>
       <TodoList1/>
       <TodoList2/>
+      <Props/>
+      <Practice/>
     </div>
   );
 }
