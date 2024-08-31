@@ -12,12 +12,13 @@ function App() {
   return (
     <div className="App">
       {/* <CardThree/> */}
-      <Compo/>
-      <TodoList/>
-      <TodoList1/>
-      <TodoList2/>
+      {/* <Compo/> */}
+      {/* <TodoList/> */}
+      {/* <TodoList1/> */}
+      {/* <TodoList2/> */}
       <Props/>
-      <Practice/>
+      
+      {/* <Practice/> */}
     </div>
   );
 }

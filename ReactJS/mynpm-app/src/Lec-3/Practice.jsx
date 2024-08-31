@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
 
-function Sandwich(name) {
+function Sandwich() {
+    let number = document.getElementById('guest').value;
     return (
         <div>
-            <h2>Sandwich for Person</h2>
+            <h1>Sandwich for {number} Person</h1>
             <ul>
-                <li>Take two Bread slices.</li>
-                <li>Take 1{name} Potato.</li>
+                <li>Take {number*2} Bread slices.</li>
+                <li>Take {number} Potato.</li>
                 <li>Mash the Potato with Spices.</li>
                 <li>Spread stuffing on Bread.</li>
                 <li>Grill it.</li>
@@ -17,11 +18,12 @@ function Sandwich(name) {
 }
 
 function Manchurian() {
+    let number = document.getElementById('guest').value;
     return (
         <div>
-            <h2>Manchurian for Person</h2>
+            <h2>Manchurian for {number} Person</h2>
             <ul>
-                <li>Pour 2 tablespoons oil.</li>
+                <li>Pour {number*2} tablespoons oil.</li>
                 <li>Add Ginger-Garlic Paste with Some Veggies.</li>
                 <li>Roast it, then add Sauces.</li>
                 <li>Add Manchurian Balls.</li>
@@ -34,7 +36,7 @@ function Manchurian() {
 const Practice = () => {
     const [recipe, setRecipe] = useState(null);
 
-    const sandwichRecipe = (name) => {
+    const sandwichRecipe = () => {
         setRecipe('Sandwich');
     };
 
@@ -44,7 +46,6 @@ const Practice = () => {
 
     return (
         <div>
-            <Sandwich name="guest"/>
             <input type="number" placeholder="Enter number of Guests" name='guest' id="guest" />
             <button onClick={sandwichRecipe} className='recipe1'>Click for Sandwich</button>
             <button onClick={manchurianRecipe} className='recipe2'>Click for Manchurian</button>
