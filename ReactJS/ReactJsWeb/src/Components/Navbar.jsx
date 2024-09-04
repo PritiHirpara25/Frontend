@@ -7,12 +7,12 @@ const Navbar = () => {
         <div>
             {/* header/Navbar */}
             <div className='bg-gray-500 h-24 flex items-center'>
-                <div>
+                <div className='pl-10'>
                     <img src={NavLogo} alt="Image" />
                 </div>
-                <div>
+                <div className='pl-64'>
                     <nav>
-                        <ul className='flex gap-7'>
+                        <ul className='flex gap-9'>
                             <li><Link to="/">Home</Link></li>
                             <li><Link to="/shop">Shop</Link></li>
                             <li><Link to="/products">Products</Link></li>

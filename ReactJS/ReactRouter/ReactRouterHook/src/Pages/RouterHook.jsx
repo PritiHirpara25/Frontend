@@ -12,7 +12,7 @@ const RouterHook = () => {
 
   return (
     <div>
-      <button onClick={() => navigate('/login')}>Click For Home</button>
+      <button onClick={() => navigate('/login')}>Click For LoginPage</button>
     </div>
   )
 }
