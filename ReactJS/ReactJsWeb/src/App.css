@@ -1,15 +1,11 @@
-body{
-    width: 1370px;
-}
-
 
 .mainslider1 , .mainslider2 , .mainslider3{
     position: relative;
 }
 .slide1 , .slide2 , .slide3{
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 160px;
+    left: 60px;
 }
 
 .scroll{
@@ -19,8 +15,4 @@ body{
     font-size: small;
     display: flex;
     align-items: center;
-}
-
-.slick-dots{
-    
 }
