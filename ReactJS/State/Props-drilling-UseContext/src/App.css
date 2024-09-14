@@ -1,0 +1,9 @@
+.heading{
+    background-color: cadetblue;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    border: 2px solid black;
+}
