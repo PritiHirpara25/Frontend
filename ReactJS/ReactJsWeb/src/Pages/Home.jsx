@@ -8,6 +8,7 @@ import Discount from "../Components/Discount";
 import Trending from "../Components/Trending";
 import Clients from "../Components/Clients";
 import HappyClient from "../Components/HappyClient";
+import Blogs from "../Components/Blogs";
 
 const Home = () => {
   return (
@@ -22,6 +23,7 @@ const Home = () => {
       <Trending />
       <Clients />
       <HappyClient/>
+      <Blogs/>
     </div>
   )
 }

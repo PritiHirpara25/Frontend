@@ -2,7 +2,7 @@ import React from 'react'
 import { GoStarFill } from "react-icons/go";
 import client1 from '../assets/asset 47.jpeg'
 
-const HappyClients = () => {
+const MainHappyClients = () => {
     return (
             <div className='grid grid-cols-3 container-section'>
                 <div className='bg-white w-[435px] h-100 pt-11 pr-9 pb-6 pl-9 rounded-lg border border-solid' style={{ borderColor: "var(--border-line)" }}>
@@ -32,4 +32,4 @@ const HappyClients = () => {
     )
 }
 
-export default HappyClients
+export default MainHappyClients
