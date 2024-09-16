@@ -6,7 +6,7 @@ import headphone from '../assets/asset 45.png'
 
 const Trending = () => {
     return (
-        <div>
+        <div className='w-full over'>
             <div className='header'>
                 <h1 className='text-5xl pl-[50px] pt-[60px]'>Trending Products</h1>
             </div>

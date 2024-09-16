@@ -44,7 +44,7 @@ const ShopByCategory = () => {
   };
 
   return (
-    <div className="overflow-hidden mt-0 lg:mt-6">
+    <div className="overflow-hidden mt-0 lg:mt-6 shopbycategory">
       <div className='pl-[50px] pt-[60px]'>
                  <h1 className='text-5xl'>Shop by category.</h1>
              </div>

@@ -1,9 +1,11 @@
 import React from 'react'
 
-const MainBlogs = () => {
+const MainBlogs = ({image}) => {
   return (
-    <div>
-        Blogs
+    <div className='container-section'>
+        <div>
+          <img src="{image}" alt="" />
+        </div>
     </div>
   )
 }

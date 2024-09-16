@@ -6,7 +6,6 @@ import BestDeals from "../Components/BestDeals";
 import Twocom from "../Components/Twocom";
 import Discount from "../Components/Discount";
 import Trending from "../Components/Trending";
-import Clients from "../Components/Clients";
 import HappyClient from "../Components/HappyClient";
 import Blogs from "../Components/Blogs";
 
@@ -21,7 +20,6 @@ const Home = () => {
       <Twocom />
       <Discount />
       <Trending />
-      <Clients />
       <HappyClient/>
       <Blogs/>
     </div>
