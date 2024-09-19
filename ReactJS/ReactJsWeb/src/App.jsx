@@ -6,7 +6,6 @@ import SimpleSlider from './Pages/Home'
 import Login from './Pages/Login'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>

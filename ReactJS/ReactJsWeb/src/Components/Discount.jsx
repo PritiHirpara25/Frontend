@@ -7,7 +7,7 @@ const Discount = () => {
       <section className='container-section'>
         <div className='grid grid-cols-2'>
           <div>
-            <img src={discount} alt="" className='h-auto w-auto' />
+            <img src={discount} alt="" className='' />
           </div>
           <div style={{ backgroundColor: "var(--primary-color)" }} className='pt-20 pl-20'>
             <div className='text-[14px] font-bold leading-4'>ULTIMATE APPLE ACCESSORY.</div>

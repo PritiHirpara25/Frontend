@@ -3,7 +3,7 @@ import client1 from '../assets/asset 47.jpeg'
 import client2 from '../assets/asset 43.png'
 import client3 from '../assets/asset 39.png'
 import client4 from '../assets/asset 41.png'
-import MainHappyClients from '../Helpers/MainHappyClients'
+import MainHappyClients from '../HomeHelper/MainHappyClients'
 import Slider from "react-slick";
 
 function HappyClient() {

@@ -11,15 +11,15 @@ import Blogs from "../Components/Blogs";
 
 const Home = () => {
   return (
-    // <div className="max-w[1540px]">
-    <div>
+    // <div>
+    <div className="max-w[1540px]">
       <SimpleSlider />
       <Scroll />
       <ShopbyCategory />
       <BestDeals />
       <Twocom />
       <Discount />
-      <Trending />
+      {/* <Trending /> */}
       <HappyClient/>
       <Blogs/>
     </div>

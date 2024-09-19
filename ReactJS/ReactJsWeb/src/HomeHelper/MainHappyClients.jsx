@@ -1,6 +1,5 @@
 import React from 'react'
 import { GoStarFill } from "react-icons/go";
-import client1 from '../assets/asset 47.jpeg'
 
 const MainHappyClients = ({heading , text , name , meta , image , title , price}) => {
     return (

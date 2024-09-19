@@ -10,13 +10,13 @@ import { IoReorderThreeOutline } from "react-icons/io5";
 
 const Navbar = () => {
     return (
-        <div>
+        <div className='sticky top-0 left-0 right-0 bg-white z-[888] headertransition'>
             {/* header/Navbar */}
-            <div className='h-20 flex items-center justify-between'>
+            <div className='h-20 flex items-center justify-between px-10'>
                 <div className='lg:hidden text-3xl pl-4'>
                     <IoReorderThreeOutline />
                 </div>
-                <div className='pl-10'>
+                <div className=''>
                     <img src={NavLogo} alt="Image" />
                 </div>
                 <div>

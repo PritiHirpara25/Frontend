@@ -22,28 +22,28 @@ function SimpleSlider() {
       <div className="overflow-hidden">
         <div className="slider-container">
           <Slider {...settings}>
-            <div className="mainslider1">
+            <div className="relative ">
               <img src={asset28} alt="" className="" />
-              <div className="slide1 max-lg:top-14 max-md:top-2 max-sm:-top-6 max-sm:left-5">
+              <div className="absolute top-40 left-[60px] max-lg:top-14 max-md:top-2 max-sm:-top-6 max-sm:left-5">
                 <p className="text-xl max-md:hidden">UP TO 40% OFF CHARGERS AND MORE.</p>
                 <h1 className="text-7xl pt-10 max-lg:text-5xl max-md:text-4xl max-sm:text-2xl">Savings for <br />dads and grads.</h1>
-                <button className="bg-black text-white rounded-full px-6 py-2 text-lg flex items-center mt-10 max-md:text-sm max-sm:mt-3 ">Shop collection <div className="pt-1"><MdKeyboardArrowRight /></div></button>
+                <button className="bg-black text-white rounded-full px-6 py-2 text-lg flex items-center mt-10 max-md:text-sm max-sm:mt-3 ">Shop collection <div className=""><MdKeyboardArrowRight /></div></button>
               </div>
             </div>
-            <div className="mainslider2">
+            <div className="relative ">
               <img src={asset29} alt="" />
-              <div className="slide2 max-lg:top-14 max-md:top-3 max-sm:-top-6 max-sm:left-5">
+              <div className="absolute top-40 left-[60px] max-lg:top-14 max-md:top-3 max-sm:-top-6 max-sm:left-5">
                 <p className="text-xl max-md:hidden">UP TO 40% OFF CHARGERS AND MORE.</p>
                 <h1 className="text-7xl pt-10 max-lg:text-5xl max-md:text-4xl max-sm:text-2xl">Modern design</h1>
-                <button className="bg-black text-white rounded-full px-6 py-2 text-lg flex items-center mt-10 max-md:text-sm max-sm:mt-6 butn__new butn">Shop collection <div className="pt-1"><MdKeyboardArrowRight /></div></button>
+                <button className="bg-black text-white rounded-full px-6 py-2 text-lg flex items-center mt-10 max-md:text-sm max-sm:mt-6 butn__new butn">Shop collection <div className=""><MdKeyboardArrowRight /></div></button>
               </div>
             </div>
-            <div className="mainslider3">
+            <div className="relative ">
               <img src={asset27} alt="" />
-              <div className="slide3 max-lg:top-14 max-md:top-3 max-sm:-top-6 max-sm:left-5">
+              <div className="absolute top-40 left-[60px] max-lg:top-14 max-md:top-3 max-sm:-top-6 max-sm:left-5">
                 <p className="text-xl max-md:hidden">UP TO 40% OFF CHARGERS AND MORE.</p>
                 <h1 className="text-7xl pt-10 max-lg:text-5xl max-md:text-4xl max-sm:text-2xl">Fast charging</h1>
-                <button className="bg-black text-white rounded-full px-6 py-2 text-lg flex items-center mt-10 max-md:text-sm max-sm:mt-6">Shop collection <div className="pt-1"><MdKeyboardArrowRight /></div></button>
+                <button className="bg-black text-white rounded-full px-6 py-2 text-lg flex items-center mt-10 max-md:text-sm max-sm:mt-6">Shop collection <div className=""><MdKeyboardArrowRight /></div></button>
               </div>
             </div>
           </Slider>

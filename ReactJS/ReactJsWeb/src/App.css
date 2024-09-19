@@ -7,18 +7,19 @@
     font-family: "Albert Sans", sans-serif;
 }
 
+
+/* header transition*/
+
+.headertransition{
+    transition: 0.15s ease-out;
+}
+
+
 /* Main Home Page Slider*/
-.mainslider1 , .mainslider2 , .mainslider3{
-    position: relative;
-}
-.slide1 , .slide2 , .slide3{
-    position: absolute;
-    top: 160px;
-    left: 60px;
-}
 .slick-dots{
     bottom: 20px ! important;
 }
+
 /* button effect in slider*/
 .butn::after {
     background: #fff;
@@ -101,3 +102,24 @@
     bottom: 410px ! important;
     left: 630px !important;
  }
+
+
+ /* Allinnerbanner background image */
+ .bginnerbanner{
+    background-image: url(./assets/bginnerbanner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+ 
+
+
+
+ /* on hover scale and transfrom  */
+
+ /* .imghover{
+     transition: transform 0.3s ease-in-out;
+    }
+.imghover img:hover{
+     transform: scale(1.2);
+ } */
