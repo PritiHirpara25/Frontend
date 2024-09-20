@@ -26,8 +26,6 @@ const Blog = () => {
         <MainBlog image={bloggrid7} title={`Something About This Type of Jeans`} />
         <MainBlog image={bloggrid8} title={`One of The Most Iconic Fashion Bloggers`} />
       </div>
-      {/* <div> */}
-      {/* </div> */}
     </div>
   )
 }

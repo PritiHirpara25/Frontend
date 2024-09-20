@@ -43,6 +43,9 @@ const Navbar = () => {
                                     <Link to="/contactus" className='block bg-white p-2'>
                                         ContactUs
                                     </Link>
+                                    <Link to="/checkout" className='block bg-white p-2'>
+                                        CheckOut
+                                    </Link>
                                 </div>
                             </li>
                             <li><Link to="/blog">Blog</Link></li>

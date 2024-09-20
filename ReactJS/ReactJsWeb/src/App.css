@@ -103,6 +103,11 @@
     left: 630px !important;
  }
 
+ .trendingdots .slick-dots{
+    bottom: 470px ! important;
+    left: 630px !important;
+ }
+
 
  /* Allinnerbanner background image */
  .bginnerbanner{

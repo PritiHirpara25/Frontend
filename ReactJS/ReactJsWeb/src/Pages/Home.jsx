@@ -8,6 +8,8 @@ import Discount from "../Components/Discount";
 import Trending from "../Components/Trending";
 import HappyClient from "../Components/HappyClient";
 import Blogs from "../Components/Blogs";
+import Shipping from "../Components/Shipping";
+import Footer from "../Components/Footer";
 
 const Home = () => {
   return (
@@ -19,9 +21,11 @@ const Home = () => {
       <BestDeals />
       <Twocom />
       <Discount />
-      {/* <Trending /> */}
+      <Trending />
       <HappyClient/>
       <Blogs/>
+      <Shipping/>
+      <Footer/>
     </div>
   )
 }
