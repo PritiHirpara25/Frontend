@@ -3,7 +3,7 @@ import check1 from '../assets/check1.jpg'
 import check2 from '../assets/check2.jpg'
 import check3 from '../assets/check3.jpg'
 import check4 from '../assets/check4.jpg'
-import Footer from '../Components/Footer'
+import Footerwhite from '../Components/Footerwhite'
 import Allinnerbanner from '../PageHelpers/Allinnerbanner'
 
 const Checkout = () => {
@@ -12,7 +12,7 @@ const Checkout = () => {
             <div>
                 <Allinnerbanner title='Check Out' Breadcrumbs='checkout' />
             </div>
-            <div className='flex'>
+            <div className='flex mt-20 mb-16'>
                 {/* Billing Details */}
 
                 <div>
@@ -73,7 +73,7 @@ const Checkout = () => {
 
                                     {/* {image1} */}
                                     <div class="pb-4 md:pb-8 w-full md:w-40">
-                                        <img class="w-full hidden md:block h-14 w-12 border rounded-s ml-4" src={check1} alt="tshrt" />
+                                        <img class=" hidden md:block h-16 w-16 border rounded-s ml-4" src={check1} alt="tshrt" />
                                     </div>
                                     <div class="border-b border-gray-200 md:flex-row flex-col flex justify-between items-start w-full pb-8 md:space-y-0 ml-2">
                                         <div class="mr-6">
@@ -92,7 +92,7 @@ const Checkout = () => {
                                 <div class="mt-4 md:mt-6 flex flex-col md:flex-row justify-start items-start md:items-center md:space-x-6 xl:space-x-8 w-full">
 
                                     <div class="pb-4 md:pb-8 w-full md:w-40">
-                                        <img class="w-full hidden md:block h-14 w-12 border rounded-s ml-4" src={check2} alt="sweater" />
+                                        <img class="hidden md:block h-16 w-16 border rounded-s ml-4" src={check2} alt="sweater" />
                                     </div>
                                     <div class="border-b border-gray-200 md:flex-row flex-col flex justify-between items-start w-full pb-8 md:space-y-0 ml-2">
                                         <div class="mr-6">
@@ -109,7 +109,7 @@ const Checkout = () => {
                                 <div class="mt-4 md:mt-6 flex flex-col md:flex-row justify-start items-start md:items-center md:space-x-6 xl:space-x-8 w-full">
 
                                     <div class="pb-4 md:pb-8 w-full md:w-40 ">
-                                        <img class="w-full hidden md:block h-14 w-12 ml-4 border rounded-s" src={check3} alt="tshrt" />
+                                        <img class="hidden md:block h-16 w-16 ml-4 border rounded-s" src={check3} alt="tshrt" />
                                     </div>
                                     <div class="border-b border-gray-200 md:flex-row flex-col flex justify-between items-start w-full pb-8 md:space-y-0 ml-2">
                                         <div class="mr-6">
@@ -127,7 +127,7 @@ const Checkout = () => {
                                 <div class="mt-4 md:mt-6 flex flex-col md:flex-row justify-start items-start md:items-center md:space-x-6 xl:space-x-8 w-full">
 
                                     <div class="pb-4 md:pb-8 w-full md:w-40">
-                                        <img class="w-full hidden md:block h-14 w-12 ml-4 border rounded-s" src={check4} alt="tshir" />
+                                        <img class="hidden md:block h-16 w-16 ml-4 border rounded-s" src={check4} alt="tshir" />
                                     </div>
                                     <div class="border-b border-gray-200 md:flex-row flex-col flex justify-between items-start w-full pb-8 md:space-y-0 ml-2">
                                         <div class="mr-6">
@@ -202,8 +202,9 @@ const Checkout = () => {
                     </div>
                 </div>
             </div>
-            <div>
-                <Footer className='mt-10'/>
+            <div className=''>
+                <hr />
+                <Footerwhite />
             </div>
         </div>
     )

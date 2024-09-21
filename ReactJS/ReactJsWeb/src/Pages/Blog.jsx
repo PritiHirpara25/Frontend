@@ -1,5 +1,6 @@
 import React from 'react'
 import Allinnerbanner from '../PageHelpers/Allinnerbanner'
+import Footerwhite from '../Components/Footerwhite'
 import MainBlog from '../PageHelpers/MainBlog'
 import bloggrid1 from '../assets/blog-grid1.jpg'
 import bloggrid2 from '../assets/blog-grid2.jpg'
@@ -25,6 +26,13 @@ const Blog = () => {
         <MainBlog image={bloggrid6} title={`The Variety of Styles and Prices are Endless`} />
         <MainBlog image={bloggrid7} title={`Something About This Type of Jeans`} />
         <MainBlog image={bloggrid8} title={`One of The Most Iconic Fashion Bloggers`} />
+      </div>
+
+
+      
+      <div className='mt-12'>
+        <hr />
+        <Footerwhite />
       </div>
     </div>
   )

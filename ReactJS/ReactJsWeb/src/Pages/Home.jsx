@@ -9,7 +9,7 @@ import Trending from "../Components/Trending";
 import HappyClient from "../Components/HappyClient";
 import Blogs from "../Components/Blogs";
 import Shipping from "../Components/Shipping";
-import Footer from "../Components/Footer";
+import Footerblack from "../Components/Footerblack";
 
 const Home = () => {
   return (
@@ -25,7 +25,7 @@ const Home = () => {
       <HappyClient/>
       <Blogs/>
       <Shipping/>
-      <Footer/>
+      <Footerblack/>
     </div>
   )
 }

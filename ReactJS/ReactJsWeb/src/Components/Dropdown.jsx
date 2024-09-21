@@ -1,40 +1,33 @@
 import React from 'react'
 // import "remixicon/fonts/remixicon.css";
+import USD from '../assets/asset 0.svg'
 import Eur from "../assets/european-union.png";
 import styles from "../CSS/Dropdown.module.css";
 
-const Dropdown = (props) => {
-  return (
+const Dropdown = () => {
+  return (  
     <div>
-<div className="text-white flex items-center gap-2 relative">
-        <img src={props.img} alt="" className={styles.flag} />
-        <p>{props.name}</p>
-        <i className="ri-arrow-down-s-line text-white"></i>
+      <div className="text-black flex items-center gap-2 relative">
+        <img src={USD} alt="" className={styles.flag} />
+        <p>USD</p>
+        <i className="ri-arrow-down-s-line text-black"></i>
 
         <section className="Dropdown absolute top-[40px] bg-black -right-16 hidden w-52 px-3">
-          <div className="text-white flex items-center gap-2">
+          <div className="text-black flex items-center gap-2">
             <img src={Eur} alt="" className={styles.flag} />
-            <p>EUR</p>
-            <p>|</p>
-            <p>Franch</p>
+            <p> EUR € | France</p>
           </div>
-          <div className="text-white flex items-center gap-2">
+          <div className="text-black flex items-center gap-2">
             <img src={Eur} alt="" className={styles.flag} />
-            <p>EUR</p>
-            <p>|</p>
-            <p>Germany</p>
+            <p> EUR € | Germany</p>
           </div>
-          <div className="text-white flex items-center gap-2">
+          <div className="text-black flex items-center gap-2">
             <img src={Eur} alt="" className={styles.flag} />
-            <p>EUR</p>
-            <p>|</p>
-            <p>Unted States</p>
+            <p>USD $ | United States</p>
           </div>
-          <div className="text-white flex items-center gap-2">
+          <div className="text-black flex items-center gap-2">
             <img src={Eur} alt="" className={styles.flag} />
-            <p>EUR</p>
-            <p>|</p>
-            <p>Vitnam</p>
+            <p>VND ₫ | Vietnam</p>
           </div>
         </section>
       </div>

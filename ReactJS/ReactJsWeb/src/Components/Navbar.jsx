@@ -33,7 +33,7 @@ const Navbar = () => {
                                     {/* <div className='absolute '></div> */}
                                     <div className='pl-2 pt-1.5'><IoIosArrowDown /></div>
                                 </Link>
-                                <div className='absolute hidden group-hover:block z-10 p-2'>
+                                <div className='absolute hidden group-hover:block z-10 p-2 pt-7'>
                                     <Link to="/aboutus" className='block bg-white p-2'>
                                         Aboutus
                                     </Link>
@@ -43,13 +43,10 @@ const Navbar = () => {
                                     <Link to="/contactus" className='block bg-white p-2'>
                                         ContactUs
                                     </Link>
-                                    <Link to="/checkout" className='block bg-white p-2'>
-                                        CheckOut
-                                    </Link>
                                 </div>
                             </li>
                             <li><Link to="/blog">Blog</Link></li>
-                            <li><Link to="/buynow">BuyNow</Link></li>
+                            <li><Link to="/checkout">BuyNow</Link></li>
                         </ul>
                     </nav>
                 </div>

@@ -12,7 +12,7 @@ import footer3 from "../assets/asset 61.png";
 import footer4 from "../assets/asset 62.png";
 import Logo from '../assets/logo-white.svg'
 
-const Footer = () => {
+const Footerblack = () => {
   return (
     <div>
        <footer className="bg-black text-white flex  h-auto   items-center flex-col p-8">
@@ -199,4 +199,4 @@ const Footer = () => {
   )
 }
 
-export default Footer
+export default Footerblack
