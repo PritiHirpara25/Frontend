@@ -51,8 +51,9 @@ const ShopByCategory = () => {
       <div>
         <Slider {...settings} className='container-section'>
           <div>
-            <div className="relative rounded-md m-3 imghover">
-              <img src={screenprotection} className="z-0 h-full w-full rounded-md object-cover " />
+            <div className="relative rounded-md m-3 overflow-hidden">
+              <img src={screenprotection} className="z-0 h-full w-full rounded-md object-cover shopimg" />
+              {/* <img src={screenprotection} className="z-0 h-full w-full rounded-md object-cover hover:scale-125 hover:duration-300 hover:ease" /> */}
               <div className="absolute top-6 left-5 text-left">
                 <h1 className="text-xl font-medium tracking-wide">Screen Protection</h1>
                 <p className='text-[14px] pt-1 text-gray-700 tracking-wider font-thin'>6 items</p>
@@ -63,8 +64,8 @@ const ShopByCategory = () => {
             </div>
           </div>
           <div>
-            <div className="relative rounded-md m-3">
-              <img src={headphones} className="z-0 h-full w-full rounded-md object-cover" />
+            <div className="relative rounded-md m-3 overflow-hidden">
+              <img src={headphones} className="z-0 h-full w-full rounded-md object-cover shopimg" />
               <div className="absolute top-6 left-5 text-left">
                 <h1 className="text-xl font-medium tracking-wide">Headphone</h1>
                 <p className='text-[14px] pt-1 text-gray-700 tracking-wider font-thin'>6 items</p>
@@ -75,8 +76,8 @@ const ShopByCategory = () => {
             </div>
           </div>
           <div>
-            <div className="relative rounded-md m-3">
-              <img src={cables} className="z-0 h-full w-full rounded-md object-cover" />
+            <div className="relative rounded-md m-3 overflow-hidden">
+              <img src={cables} className="z-0 h-full w-full rounded-md object-cover shopimg" />
               <div className="absolute top-6 left-5 text-left">
                 <h1 className="text-xl font-medium tracking-wide">Cables</h1>
                 <p className='text-[14px] pt-1 text-gray-700 tracking-wider font-thin'>6 items</p>
@@ -87,8 +88,8 @@ const ShopByCategory = () => {
             </div>
           </div>
           <div>
-            <div className="relative rounded-md m-3">
-              <img src={adaptors} className="z-0 h-full w-full rounded-md object-cover" />
+            <div className="relative rounded-md m-3 overflow-hidden">
+              <img src={adaptors} className="z-0 h-full w-full rounded-md object-cover shopimg" />
               <div className="absolute top-6 left-5 text-left">
                 <h1 className="text-xl font-medium tracking-wide">Adapters</h1>
                 <p className='text-[14px] pt-1 text-gray-700 tracking-wider font-thin'>6 items</p>
