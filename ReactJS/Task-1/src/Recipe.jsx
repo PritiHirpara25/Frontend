@@ -20,14 +20,13 @@ const Recipe = () => {
         <button className='border-2 border-solid border-black p-2 ml-2 bg-gray-400'>Search</button>
     </div>
 
-    <div>
+    {/* <div>
         {data.map((list) => {
           return
           <p>{list.name}</p>
         }) 
-        
         }
-    </div>
+    </div> */}
     </div>
   )
 }
