@@ -1,13 +1,13 @@
 import { useState } from 'react'
+import UseReducer from './demo'
 import './App.css'
-import Recipe from './RecipeTask'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <Recipe />
+        <UseReducer/>
     </>
   )
 }
