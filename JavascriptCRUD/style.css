@@ -1,0 +1,157 @@
+body {
+    font-family: sans-serif;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+th {
+    background-color: #f0f0f0;
+}
+
+/* input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+} */
+
+/* input name search bar */
+
+.typename {
+    display: flex;
+    justify-content: start;
+    height: 40px;
+}
+
+.inputname {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.searchbtn {
+    background-color: #54b7f5;
+    border: none;
+    height: 40px;
+    width: 40px;
+    color: white;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+/* button {
+    padding: 5px 10px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+} */
+.editbtn {
+    padding: 10px 15px;
+    background-color: #54b7f5;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.fa-pen-to-square, .fa-xmark ,.fa-circle-xmark ,.fa-circle-down,.fa-plus {
+    padding-right: 5px;
+}
+
+
+.deletebtn {
+    padding: 10px 15px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.createrecord {
+    padding: 10px 15px;
+    background-color: rgb(0, 157, 255);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* button:hover {
+    background-color: #45a049;
+} */
+.pagination {
+    /* display: flex; */
+    /* justify-content: center; */
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+.pagination a {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    color: #333;
+    border-radius: 3px;
+    margin-left: -5px;
+}
+
+.pagination a:hover {
+    background-color: #f0f0f0;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.button-container button {
+    margin-left: 10px;
+}
+
+.button-container button:first-child {
+    background-color: #f44336;
+}
+
+.button-container button:nth-child(2) {
+    background-color: #54b7f5;
+}
+
+/* input pagenumber in bottom */
+.pagenum {
+    display: flex;
+    justify-content: end;
+    height: 40px;
+    /* width: 50px;  */
+}
+
+.inputpage {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    /* margin-top: 20px; */
+}
+
+.gobtn {
+    background-color: #54b7f5;
+    border: none;
+    height: 40px;
+    width: 40px;
+    color: white;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    /* margin-top: 20px; */
+}

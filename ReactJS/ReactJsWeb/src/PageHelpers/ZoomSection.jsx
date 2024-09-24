@@ -5,7 +5,7 @@ import ProductSide from "../Components/PoductSide";
 const ZoomSection = () => {
   return (
     <div
-      className="md:px-[18px] grid lg:grid-cols-2 mt-5 gap-5 overflow-x-hidden"
+      className="container-section grid lg:grid-cols-2 mt-5 gap-5 overflow-x-hidden"
       id="Parent"
     >
       <div className=" p-[12px] relative overflow-x-hidden lg:overflow-visible">

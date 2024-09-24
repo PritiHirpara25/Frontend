@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read Records</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <h1>Read Records</h1>
+
+    <div class="button-container">
+        <button class="deletebtn">
+            <i class="fa-regular fa-circle-xmark"></i>
+            Delete Selected
+        </button>
+        <button class="editbtn">
+            <i class="fa-regular fa-circle-down"></i>
+            Export CSV
+        </button>
+        <button class="createrecord">
+            <i class="fa-solid fa-plus"></i>
+            Create Record
+        </button>
+    </div>
+
+    <div class="typename">
+        <input type="text" class="inputname" placeholder="Type a name...">
+        <button class="searchbtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Category</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>Pillow</td>
+                <td>Sleeping well is important.</td>
+                <td>$8.99</td>
+                <td>Personal</td>
+                <td>
+                    <button class="editbtn"><i class="fa-regular fa-pen-to-square"></i>Edit</button>
+                    <button class="deletebtn"><i class="fa-sharp fa-solid fa-xmark"></i>Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>Earphone</td>
+                <td>You need this one if you love music.</td>
+                <td>$9.00</td>
+                <td>Personal</td>
+                <td>
+                    <button class="editbtn"><i class="fa-regular fa-pen-to-square"></i>Edit</button>
+                    <button class="deletebtn"><i class="fa-sharp fa-solid fa-xmark"></i>Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>Mouse</td>
+                <td>Very useful if you love your computer.</td>
+                <td>$11.35</td>
+                <td>Personal</td>
+                <td>
+                    <button class="editbtn"><i class="fa-regular fa-pen-to-square"></i>Edit</button>
+                    <button class="deletebtn"><i class="fa-sharp fa-solid fa-xmark"></i>Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>Trash Can</td>
+                <td>It will help you maintain cleanliness.</td>
+                <td>$3.95</td>
+                <td>Sports</td>
+                <td>
+                    <button class="editbtn"><i class="fa-regular fa-pen-to-square"></i>Edit</button>
+                    <button class="deletebtn"><i class="fa-sharp fa-solid fa-xmark"></i>Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>Eye Glasses</td>
+                <td>It will make you read better.</td>
+                <td>$6.00</td>
+                <td>Sports</td>
+                <td>
+                    <button class="editbtn"><i class="fa-regular fa-pen-to-square"></i>Edit</button>
+                    <button class="deletebtn"><i class="fa-sharp fa-solid fa-xmark"></i>Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div>
+        <div class="pagination">
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">&gt;</a>
+        </div>
+
+        <div class="pagenum">
+            <input type="text" class="inputpage" placeholder="Type page number...">
+            <button class="gobtn">Go</button>
+        </div>
+    </div>
+</body>
+
+</html>

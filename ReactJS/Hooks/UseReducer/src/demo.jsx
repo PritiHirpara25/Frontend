@@ -43,36 +43,42 @@
 import React, { useState } from 'react'
 import { useReducer } from 'react';
 
-// const initialState = 0;
+// const Reducer = (state , action) => {
+//     console.log(state.age , action)
+//     if(action === 'INCREMENTAGE'){
+//       return state.age + 1;
+//     }
+//     else{
+//       return state.age - 1;
+//     }
+//     // return state.age;
+// }
 
-const reducer = (state , action) => {
-    // console.log(state,action)
-    if(action.type === 'INCREMENTAGE'){
-      return state.age + 1;
-    }
-    else{
-      return state.age - 1;
-    }
-    return state;
+const Reducer = (state, action) => {
+  console.log(state.age, action)
+  switch (action) {
+    case 'INCREMENT': return {
+        ...state,
+        age: state.age + 1
+      };
+    case 'DECREMENT': return {
+        ...state,
+        age: state.age - 1
+      };
+    default:
+      return state;
+  }
 }
 
 const demo = () => {
 
-    const [state , dispatch] = useReducer(reducer , {age : 20})
-
-    // const increment = () => {
-    //     setCount(count + 1) ;
-    // }
-
-    // const decrement = () => {
-    //     setCount(count - 1) ;
-    // }
+  const [state, dispatch] = useReducer(Reducer, { age: 20 })
 
   return (
     <div>
-        <p>{state.age}</p>
-        <div onClick={() => dispatch({type:'INCREMENTAGE'})} >INCREMENT AGE</div>
-        <div onClick={() => dispatch({type:'DECREMENTAGE'})} >DECREMENT AGE</div>
+      <p> AGE: {state.age}</p>
+      <div onClick={() => dispatch('INCREMENTAGE')} className='button'>INCREMENT AGE</div>
+      <div onClick={() => dispatch('DECREMENTAGE')} className='button'>DECREMENT AGE</div>
     </div>
   )
 }
