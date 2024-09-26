@@ -12,32 +12,51 @@
 </head>
 
 <body>
+
+    <!-- <header>
+        <div class="logo">
+            <i class="fa-brands fa-apple"></i>
+        </div>
+        <div class="navbar">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Services</a>
+        </div>
+        <div class="icons">
+            <i class="fa-regular fa-heart"></i>
+        </div>
+    </header> -->
+
     <h1>Read Records</h1>
 
-    <div class="button-container">
-        <button class="deletebtn">
-            <i class="fa-regular fa-circle-xmark"></i>
-            Delete Selected
-        </button>
-        <button class="editbtn">
-            <i class="fa-regular fa-circle-down"></i>
-            Export CSV
-        </button>
-        <button class="createrecord">
-            <i class="fa-solid fa-plus"></i>
-            Create Record
-        </button>
+    <div class="topcontent">
+        <div class="typename">
+            <input type="text" class="inputname" placeholder="Type a name...">
+            <button class="searchbtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        <div class="button-container">
+            <button class="deletebtn">
+                <i class="fa-regular fa-circle-xmark"></i>
+                Delete Selected
+            </button>
+            <button class="editbtn">
+                <i class="fa-regular fa-circle-down"></i>
+                Export CSV
+            </button>
+            <button class="createrecord">
+                <i class="fa-solid fa-plus"></i>
+                Create Record
+            </button>
+        </div>
     </div>
 
-    <div class="typename">
-        <input type="text" class="inputname" placeholder="Type a name...">
-        <button class="searchbtn"><i class="fa-solid fa-magnifying-glass"></i></button>
-    </div>
 
     <table>
         <thead>
             <tr>
-                <th></th>
+                <th><input type="checkbox"></th>
                 <th>Name</th>
                 <th>Description</th>
                 <th>Price</th>
@@ -104,7 +123,7 @@
         </tbody>
     </table>
 
-    <div>
+    <div class="bottomcontent">
         <div class="pagination">
             <a href="#">1</a>
             <a href="#">2</a>
