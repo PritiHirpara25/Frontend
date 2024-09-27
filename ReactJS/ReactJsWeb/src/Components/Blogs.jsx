@@ -61,12 +61,12 @@ function Blogs() {
   };
   return (
     <div className="slider-container">
-      <div className='container-section'>
+      <div className='container-section mb-72'>
         <div className='text-[42px] text-center'>Blogs Post</div>
-        <div className='flex'>
-          <Slider {...settings} className='overflow-hidden'>
+        <div className=''>
+          <Slider {...settings} className='overflow-hidden blogspost'>
             <div>
-              <MainBlogs image={blog1} title={`Pop-punk is back in fashion`} />
+              <MainBlogs image={blog1} title={`Pop-punk is back in fashion`} className='border-2 border-solid border-black'/>
             </div>
             <div>
               <MainBlogs image={blog2} title={`The next generation of leather alternatives`} />

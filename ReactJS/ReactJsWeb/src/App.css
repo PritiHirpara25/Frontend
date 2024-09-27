@@ -53,29 +53,120 @@
 }
 /* Shop by Category Component*/
 
+/* Shop By Category */
+.shopCategory .slick-dots{
+    top: -70px;
+    text-align: right;
+    z-index:0;
+}
+.shopCategory .slick-list{
+    z-index:2
+}
+.shopCategory .slick-dots li.slick-active button,
+.shopCategory .slick-dots li.slick-active button:hover,
+.shopCategory .slick-dots li button:hover  {
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.shopCategory .slick-dots li.slick-active button:before,
+.shopCategory .slick-dots li button:hover:before{
+    opacity: 1 !important;
+    font-size:6px;
+    line-height: 22px;
+}
+.shopCategory .slick-dots li button:before{
+    font-size:8px;
+}
+.shopCategoryBtn,
+.shopCategoryBtn:hover{
+    transition:0.5s;
+}
+.shopCategoryBtn .shopCategoryBtnIcon{
+    transition: all 0.3s ease;
+    transform: scale(0);
+    transform-origin: right;
+    width: 0; 
+}
+.shopCategoryBtn:hover .shopCategoryBtnIcon{
+    transform: scale(1);
+    width: fit-content;
+    margin-inline-start: 8px;
+}
+.shopCategory .shopCategoryInfo .shopCategoryImg{
+    transition: all 2.5s ease;
+}
+.shopCategory .shopCategoryInfo:hover .shopCategoryImg{
+    transform:scale(1.1);
+}
+
+
+
+/* Two component Section */
+.twoComponent .twoComponentImg{
+    transition: all 2.5s ease;
+}
+.twoComponent:hover .twoComponentImg{
+    transform:scale(1.1);
+}
+
+
+/* Discount Image Hover */
+.imgHover{
+    position:relative;
+    overflow:hidden;
+    transition:0.5s;
+}
+.imgHover::before{
+    content: "";
+    background:rgba(0,0,0,0.15);
+    height:0;
+    width:50%;
+    position:absolute;
+    top:0;
+    left:0;
+    transition:0.3s;
+}
+.imgHover::after{
+    content: "";
+    background:rgba(0,0,0,0.15);
+    height:0;
+    width:50%;
+    position:absolute;
+    bottom:0;
+    right:0;
+    transition:0.3s;
+}
+.imgHover:hover::before{
+    height:100%;
+    transition:0.3s;
+}
+.imgHover:hover::after{
+   height:100%;
+    transition-delay:0.3s;
+}
+
+
+/* Blogs Post */
+
+.blogspost .slick-dots{
+    /* bottom: 101px !important; */
+}
+
+
+
 .container-section{
     padding: 50px 50px 0 50px;
 }
-/* @media only screen and (min-width: 992px){
-    .container-section {
-        padding: 45px 45px 0 45px;
-    }
-}
-@media only screen and (min-width: 768px) {
-    .container-section{
-        padding: 40px 40px 0 40px;
-    }
-}
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 768px) {
     .container-section{
         padding: 30px 30px 0 30px;
     }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 576px) {
     .container-section{
-        padding: 20px 20px 0 20px;
+        padding: 10px 10px 0 10px;
     }
-} */
+}
 
 
  /* Best Deals Discount Page */
@@ -98,10 +189,6 @@
 
 
 
- .shopbycategory .slick-dots{
-    bottom: 410px ! important;
-    left: 630px !important;
- }
 
  .trendingdots .slick-dots{
     bottom: 470px ! important;
@@ -116,35 +203,6 @@
     background-repeat: no-repeat;
     background-size: cover;
  }
- 
-
-
-
- /* on hover scale and transfrom  */
-
- /* .imghover{
-     transition: transform 0.3s ease-in-out;
-    }
-.imghover img:hover{
-     transform: scale(1.2);
- } */
-
-/* 
- .imghover:hover{
-    transform: scale(1.25);
-    transition-duration: 500ms;
- } */
-
- /* .shopimg:hover{
-    transform: scale(1);
-    -webkit-transition: all 0.7s ease-in-out;
-    -moz-transition: all 0.7s ease-in-out;
-    -ms-transition: all 0.7s ease-in-out;
-    -o-transition: all 0.7s ease-in-out;
-    transition: all 0.7s ease-in-out;
-    text-decoration: none;
-    outline: 0;
- } */
 
 
 
@@ -169,3 +227,18 @@
 
 
 
+/* Accordian */
+.accordian{
+    box-shadow:none !important;
+}
+.accordian .MuiAccordion-heading .MuiButtonBase-root{
+    padding:0;
+}
+.accordian .MuiCollapse-root .MuiCollapse-wrapper .MuiAccordion-region .MuiAccordionDetails-root{
+    padding:8px 0px 10px 0px;
+}
+.accordian .MuiAccordion-heading .MuiAccordionSummary-content{
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom:15px;
+    margin:0;
+}

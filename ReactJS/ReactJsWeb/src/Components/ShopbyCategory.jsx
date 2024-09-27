@@ -44,76 +44,80 @@ const ShopByCategory = () => {
   };
 
   return (
-    <div className="overflow-hidden mt-0 lg:mt-6 shopbycategory">
-      <div className='pl-[50px] pt-[60px]'>
-                 <h1 className='text-5xl'>Shop by category.</h1>
-             </div>
-      <div>
-        <Slider {...settings} className='container-section'>
-          <div>
-            <div className="relative rounded-md m-3 overflow-hidden">
-              <img src={screenprotection} className="z-0 h-full w-full rounded-md object-cover shopimg" />
-              {/* <img src={screenprotection} className="z-0 h-full w-full rounded-md object-cover hover:scale-125 hover:duration-300 hover:ease" /> */}
-              <div className="absolute top-6 left-5 text-left">
-                <h1 className="text-xl font-medium tracking-wide">Screen Protection</h1>
-                <p className='text-[14px] pt-1 text-gray-700 tracking-wider font-thin'>6 items</p>
-              </div>
-              <div className="absolute bottom-5 left-5">
-                <button className="bg-white rounded-full text-[14px] font-medium px-6 py-3">Shop now</button>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div className="relative rounded-md m-3 overflow-hidden">
-              <img src={headphones} className="z-0 h-full w-full rounded-md object-cover shopimg" />
-              <div className="absolute top-6 left-5 text-left">
-                <h1 className="text-xl font-medium tracking-wide">Headphone</h1>
-                <p className='text-[14px] pt-1 text-gray-700 tracking-wider font-thin'>6 items</p>
-              </div>
-              <div className="absolute bottom-5 left-5">
-                <button className="bg-white rounded-full text-[14px] font-medium px-6 py-3">Shop now</button>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div className="relative rounded-md m-3 overflow-hidden">
-              <img src={cables} className="z-0 h-full w-full rounded-md object-cover shopimg" />
-              <div className="absolute top-6 left-5 text-left">
-                <h1 className="text-xl font-medium tracking-wide">Cables</h1>
-                <p className='text-[14px] pt-1 text-gray-700 tracking-wider font-thin'>6 items</p>
-              </div>
-              <div className="absolute bottom-5 left-5">
-                <button className="bg-white rounded-full text-[14px] font-medium px-6 py-3">Shop now</button>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div className="relative rounded-md m-3 overflow-hidden">
-              <img src={adaptors} className="z-0 h-full w-full rounded-md object-cover shopimg" />
-              <div className="absolute top-6 left-5 text-left">
-                <h1 className="text-xl font-medium tracking-wide">Adapters</h1>
-                <p className='text-[14px] pt-1 text-gray-700 tracking-wider font-thin'>6 items</p>
-              </div>
-              <div className="absolute bottom-5 left-5">
-                <button className="bg-white rounded-full text-[14px] font-medium px-6 py-3">Shop now</button>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div className="relative rounded-md m-3">
-              <img src={docks} className="z-0 h-full w-full rounded-md object-cover" />
-              <div className="absolute top-6 left-5 text-left">
-                <h1 className="text-xl font-medium tracking-wide">Docks and Hubs.</h1>
-                <p className='text-[14px] pt-1 text-gray-700 tracking-wider font-thin'>6 items</p>
-              </div>
-              <div className="absolute bottom-5 left-5">
-                <button className="bg-white rounded-full text-[14px] font-medium px-6 py-3">Shop now</button>
-              </div>
-            </div>
-          </div>
-        </Slider>
-      </div>
+    <div className="container-section mt-0 lg:mt-6 pb-10 md:pb-3 xl:pb-0 overflow-hidden">
+    <div>
+      <h1 className="title py-4 md:py-8 lg:py-12">Shop by category.</h1>
     </div>
+    <div className="slider-container shopCategory">
+      <Slider {...settings}>
+        <div>
+            <div className="shopCategoryInfo overflow-hidden relative rounded-md m-3">
+                <img src={screenprotection} className="shopCategoryImg z-0 h-full w-full rounded-md object-cover"/>
+                <div className="absolute top-7 left-6 text-left">
+                    <h1 className="text-md lg:text-lg font-medium tracking-wide mb-1">Screen Protection</h1>
+                    <p className='text-[13px] text-gray-700 tracking-wider font-thin'>6 items</p>
+                </div>
+                <div className="flex items-center absolute bottom-7 left-6 text-left bg-white rounded-full px-6 py-3 shopCategoryBtn hover:bg-black hover:text-white">
+                    <button className="text-sm">Shop now </button>
+                    <p className='shopCategoryBtnIcon text-white'><GoArrowUpRight /></p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div className="shopCategoryInfo overflow-hidden relative rounded-md m-3">
+                <img src={headphones} className="shopCategoryImg z-0 h-full w-full rounded-md object-cover"/>
+                <div className="absolute top-7 left-6 text-left">
+                    <h1 className="text-md lg:text-lg font-medium tracking-wide mb-1">Headphone</h1>
+                    <p className='text-[13px] text-gray-700 tracking-wider font-thin'>6 items</p>
+                </div>
+                <div className="flex items-center absolute bottom-7 left-6 text-left bg-white rounded-full px-6 py-3 shopCategoryBtn hover:bg-black hover:text-white">
+                    <button className="text-sm">Shop now </button>
+                    <p className='shopCategoryBtnIcon text-white'><GoArrowUpRight /></p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div className="shopCategoryInfo overflow-hidden relative rounded-md m-3">
+                <img src={cables} className="shopCategoryImg z-0 h-full w-full rounded-md object-cover"/>
+                <div className="absolute top-7 left-6 text-left">
+                    <h1 className="text-md lg:text-lg font-medium tracking-wide mb-1">Cables</h1>
+                    <p className='text-[13px] text-gray-700 tracking-wider font-thin'>6 items</p>
+                </div>
+                <div className="flex items-center absolute bottom-7 left-6 text-left bg-white rounded-full px-6 py-3 shopCategoryBtn hover:bg-black hover:text-white">
+                    <button className="text-sm">Shop now </button>
+                    <p className='shopCategoryBtnIcon text-white'><GoArrowUpRight /></p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div className="shopCategoryInfo overflow-hidden relative rounded-md m-3">
+                <img src={adaptors} className="shopCategoryImg z-0 h-full w-full rounded-md object-cover"/>
+                <div className="absolute top-7 left-6 text-left">
+                    <h1 className="text-md lg:text-lg font-medium tracking-wide mb-1">Adapters</h1>
+                    <p className='text-[13px] text-gray-700 tracking-wider font-thin'>6 items</p>
+                </div>
+                <div className="flex items-center absolute bottom-7 left-6 text-left bg-white rounded-full px-6 py-3 shopCategoryBtn hover:bg-black hover:text-white">
+                    <button className="text-sm">Shop now </button>
+                    <p className='shopCategoryBtnIcon text-white'><GoArrowUpRight /></p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div className="shopCategoryInfo overflow-hidden relative rounded-md m-3">
+                <img src={docks} className="shopCategoryImg z-0 h-full w-full rounded-md object-cover"/>
+                <div className="absolute top-7 left-6 text-left">
+                    <h1 className="text-md lg:text-lg font-medium tracking-wide mb-1">Docks and hubs</h1>
+                    <p className='text-[13px] text-gray-700 tracking-wider font-thin'>6 items</p>
+                </div>
+                <div className="flex items-center absolute bottom-7 left-6 text-left bg-white rounded-full px-6 py-3 shopCategoryBtn hover:bg-black hover:text-white">
+                    <button className="text-sm">Shop now </button>
+                    <p className='shopCategoryBtnIcon text-white'><GoArrowUpRight /></p>
+                </div>
+            </div>
+        </div>
+      </Slider>
+    </div>
+  </div>
   )
 }
 

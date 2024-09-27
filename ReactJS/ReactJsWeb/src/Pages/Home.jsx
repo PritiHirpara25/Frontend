@@ -20,7 +20,7 @@ const Home = () => {
       <ShopbyCategory />
       <BestDeals />
       <Twocom />
-      {/* <Discount /> */}
+      <Discount />
       <Trending />
       <HappyClient/>
       <Blogs/>
