@@ -40,7 +40,7 @@
 // <h1 id=​"firstHeading" class=​"firstHeading mw-first-heading">
 //     ​<h1>​Hello​</h1>
 // ​</h1>
-​
+
 // document.getElementById('firstHeading').style.color = 'white'
 // 'white'
 
@@ -49,8 +49,11 @@
 
 /* difference between innerText , textContent and innerHTML */
 
-// document.getElementById('firstHeading').innerText
-// 'Hello'
+let add = document.getElementById('firstheading')
+// add.innerText 
+// add.innerContent = 'Hello'
+// add.innerHTML = 'Hello'
+console.log(add);
 
 // document.getElementById('firstHeading').textContent
 // 'Hello'
