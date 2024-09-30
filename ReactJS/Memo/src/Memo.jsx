@@ -7,9 +7,13 @@ const Memo = () => {
   
   const [count, setCount] = useState(0)
 
-  const Update = () => {
+  // const Update = () => {
+  //   setAdd(add + 1);
+  // };  
+
+   const newUpdate (const Update = () => {
     setAdd(add + 1);
-  };  
+  });  
 
   return (
     <div>

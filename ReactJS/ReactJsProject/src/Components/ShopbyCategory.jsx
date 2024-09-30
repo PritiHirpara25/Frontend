@@ -46,7 +46,7 @@ const ShopByCategory = () => {
   return (
     <div className="container-section mt-0 lg:mt-6 pb-10 md:pb-3 xl:pb-0 overflow-hidden">
     <div>
-      <h1 className="title py-4 md:py-8 lg:py-12">Shop by category.</h1>
+      <h1 className="text-5xl py-4 md:py-8 lg:py-12">Shop by category.</h1>
     </div>
     <div className="slider-container shopCategory">
       <Slider {...settings}>

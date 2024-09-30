@@ -2,7 +2,7 @@ import React from 'react'
 import { CiFacebook } from "react-icons/ci";
 import { FaInstagram, FaTiktok, FaPinterestSquare } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import Dropdown from "../Components/Dropdown";
+// import Dropdown from "../Components/Dropdown";
 import Eur from "../assets/european-union.png";
 import visa from "../assets/asset 58.png";
 import footer1 from "../assets/asset 59.png";
@@ -168,13 +168,13 @@ const Footerwhite = () => {
               </button>
             </div>
             {/* Dropdown */}
-            <div className="flex justify-around">
+            {/* <div className="flex justify-around">
               <Dropdown name="EUR" img={Eur} />
               <div className="text-black flex items-center gap-2 relative">
                 <p>ENGLISH</p>
                 <i className="ri-arrow-down-s-line text-black"></i>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

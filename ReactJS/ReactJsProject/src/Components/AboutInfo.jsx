@@ -16,7 +16,7 @@ const AboutInfo = () => {
 
       <hr />
 
-      <div className='containerSection py-6 md:py-10 lg:py-16 grid lg:grid-cols-2 grid-cols-1 gap-5 items-center overflow-hidden'>
+      <div className='container-section py-6 md:py-10 lg:py-16 grid lg:grid-cols-2 grid-cols-1 gap-5 items-center overflow-hidden'>
         <div className='imgHover'>
           <img src={aboutImg1} alt="" className='h-full w-full object-cover' />
         </div>
@@ -28,7 +28,7 @@ const AboutInfo = () => {
         </div>
       </div>
 
-      <div className='containerSection py-0 md:py-0 lg:py-16 grid lg:grid-cols-2 grid-cols-1 gap-5 items-center overflow-hidden'>
+      <div className='container-section py-0 md:py-0 lg:py-16 grid lg:grid-cols-2 grid-cols-1 gap-5 items-center overflow-hidden'>
         <div className='w-[100%] pb-2 lg:pb-0'>
           <div className='w-[100%] lg:w-[70%] mx-auto'>
             <h1 className='text-3xl mb-4'>Our mission</h1>

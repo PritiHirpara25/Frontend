@@ -7,20 +7,20 @@ import Footerwhite from '../Components/Footerwhite'
 
 const AboutUs = () => {
   return (
-      <div>
-        <div className='flex justify-center items-center h-[80vh] md:h-[90vh] lg:h-screen containerSection' style={{ backgroundImage: `url(${aboutusbanner})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-          <p className='text-white text-3xl md:text-5xl xl:text-7xl text-center px-0 md:px-18 lg:px-24'>Empowering women to achieve fitness goals with style</p>
-        </div>
+    <div>
+      <div className='flex justify-center items-center h-[80vh] md:h-[90vh] lg:h-screen container-section' style={{ backgroundImage: `url(${aboutusbanner})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <p className='text-white text-3xl md:text-5xl xl:text-7xl text-center px-0 md:px-18 lg:px-24'>Empowering women to achieve fitness goals with style</p>
+      </div>
       <div>
         <AboutInfo />
       </div>
       <div>
-        <OurPriority/>
+        <OurPriority />
       </div>
       <div>
-        <AboutShopGram/>
+        <AboutShopGram />
       </div>
-      <div className=''>
+      <div>
         <hr />
         <Footerwhite />
       </div>

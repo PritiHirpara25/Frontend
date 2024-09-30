@@ -11,14 +11,9 @@ import { FaShareAlt } from "react-icons/fa";
 import { FaShip } from "react-icons/fa6";
 import { GiReturnArrow } from "react-icons/gi";
 import { MdOutlineSecurity } from "react-icons/md";
-// import InnerBanner from "../helper/InnerBanner";
 const ProductSide = () => {
   return (
     <div>
-      {/* <div>
-        <InnerBanner title="Blog" Breadcrumbs="Fashion" />
-      </div> */}
-
       <div className="px-[15px] md:px-[30px] py-2 overflow-x-hidden">
         <h2 className="text-[26px]  mb-[20px]">Cotton jersey top</h2>
         <div className="flex items-center gap-2 mb-[18px]">
