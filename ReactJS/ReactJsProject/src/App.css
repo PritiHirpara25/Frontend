@@ -99,7 +99,13 @@
     transform:scale(1.1);
 }
 
-
+/* blog page img hover effect */
+.imageinfo .imghover{
+    transition: all 2.5s ease;
+}
+.imageinfo:hover .imghover{
+    transform: scale(1.1);
+}
 
 /* Two component Section */
 .twoComponent .twoComponentImg{

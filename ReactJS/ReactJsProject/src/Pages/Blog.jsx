@@ -11,7 +11,7 @@ import bloggrid6 from '../assets/blog-grid6.jpg'
 import bloggrid7 from '../assets/blog-grid7.jpg'
 import bloggrid8 from '../assets/blog-grid8.jpg'
 
-const blogData = [
+export const blogData = [
   { image: bloggrid1, title: 'The next generation of leather alternatives' },
   { image: bloggrid2, title: 'An Exclusive Clothing Collaboration' },
   { image: bloggrid3, title: 'Hello Fashion by Colombian-American' },
