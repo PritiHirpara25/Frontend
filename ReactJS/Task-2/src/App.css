@@ -1,0 +1,54 @@
+.Toggle {
+    background-color: #f0f4f8; /* Light background for the toggle container */
+    border: 1px solid #ccc; /* Subtle border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Inner spacing */
+    max-width: 400px; /* Limit the width */
+    margin: 20px auto; /* Center the container */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    text-align: center; /* Center text inside the container */
+}
+
+.Toggle h1 {
+    font-size: 24px; /* Font size for the heading */
+    margin-bottom: 16px; /* Space below the heading */
+    color: #333; /* Darker text color */
+}
+
+.Toggle {
+    background-color: #f0f4f8; /* Light background for the toggle container */
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    padding: 20px; 
+    max-width: 400px;
+    margin: 20px auto; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    text-align: center; 
+}
+
+.Toggle h1 {
+    font-size: 24px; 
+    margin-bottom: 16px; 
+    color: #333; 
+}
+
+.Toggle button {
+    padding: 10px 20px; 
+    font-size: 16px; 
+    border: none;
+    border-radius: 4px; 
+    background-color: #007bff; 
+    color: white; 
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}
+
+.Toggle button:hover {
+    background-color: #0056b3; 
+}
+
+.Toggle p {
+    font-size: 18px; 
+    margin-top: 16px; 
+    color: #555; 
+}
