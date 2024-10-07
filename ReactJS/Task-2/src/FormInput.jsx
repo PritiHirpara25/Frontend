@@ -72,13 +72,13 @@ const FormInput = () => {
   };
 
   return (
-    <div>
-      <h1 className="text-4xl p-4 m-4 ">Form With Multiple Data</h1>
+    <div className='flex flex-col items-center px-5 '>
+      <h1 className="text-4xl p-4 m-4 shadow ">Form With Multiple Data</h1>
       <fieldset className='border-2 border-black'>
         <legend>Form</legend>
-      <form onSubmit={handleSubmit} className='pl-2'>
+      <form onSubmit={handleSubmit} className='pr-3 bg-yellow-100'>
         <div>
-          <label className="p-2 text-red-700 text-2xl m-4">First Name:</label>
+          <label className=" text-red-700 text-2xl m-4">First Name:</label>
           <input
             className="border-2"
             type="text"
@@ -88,7 +88,7 @@ const FormInput = () => {
           />
         </div>
         <div>
-          <label className="p-2 text-red-700 text-2xl m-4">Last Name:</label>
+          <label className=" text-red-700 text-2xl m-4">Last Name:</label>
           <input
             className="border-2"
             type="text"
@@ -98,7 +98,7 @@ const FormInput = () => {
           />
         </div>
         <div>
-          <label className="p-2 text-red-700 text-2xl m-4">Email:</label>
+          <label className=" text-red-700 text-2xl m-4">Email:</label>
           <input
             className="border-2"
             type="email"
@@ -108,7 +108,7 @@ const FormInput = () => {
           />
         </div>
         <div>
-          <label className="p-2 text-red-700 text-2xl m-4">Phone:</label>
+          <label className=" text-red-700 text-2xl m-4">Phone:</label>
           <input
             className="border-2"
             type="tel"
@@ -118,7 +118,7 @@ const FormInput = () => {
           />
         </div>
         <div>
-          <label className="p-2 text-red-700 text-2xl m-4">Address:</label>
+          <label className=" text-red-700 text-2xl m-4">Address:</label>
           <input
             className="border-2"
             type="text"
@@ -128,7 +128,7 @@ const FormInput = () => {
           />
         </div>
         <div>
-          <label className="p-2 text-red-700 text-2xl m-4">City:</label>
+          <label className=" text-red-700 text-2xl m-4">City:</label>
           <input
             className="border-2"
             type="text"
@@ -138,7 +138,7 @@ const FormInput = () => {
           />
         </div>
         <div>
-          <label className="p-2 text-red-700 text-2xl m-4">ZIP Code:</label>
+          <label className=" text-red-700 text-2xl m-4">ZIP Code:</label>
           <input
             className="border-2"
             type="text"
@@ -149,7 +149,7 @@ const FormInput = () => {
         </div>
         {/* Radio Buttons */}
         <div>
-          <label className="p-2 text-red-700 text-2xl m-4">
+          <label className=" text-red-700 text-2xl m-4">
             Select Gender:
           </label>
           <div>
@@ -189,7 +189,7 @@ const FormInput = () => {
 
         {/* Checkboxes */}
         <div>
-          <label className="p-2 text-red-700 text-2xl m-4">
+          <label className=" text-red-700 text-2xl m-4">
             Select Your Interests:
           </label>
           <div>

@@ -20,14 +20,15 @@ const StatewithArray = () => {
 
 
   return (
-    <div>
-      <h1>Array State Example</h1>
-      <button onClick={addItem}>Add Item</button>
+    <div className='bg-zinc-200 border-2 border-black flex flex-col items-center py-3 mx-96 mt-56'>
+      <h1>State With Array</h1>
+      <button onClick={addItem} className='border-2 border-transparent bg-zinc-400 px-2 rounded-md mt-2'>Add Items</button>
 
       <ul>
         {items.map((item, index) => (
-          <li key={index}>
-            {item} <button onClick={() => removeItem(index)}>Remove</button>
+          <li key={index} className='border-2 border-black mt-2 rounded-sm'>
+             <p className='bg-zinc-300 flex justify-center'>{item}</p>
+             <button onClick={() => removeItem(index)} className='px-2'>Click for Remove</button>
           </li>
         ))}
       </ul>

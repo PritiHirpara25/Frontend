@@ -31,7 +31,7 @@ const FormCom = () => {
   };
 
   return (
-    <div>
+    <div className="border-2 border-black ">
       <h1 className="text-4xl p-4 m-4 ">Simple Form</h1>
       <form onSubmit={handleSubmit}>
         <div>
@@ -66,9 +66,15 @@ const FormCom = () => {
         </div>
         <button
           type="submit"
-          className="bg-purple-700 px-6 py-2 rounded-2xl mt-8"
+          className="bg-purple-700 px-6 py-2 rounded-2xl mt-8 ml-8 mb-3"
         >
           Submit
+        </button>
+        <button
+          type="reset"
+          className="bg-purple-700 px-6 py-2 rounded-2xl mt-8 ml-8 mb-3"
+        >
+          Reset
         </button>
       </form>
     </div>

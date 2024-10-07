@@ -21,7 +21,7 @@ const ObjState = () => {
 
 
     return (
-        <div>
+        <div className='border-2 flex flex-col items-center mx-96 mt-48 py-5 bg-green-200'>
             <h1>Object State Example</h1>
 
             <p>Name: {user.name}</p>
@@ -33,7 +33,7 @@ const ObjState = () => {
                 placeholder="Enter your name"
                 className='border-2 border-solid border-black'
             />
-            
+
             <p>Age: {user.age}</p>
             <input
                 type="number"
@@ -55,6 +55,7 @@ const ObjState = () => {
             />
 
             <h2>User Information:</h2>
+            <textarea name="" id="" className='border-2 border-black'></textarea>
 
         </div>
     );

@@ -16,16 +16,16 @@ function App() {
 
   return (
     <>
-      {/* <Task/> */}
+      <Task/>
       {/* <NestingCom/> */}
       {/* <FormCom/> */}
       {/* <ListRenderingArray/> */}
       {/* <MultipleState/> */}
-    <FormInput/>
-    {/* <ToggleState/> */}
-    {/* <ObjState/> */}
-    {/* <StatewithArray/> */}
-    {/* <Counter/> */}
+      {/* <FormInput/> */}
+      {/* <ToggleState/> */}
+      {/* <ObjState/> */}
+      {/* <StatewithArray/> */}
+      {/* <Counter/> */}
     </>
   )
 }
