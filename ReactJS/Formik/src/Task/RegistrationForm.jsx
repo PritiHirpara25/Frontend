@@ -18,7 +18,7 @@ const RegistrationForm = () => {
     }
 
     const validationSchema = Yup.object({
-        userid: Yup.string().required('Required'),
+        userid: Yup.string().required('Required and must be of length 5 to 12'),
         password: Yup.string().required('Required'),
         name: Yup.string().required('Required'),
         address: Yup.string().required('Required'),
@@ -41,19 +41,35 @@ const RegistrationForm = () => {
                 <Form action="">
                     <label htmlFor="userid">User id:</label>
                     <Field type="text" name='userid' id='userid' className='border-2 border-solid w-40' /><br />
-                    <ErrorMessage name='userid'></ErrorMessage>
+                    <div className=''>
+                        <ErrorMessage name="userid" >
+                            {msg => <div className='text-red-500 font-semibold'>{msg}</div>}
+                        </ErrorMessage>
+                    </div>
 
                     <label htmlFor="password">Password:</label>
                     <Field type="password" name='password' id='password' className='border-2 border-solid w-40' /><br />
-                    <ErrorMessage name='password'></ErrorMessage>
+                    <div className=''>
+                        <ErrorMessage name="password" >
+                            {msg => <div className='text-red-500 font-semibold'>{msg}</div>}
+                        </ErrorMessage>
+                    </div>
 
                     <label htmlFor="name">Name:</label>
                     <Field type="text" name='name' id='name' className='border-2 border-solid w-40' /><br />
-                    <ErrorMessage name='name'></ErrorMessage>
+                    <div className=''>
+                        <ErrorMessage name="name" >
+                            {msg => <div className='text-red-500 font-semibold'>{msg}</div>}
+                        </ErrorMessage>
+                    </div>
 
                     <label htmlFor="address">Address:</label>
                     <Field type="address" name='address' id='address' className='border-2 border-solid w-40' /><br />
-                    <ErrorMessage name='address'></ErrorMessage>
+                    <div>
+                        <ErrorMessage name="address" >
+                            {msg => <div className='text-red-500 font-semibold'>{msg}</div>}
+                        </ErrorMessage>
+                    </div>
 
                     <label htmlFor="address">Country:</label>
                     <select name="country" id="country">
@@ -62,29 +78,53 @@ const RegistrationForm = () => {
                         <option value="paris">Paris</option>
                         <option value="filipines">Filipines</option>
                     </select><br />
-                    <ErrorMessage name='country'></ErrorMessage>
+                    <div>
+                        <ErrorMessage name="country" >
+                            {msg => <div className='text-red-500 font-semibold'>{msg}</div>}
+                        </ErrorMessage>
+                    </div>
 
                     <label htmlFor="zipcode">ZIP Code:</label>
                     <Field type="number" name='zipcode' id='zipcode' className='border-2 border-solid w-40' /><br />
-                    <ErrorMessage name='ZIPCode'></ErrorMessage>
+                    <div className=''>
+                        <ErrorMessage name="zipcode" >
+                            {msg => <div className='text-red-500 font-semibold'>{msg}</div>}
+                        </ErrorMessage>
+                    </div>
 
                     <label htmlFor="email">Email:</label>
                     <Field type="email" name='email' id='email' className='border-2 border-solid w-40' /><br />
-                    <ErrorMessage name='email'></ErrorMessage>
+                    <div className=''>
+                        <ErrorMessage name="email" >
+                            {msg => <div className='text-red-500 font-semibold'>{msg}</div>}
+                        </ErrorMessage>
+                    </div>
 
                     <label htmlFor="sex">Sex:</label>
                     <input type="radio" name='sex' id='sex' />Male
                     <input type="radio" name='sex' id='sex' />Female <br />
-                    <ErrorMessage name='sex'></ErrorMessage>
+                    <div className=''>
+                        <ErrorMessage name="sex" >
+                            {msg => <div className='text-red-500 font-semibold'>{msg}</div>}
+                        </ErrorMessage>
+                    </div>
 
                     <label htmlFor="language">Language:</label>
                     <input type="checkbox" name='language' id='language' />English
                     <input type="checkbox" name='language' id='language' />Non-English <br />
-                    <ErrorMessage name='language'></ErrorMessage>
+                    <div className=''>
+                        <ErrorMessage name="language" >
+                            {msg => <div className='text-red-500 font-semibold'>{msg}</div>}
+                        </ErrorMessage>
+                    </div>
 
                     <label htmlFor="about">About:</label>
                     <textarea name="about" id="about" cols='30' rows='5' className='border-2 border-solid'></textarea><br />
-                    <ErrorMessage name='about'></ErrorMessage>
+                    <div className=''>
+                        <ErrorMessage name="about" >
+                            {msg => <div className='text-red-500 font-semibold'>{msg}</div>}
+                        </ErrorMessage>
+                    </div>
 
                     <button type='submit' className='bg-gray-400 p-1.5 rounded-xl border-1 border-solid'>Submit</button>
 

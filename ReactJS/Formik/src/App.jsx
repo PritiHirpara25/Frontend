@@ -19,8 +19,8 @@ function App() {
        {/* <Validateschema/> */}
        {/* <YupCom/> */}
        {/* <StudentsDetails/> */}
-       {/* <RegistrationForm/> */}
-       <SignupForm/>
+       <RegistrationForm/>
+       {/* <SignupForm/> */}
     </>
   )
 }
