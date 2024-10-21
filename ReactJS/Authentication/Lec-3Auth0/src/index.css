@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .btn{
+        @apply bg-teal-700 text-white font-semibold p-1.5 rounded
+    }
+}
