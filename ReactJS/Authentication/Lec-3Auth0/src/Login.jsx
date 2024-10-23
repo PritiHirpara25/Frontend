@@ -1,37 +1,52 @@
 import React from 'react'
 import * as Yup from 'yup'
-import { Formik, Form, Field , ErrorMessage } from 'formik'
+import { Formik, Form, Field, ErrorMessage } from 'formik'
+import { useNavigate } from 'react-router-dom'
+import { getFormDataFromLocalStorage } from './Auth/Auth'
 
 const Login = () => {
+
+  const navigate = useNavigate()
 
   const initialValues = {
     email: '',
     password: ''
   }
 
-  const validationSchema = Yup.object({
-     email: Yup.string().email('Invalid Email').required('Required'),
-     password: Yup.string().min(5).max(12, 'Password must be at least 12 Character').required('Required')
-   }
+  const validationSchema = Yup.object().shape({
+    email: Yup.string().email('Invalid Email').required('Required'),
+    password: Yup.string().min(5).max(12, 'Password must be at least 12 Character').required('Required')
+  }
   )
-    
 
-  const handleSubmit = (values) => {
-
+  const handleSubmit = (values, { isSubmitting, isError }) => {
+    const user = getFormDataFromLocalStorage(values.email)
+    if (user && user.password === values.password) {
+      localStorage.setItem('authenticate', true)
+      navigate('/')
+    } else {
+      isError({ password: "Invalid Email and password" })
+    }
+    isSubmitting(false)
+    // console.log(values)
   }
 
   return (
-    <div>
-      <Formik initialValues={initialValues} validationSchema={validationSchema} onsubmit={handleSubmit}>
-        <Form action="" className='border-2 border-soild border-black w-fit p-4'>
-          <label htmlFor="">Email:</label>
-          <Field type="email" name='email' className='border-2 border-solid border-black m-2'></Field>
-          <ErrorMessage name='email' component='div' className='text-red-600'></ErrorMessage><br />
-          <label htmlFor="">Password:</label>
-          <Field type="Password" name='password' className='border-2 border-solid border-black m-2'></Field>
-          <ErrorMessage name='password' component='div' className='text-red-600'></ErrorMessage><br />
-          <button className='btn m-2' type='submit'>Login</button>
-        </Form>
+    <div className='flex justify-center items-center mt-52'>
+      <Formik initialValues={initialValues} validationSchema={validationSchema} onSubmit={handleSubmit}>
+        {
+          ({isSubmitting}) => (
+            <Form action="" className='border-4 border-soild border-teal-700 w-fit p-6 bg-orange-200'>
+              <label htmlFor="">Email:</label>
+              <Field type="email" name='email' className='m-4 p-1'></Field>
+              <ErrorMessage name='email' component='div' className='text-red-600'><p>invalid email</p></ErrorMessage><br />
+              <label htmlFor="">Password:</label>
+              <Field type="Password" name='password' className='m-4 p-1'></Field>
+              <ErrorMessage name='password' component='div' className='text-red-600'></ErrorMessage><br />
+              <button className='btn m-4 text-orange-200' type='submit' disabled={isSubmitting}>Login</button>
+            </Form>
+          )
+        }
       </Formik>
     </div>
   )

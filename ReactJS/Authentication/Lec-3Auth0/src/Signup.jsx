@@ -1,8 +1,12 @@
 import React from 'react'
 import * as Yup from 'yup'
 import { Formik, Form, Field , ErrorMessage } from 'formik'
+import { useNavigate } from 'react-router-dom'
+import { formDataFromLocalStorage } from './Auth/Auth'
 
 const Signup = () => {
+
+  const navigate = useNavigate();
 
   const initialValues = {
     username:'',
@@ -17,27 +21,29 @@ const Signup = () => {
   }) 
 
   const handleSubmit = (values) => {
+    formDataFromLocalStorage(values)
+    navigate('/login')
     console.log(values)
   }
 
   return (
-    <div>
+    <div className='flex justify-center items-center mt-52'>
       <Formik initialValues={initialValues} validationSchema={validationSchema} onSubmit={handleSubmit}>
-        <Form action="" className='border-2 border-soild border-black w-fit p-4'>
+        <Form action="" className='border-4 border-soild border-teal-700 w-fit p-6 bg-orange-200'>
         <label htmlFor="">Username:</label>
 
-          <Field type="text" name='username' className='border-2 border-solid border-black m-2'></Field>
-          <ErrorMessage name='username' component='p' className='text-red-600'></ErrorMessage><br />
+          <Field type="text" name='username' className='m-4 p-1'></Field>
+          <ErrorMessage name='username' component='div' className='text-red-600'></ErrorMessage><br />
 
           <label htmlFor="">Email:</label>
-          <Field type="email" name='email' className='border-2 border-solid border-black m-2'></Field>
+          <Field type="email" name='email' className='m-4 p-1'></Field>
           <ErrorMessage name='email' component='div' className='text-red-600'></ErrorMessage><br />
 
           <label htmlFor="">Password:</label>
-          <Field type="Password" name='password' className='border-2 border-solid border-black m-2'></Field>
+          <Field type="Password" name='password' className='m-4 p-1'></Field>
           <ErrorMessage name='password' component='div' className='text-red-600'></ErrorMessage><br />
 
-          <button className='btn m-2' type='submit'>Signup</button>
+          <button className='btn m-4 text-orange-200' type='submit'>Signup</button>
         </Form>
       </Formik>
     </div>

@@ -9,6 +9,7 @@ import Navbar from '../Components/Navbar'
 import Profile from './Profile'
 import { createBrowserRouter, RouterProvider, Route } from 'react-router-dom'
 import Blog from './Blog'
+
 const List = createBrowserRouter([
     {
         path:'/',
