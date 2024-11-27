@@ -1,12 +1,20 @@
 import { BUY_CHOCO } from "./Constant";
 import { BUY_TOYS } from "./Constant";
 
-let initialValue = {
-    numOfChoco : 20,
+// let initialValue = {
+//     numOfChoco : 20,
+//     numOfToys : 30
+// }
+
+let initialValueChoco = {
+    numOfChoco : 20
+}
+
+let initialValueToys = {
     numOfToys : 30
 }
 
-const ChocoReducer = (state = initialValue , action) => {
+export const ChocoReducer = (state = initialValueChoco , action) => {
     switch(action.type){
         case BUY_CHOCO: 
         console.log('ChocoReducer Called');
@@ -14,6 +22,12 @@ const ChocoReducer = (state = initialValue , action) => {
             ...state,
             numOfChoco:state.numOfChoco - 1
         }
+        default:return state
+    }
+}
+
+export const ToysReducer = (state = initialValueToys , action) => {
+    switch(action.type){
         case BUY_TOYS: 
         console.log('ChocoReducer Called');
         return{
@@ -24,4 +38,3 @@ const ChocoReducer = (state = initialValue , action) => {
     }
 }
 
-export default ChocoReducer

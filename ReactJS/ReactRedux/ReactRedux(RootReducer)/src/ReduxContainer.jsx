@@ -4,11 +4,13 @@ import { useSelector , useDispatch } from "react-redux";
 
 const ReduxContainer = () => {
 
-    const data1 = useSelector(state => state.numOfChoco)
-    const data2 = useSelector(state => state.numOfToys)
+    const data1 = useSelector(state => state.choco.numOfChoco)
+    const data2 = useSelector(state => state.toys.numOfToys)
+    // const data = useSelector(state => state)
 
     console.log('reduxcontainer data' , data1)
     console.log('reduxcontainer data' , data2)
+    // console.log('StoreData' , data);
 
     const dispatch = useDispatch()
 
