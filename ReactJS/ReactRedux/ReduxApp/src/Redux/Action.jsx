@@ -1,10 +1,10 @@
 import { ADD_TO_CART , REMOVE_TO_CART , EMPTY_CART , CART_TO_WISHLIST , ADD_TO_WISHLIST , REMOVE_TO_WISHLIST , EMPTY_WISHLIST , WISHLIST_TO_CART } from "./Constant";
 
-export const add_to_cart = () => {
+export const add_to_cart = (cartdata) => {
     console.log('add_to_cart action called');
     return{
         type:ADD_TO_CART,
-        info:'add_to_cart'
+        payload:cartdata
     }
 }
 
@@ -24,11 +24,12 @@ export const empty_cart = () => {
     }
 }
 
-export const cart_to_wishlist = () => {
+export const cart_to_wishlist = (cartdata) => {
     console.log('cart_to_wishlist action called');
     return{
         type:CART_TO_WISHLIST,
-        info:'cart_to_wishlist'
+        info:'cart_to_wishlist',
+        payload:cartdata
     }
 }
 

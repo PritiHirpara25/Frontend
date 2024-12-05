@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components{
+    .btn{
+        @apply bg-green-300 m-2 p-2 hover:border-4 border-green-500  hover:bg-black hover:text-green-300
+    }
+}
