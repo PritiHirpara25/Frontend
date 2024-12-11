@@ -13,7 +13,9 @@ const Layout = () => {
   return (
     <div>
       <BrowserRouter>
+      <div className=''>
       <Navbar/>
+      </div>
         <Routes>
             <Route path='/' element={<Home/>}></Route>
             <Route path='/shop' element={<Shop/>}></Route>

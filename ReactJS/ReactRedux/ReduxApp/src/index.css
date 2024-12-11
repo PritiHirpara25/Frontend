@@ -3,7 +3,17 @@
 @tailwind utilities;
 
 @layer components{
-    .btn{
-        @apply bg-green-300 m-2 p-2 hover:border-4 border-green-500  hover:bg-black hover:text-green-300
+    .addbtn{
+        @apply bg-blue-400 p-2 m-2 rounded-sm
+    }
+    .removebtn{
+        @apply bg-red-400 p-2 m-2 rounded-sm
     }
 }
+
+table,th,td{
+    padding: 25px;
+    border : 1px solid black;
+    border-collapse: collapse;
+}
+

@@ -13,3 +13,4 @@ export const WISHLIST_TO_CART = 'WISHLIST_TO_CART'
 /* PRODUCT GET */
 
 export const PRODUCT_SET = 'PRODUCT_SET'
+
