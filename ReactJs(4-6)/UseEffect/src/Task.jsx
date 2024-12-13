@@ -1,12 +1,8 @@
-import React, { useState } from "react";
-import { AnimalList } from "./data";
+import React from 'react'
+import { useState } from 'react';
+import { AnimalList } from './Data';
 
-const State = () => {
-  // const[state , setState] = useState(0)
-
-  // state = currentState
-  // setState = function Upadate the current state
-  // 0:initialValue
+const Task = () => {
 
   const [index, setIndex] = useState(0);
 
@@ -16,18 +12,6 @@ const State = () => {
 
   console.log(AnimalList);
 
-  // let index = 0
-
-  // console.log(index);
-
-  const handleClick = () => {
-    //     // index += 1
-    //     // index = index + 1
-    //     // setIndex(index + 1)
-    //     // setIndex(index + 1)
-    //     setIndex(prevState => prevState + 1)
-    //     // setIndex(prevState => prevState + 1)
-  };
 
   const handleNext = () => {
     if (index == 9) {
@@ -59,7 +43,6 @@ const State = () => {
         {List.map((item) => {
           return (
             <>
-              {/* Hello world */}
               <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 w-96">
                 <a href="#">
                   <img
@@ -100,5 +83,4 @@ const State = () => {
   );
 };
 
-export default State;
-
+export default Task
