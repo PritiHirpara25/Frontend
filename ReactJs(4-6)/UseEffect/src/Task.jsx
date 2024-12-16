@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState } from 'react';
+import { useState , useEffect} from 'react';
 import { AnimalList } from './Data';
 
 const Task = () => {
@@ -8,11 +8,16 @@ const Task = () => {
 
   const [toggle, setToggle] = useState(false)
 
-  console.log(index);
+  /* prevoius button */  
+  const handlePrev = () => {
+    if (index > 0) {
+      console.log("Prev Btn");
+      
+      setIndex((prevState) => prevState - 1);
+    }
+  };
 
-  console.log(AnimalList);
-
-
+  /* next button */
   const handleNext = () => {
     if (index == 9) {
       setIndex(0);
@@ -21,15 +26,10 @@ const Task = () => {
       setIndex((prevState) => (prevState + 1));
     }
   };
-  const handlePrev = () => {
-    if (index > 0) {
-      console.log("Prev Btn");
-
-      setIndex((prevState) => prevState - 1);
-    }
-  };
 
   const List = [AnimalList[index]];
+
+  // useEffect((),[])
 
   return (
     <div className="">
