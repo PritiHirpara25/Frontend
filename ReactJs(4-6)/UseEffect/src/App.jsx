@@ -1,7 +1,7 @@
 import './App.css'
 // import Effect from './Effect'
-import EffectAPI from './EffectAPI'
-import Task from './Task'
+// import EffectAPI from './EffectAPI'
+import Counter from '../Counter'
 
 function App() {
 
@@ -9,7 +9,7 @@ function App() {
     <>
         {/* <Effect/> */}
         {/* <EffectAPI/> */}
-        <Task/>
+        <Counter/>
     </>
   )
 }
