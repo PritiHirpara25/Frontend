@@ -12,41 +12,36 @@ const Blog = () => {
 
     const [loading, setLoading] = useState(true);
 
-    // useEffect(() => {
-    //     fetch('https://fakestoreapi.com/products')
-    //         .then(response => {
-    //             if (!response.ok) {
-    //                 throw new Error('Failed to Fetch Data');
-    //             }
-    //             return response.json();
-    //         })
-    //         .then(data => {
-    //             setData(data);
-    //             setLoading(false);
-    //         })
-    //         .catch(error => {
-    //             setLoading(false);
-    //             console.log('Error to fetching Data')
-    //         });
-    // }, []);
+    useEffect(() => {
+        fetch('https://fakestoreapi.com/products')
+            .then(response => {
+                return response.json();
+            })
+            .then(data => {
+                setData(data);
+                setLoading(false);
+            })
+            .catch(error => {
+                setLoading(false);
+                console.log('Error to fetching Data')
+            });
+    }, []);
 
 
 
-
-    async function fetchPage(page) {
-        // setLoading(true)
-        const baseUrl = `https://fakestoreapi.com/products=${page}`;
-        const response = await fetch(baseUrl);
-        const data = await response.json();
-        setData(data);
-        // console.log('not fetch',data)
-        // setLoading(false)
-      }
+    // async function fetchPage(page) {
+    //     // setLoading(true)
+    //     const baseUrl = `https://fakestoreapi.com/products=${page}`;
+    //     const response = await fetch(baseUrl);
+    //     const data = await response.json();
+    //     setData(data);
+    //     // console.log('not fetch',data)
+    //     // setLoading(false)
+    //   }
     
-      useEffect(() => {
-        fetchPage(page);
-      }, [page]);
-
+    //   useEffect(() => {
+    //     fetchPage(page);
+    //   }, [page]);
 
 
 

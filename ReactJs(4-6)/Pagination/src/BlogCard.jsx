@@ -3,8 +3,8 @@ import React from 'react'
 const BlogCard = ({data}) => {
 
   return (
-    <div className='flex justify-center'>  
-    <div className='text-center'>
+    <div>  
+    <div className='text-center grid grid-cols-4 gap-5'>
       {
        data.map((item , index) => {
           return (

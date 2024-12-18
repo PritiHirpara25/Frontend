@@ -39,9 +39,6 @@ const Pagination = ({page , setPage}) => {
                 <li className={`${page == 4 ? 'active' : ''}`}>
                     <span className='paginatenum'>4</span>
                 </li>
-                <li className={`${page == 5 ? 'active' : ''}`}>
-                    <span className='paginatenum'>5</span>
-                </li>
                 <li className='arrow'>
                     <span onClick={handleNext} className=''>
                         <FcNext/>
