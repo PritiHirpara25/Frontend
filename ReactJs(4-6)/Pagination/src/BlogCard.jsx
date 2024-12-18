@@ -3,6 +3,7 @@ import React from 'react'
 const BlogCard = ({data}) => {
 
   return (
+    <div className='flex justify-center'>  
     <div className='text-center'>
       {
        data.map((item , index) => {
@@ -25,6 +26,7 @@ const BlogCard = ({data}) => {
           )
         })
       }
+    </div>
     </div>
   )
 }

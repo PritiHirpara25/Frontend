@@ -49,7 +49,7 @@ const Task = () => {
       </h1>
       <div className="flex justify-center">
         <div>
-          <button className="bg-green-300 p-2 rounded-sm" onClick={handlePrev} disabled={SlidePrev ? true : false}>Previous</button>
+          <button className="bg-green-300 p-2 rounded-sm" onClick={handlePrev} disabled={SlidePrev ? 'true' : 'false'}>Previous</button>
         </div>
         <div>
           {List.map((item) => {
@@ -89,7 +89,7 @@ const Task = () => {
           })}
         </div>
         <div>
-          <button className="bg-green-300 p-2 rounded-sm" onClick={handleNext} disabled={SlideNext ? true : false}>Next</button>
+          <button className="bg-green-300 p-2 rounded-sm" onClick={handleNext} disabled={SlideNext ? "true" : 'false'}>Next</button>
         </div>
       </div>
     </div>

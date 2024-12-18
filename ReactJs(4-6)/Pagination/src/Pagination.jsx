@@ -20,7 +20,7 @@ const Pagination = ({page , setPage}) => {
 
 
     return (
-        <div className='m-10'>
+        <div className='flex justify-center mt-8'>
             <ul className='flex'>
                 <li className='arrow'>
                     <span className={`${page == 1 ? 'disabled' : ''} `}  onClick={handlePrev}>
