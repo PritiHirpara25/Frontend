@@ -1,7 +1,7 @@
 import './App.css'
 // import Effect from './Effect'
 // import EffectAPI from './EffectAPI'
-import Counter from '../Counter'
+import Counter from './Counter'
 
 function App() {
 

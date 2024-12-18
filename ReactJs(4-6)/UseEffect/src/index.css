@@ -4,6 +4,6 @@
 
 @layer components {
     .btn{
-        @apply bg-gray-400 p-2 m-5
+        @apply bg-gray-500 p-2 m-4 
     }
 }

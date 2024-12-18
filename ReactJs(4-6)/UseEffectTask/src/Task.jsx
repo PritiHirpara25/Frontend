@@ -8,16 +8,18 @@ const Task = () => {
 
   const [toggle, setToggle] = useState(false)
 
-  const [isSlide, setIsSlide] = useState(false)
+  const[SlideNext , setSlideNext] = useState(false)
+
+  const [SlidePrev, setSlidePrev] = useState(false)
 
   /* prevoius button */
   const handlePrev = () => {
     if (index > 0) {
       console.log("Prev Btn");
       setIndex((prevState) => prevState - 1);
-      setIsSlide(true)
+      setSlidePrev(true)
       setTimeout(() => {
-        setIsSlide(false)
+        setSlidePrev(false)
       }, 1000)
     }
   };
@@ -29,9 +31,9 @@ const Task = () => {
       console.log('Next Btn')
     } else {
       setIndex((prevState) => (prevState + 1));
-      setIsSlide(true)
+      setSlideNext(true)
       setTimeout(() => {
-        setIsSlide(false)
+        setSlideNext(false)
       }, 1000)
     }
   };
@@ -47,14 +49,13 @@ const Task = () => {
       </h1>
       <div className="flex justify-center">
         <div>
-          <button className="bg-green-300 p-2 rounded-sm" onClick={handlePrev}>Previous</button>
+          <button className="bg-green-300 p-2 rounded-sm" onClick={handlePrev} disabled={SlidePrev ? true : false}>Previous</button>
         </div>
         <div>
-          {/* <div className={`card ${slide ? 'animate-slide' : ''}`}> */}
           {List.map((item) => {
             return (
               <>
-                <div className={`${isSlide ? 'animate-slide' : ''} max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 w-96`}>
+                <div className={`${SlideNext ? 'animate-slidenext' : ''} ${SlidePrev ? 'animate-slideprev' : ''}  max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 w-96`}>
                   <a href="#">
                     <img
                       className="rounded-t-lg h-52 w-full object-cover object-top"
@@ -88,7 +89,7 @@ const Task = () => {
           })}
         </div>
         <div>
-          <button className="bg-green-300 p-2 rounded-sm" onClick={handleNext}>Next</button>
+          <button className="bg-green-300 p-2 rounded-sm" onClick={handleNext} disabled={SlideNext ? true : false}>Next</button>
         </div>
       </div>
     </div>

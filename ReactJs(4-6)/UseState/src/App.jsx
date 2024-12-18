@@ -40,7 +40,6 @@ const State = () => {
   const handlePrev = () => {
     if (index > 0) {
       console.log("Prev Btn");
-
       setIndex((prevState) => prevState - 1);
     }
   };

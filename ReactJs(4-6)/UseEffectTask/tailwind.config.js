@@ -7,11 +7,15 @@ export default {
   theme: {
     extend: {
       animation:{
-        slide : 'slide 1s ease-in-out'
+        slidenext : 'slidenext 1s ease-in-out',
+        slideprev : 'slideprev 1s ease-in-out'
       },
       keyframes : {
-        slide : {
+        slidenext : {
           '0%': {transform:'translate(500px)'}
+        },
+        slideprev : {
+          '0%' : {transform:'translate(-500px)'}
         }
       }
     },
