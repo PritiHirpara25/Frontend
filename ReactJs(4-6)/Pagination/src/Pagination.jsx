@@ -1,52 +1,122 @@
-import React from 'react'
-import { FcPrevious } from "react-icons/fc";
-import { FcNext } from "react-icons/fc";
+import { useState, useEffect } from "react";
 
-const Pagination = ({page , setPage}) => {
+const Pagination = () => {
+    const [proData, setProData] = useState([]);
+    console.log("proData", proData);
 
-    function handleNext() {
-        if (page < 5) {
-          setPage((prev) => prev + 1);
-        } else {
-          setPage(1);
-        }
-      }
+    const [pageIndex, setPageIndex] = useState(1);
+
+    const [value, setValue] = useState()
+
+    const perProductData = 4;
+
+    let lastindex = pageIndex * perProductData; 
+
+    let firstindex = lastindex - perProductData;
+
+    let productDataList = proData.slice(firstindex, lastindex);
+
     
-      function handlePrev() {
-        if (page > 1) {
-          setPage((prev) => prev - 1);
-        }
-      }
+    let paginationcount = Math.ceil(proData.length / perProductData);    
 
+    console.log(productDataList);
+    
+    async function API() {
+        let res = await fetch("https://fakestoreapi.com/products");
+        let data = await res.json();
+        setProData(data);
+    }
+
+    useEffect(() => {
+        API();
+    }, []);
 
     return (
-        <div className='flex justify-center mt-8'>
-            <ul className='flex'>
-                <li className='arrow'>
-                    <span className={`${page == 1 ? 'disabled' : ''} `}  onClick={handlePrev}>
-                        <FcPrevious/>
-                    </span>
-                </li>
-                <li className={`${page == 1 ? 'active' : ''}`}>
-                    <span className='paginatenum'>1</span>
-                </li>
-                <li className={`${page == 2 ? 'active' : ''}`}>
-                    <span className='paginatenum'>2</span>
-                </li>
-                <li className={`${page == 3 ? 'active' : ''}`}>
-                    <span className='paginatenum'>3</span>
-                </li>
-                <li className={`${page == 4 ? 'active' : ''}`}>
-                    <span className='paginatenum'>4</span>
-                </li>
-                <li className='arrow'>
-                    <span onClick={handleNext} className=''>
-                        <FcNext/>
-                    </span>
-                </li>
-            </ul>
-        </div>
-    )
-}
+        <div className="container mx-auto">
 
-export default Pagination
+            <div className="flex justify-center">
+                <input type="text" placeholder="search for products" className="p-2 w-1/6 border border-solid border-black rounded-sm mt-2" onChange={(e) => { setValue(e.target.value) }} />
+            </div>
+
+            <div className=" mt-5">
+                {productDataList.map((item , index) => {
+                    return <div key={index}>
+                        {
+                            // item.title === value ?
+                            item.title === value &&
+                                <div className="max-w-sm m-2 p-2 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                                    <a href="#">
+                                        <img
+                                            className="rounded-t-lg h-32 mx-auto"
+                                            src={item.image}
+                                            alt=""
+                                        />
+                                    </a>
+                                    <div className="p-5">
+                                        <a href="#">
+                                            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white line-clamp-2">
+                                                {item.title}
+                                            </h5>
+                                        </a>
+                                        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 line-clamp-3">
+                                            {item.description}
+                                        </p>
+                                        <span>{item.id}</span>
+                                    </div>
+                                </div>
+                                // : console.log('Search Not Found')
+                        }
+                    </div>
+                })}
+            </div>
+
+
+            <div className="grid grid-cols-4 mt-5">
+                {productDataList.map((item ,index) => {
+                    return <div key={index} className="max-w-sm m-2 p-2 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                        <a href="#">
+                            <img
+                                className="rounded-t-lg h-32 mx-auto"
+                                src={item.image}
+                                alt=""
+                            />
+                        </a>
+                        <div className="p-5">
+                            <a href="#">
+                                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white line-clamp-2">
+                                    {item.title}
+                                </h5>
+                            </a>
+                            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 line-clamp-3">
+                                {item.description}
+                            </p>
+                        </div>
+                    </div>
+                })}
+            </div>
+
+
+            <div className="flex justify-center">
+                <button
+                    className="btn"
+                    onClick={() => setPageIndex((prev) => prev - 1)}
+                    disabled={firstindex <= 0}
+                >
+                    Prev
+                </button>
+                {
+                    Array(paginationcount).fill(null).map((item , index) => <div key={index} onClick={() => setPageIndex(index+1)} className="btn cursor-pointer">{index+1}</div> )
+                }
+                <button
+                    className="btn"
+                    onClick={() => setPageIndex((next) => next + 1)}
+                    disabled={lastindex >= proData.length}
+                >
+                    Next
+                </button>
+            </div>
+        </div>
+    );
+};
+
+export default Pagination;

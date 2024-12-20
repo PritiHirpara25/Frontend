@@ -1,8 +1,10 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
 import { AnimalList } from './Data';
+import { GrNext } from "react-icons/gr";
+import { GrPrevious } from "react-icons/gr";
 
-const Task = () => {
+const CardSlide = () => {
 
   const [index, setIndex] = useState(0);
 
@@ -11,6 +13,7 @@ const Task = () => {
   const[SlideNext , setSlideNext] = useState(false)
 
   const [SlidePrev, setSlidePrev] = useState(false)
+
 
   /* prevoius button */
   const handlePrev = () => {
@@ -47,11 +50,13 @@ const Task = () => {
       <h1 className="bg-green-500 text-2xl text-center">
         This is UseState.
       </h1>
-      <div className="flex justify-center">
+      <div className="flex justify-between items-center">
         <div>
-          <button className="bg-green-300 p-2 rounded-sm" onClick={handlePrev} disabled={SlidePrev ? 'true' : 'false'}>Previous</button>
+          <button className="bg-green-300 p-5 rounded-full" onClick={handlePrev} disabled={SlidePrev ? true : false}>
+          <GrPrevious />
+          </button>
         </div>
-        <div>
+        <div className='mt-36'>
           {List.map((item) => {
             return (
               <>
@@ -89,14 +94,16 @@ const Task = () => {
           })}
         </div>
         <div>
-          <button className="bg-green-300 p-2 rounded-sm" onClick={handleNext} disabled={SlideNext ? "true" : 'false'}>Next</button>
+          <button className="bg-green-300 p-5 rounded-full" onClick={handleNext} disabled={SlideNext ? true : false}>
+          <GrNext />
+          </button>
         </div>
       </div>
     </div>
   );
 };
 
-export default Task
+export default CardSlide
 
 
 

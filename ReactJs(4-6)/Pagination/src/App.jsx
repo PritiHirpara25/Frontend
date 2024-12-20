@@ -1,10 +1,10 @@
-import Blog from "./Blog"
+import Pagination from "./Pagination"
 
 function App() {
 
   return (
     <>
-        <Blog/>
+        <Pagination/>
     </>
   )
 }

@@ -1,11 +1,11 @@
 import './App.css'
-import Task from './Task'
+import CardSlide from './CardSlide'
 
 function App() {
 
   return (
     <>
-      <Task/>
+      <CardSlide/>
     </>
   )
 }

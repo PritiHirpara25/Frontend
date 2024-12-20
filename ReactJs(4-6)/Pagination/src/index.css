@@ -3,10 +3,7 @@
 @tailwind utilities;
 
 @layer components{
-    .paginatenum{
-        @apply text-blue-600 border border-black border-blue-600 py-1.5 px-3 rounded-sm m-1 cursor-pointer
-    }
-    .arrow{
-        @apply  p-0.5 px-2 cursor-pointer
+    .btn {
+        @apply bg-cyan-600 m-2 p-2
     }
 }

@@ -35,7 +35,7 @@ const Recipe = () => {
               <p>Ingredients : {list.ingredients}</p>
               <p>Instructions : {list.instructions}</p>
               </div> 
-              : console.log('Search Not Found')}
+              : }
           </div>
            })}
         </div>
