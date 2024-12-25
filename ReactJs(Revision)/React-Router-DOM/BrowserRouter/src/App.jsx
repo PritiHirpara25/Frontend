@@ -1,18 +1,30 @@
-import { createContext } from 'react'
 import './App.css'
-import ComA from './ComA'
+import Navbar from './Component/Navbar'
+import Blog from './Pages/Blog'
+import Cart from './Pages/Cart'
+import Home from './Pages/Home'
+import Shop from './Pages/Shop'
+import FAQ from './Pages/FAQ'
+import AboutUs from './Pages/AboutUs'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
-export const user = createContext()
 
 function App() {
 
-  let users='Rahul'
 
   return (
     <>
-    <user.Provider value={users}>
-      <ComA/>
-    </user.Provider>
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path='/' element={<Home />}></Route>
+          <Route path='/shop' element={<Shop />}></Route>
+          <Route path='/aboutus' element={<AboutUs />}></Route>
+          <Route path='/cart' element={<Cart />}></Route>
+          <Route path='/blog' element={<Blog />}></Route>
+          <Route path='/faq' element={<FAQ />}></Route>
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }
