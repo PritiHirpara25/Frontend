@@ -8,7 +8,8 @@ const ShopDetails = () => {
     const shop = useLoaderData()
 
     return (
-        <div className='grid grid-cols-5 mx-auto w-fit mt-8 '>
+        // <div className='grid grid-cols-5 mx-auto w-fit mt-8 '>
+        <div>
             <h1>This is home Page {id}</h1>
             <div className='h-60 w-60 m-5 shadow-lg'>
                 <img src={shop.image} alt="" className='h-36 w-36 mx-auto' />
@@ -21,7 +22,7 @@ const ShopDetails = () => {
 
 export const ShopDetailsData = async ({ params }) => {
     const { id } = params
-    const res = await fetch("https://fakestoreapi.com/products" + id)
+    const res = await fetch("https://fakestoreapi.com/products/" + id)
 
     if (!res.ok) {
         throw Error('Data Not Available.....!')
