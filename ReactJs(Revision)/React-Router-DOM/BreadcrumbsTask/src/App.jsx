@@ -3,16 +3,20 @@ import './App.css'
 import Breadcrumbs from './Component/Breadcrumbs'
 import Home from './Pages/Home'
 import Shop from './Pages/Shop'
+import Cart from './Pages/Cart'
 import AboutUs from './Pages/AboutUs'
 import Post from './Pages/Post'
 import Product from './Pages/Product'
+import Navbar from './Component/Navbar'
+
 
 function App() {
 
   return (
     <>
       <BrowserRouter>
-        <Breadcrumbs />
+        {/* <Breadcrumbs /> */}
+        <Navbar/>
         <Routes>
           <Route path='/' element={<Home/>} />
           <Route path='/Shop' element={<Shop/>} />
