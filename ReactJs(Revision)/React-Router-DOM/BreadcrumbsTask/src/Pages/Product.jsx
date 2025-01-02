@@ -1,8 +1,11 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Product = () => {
   return (
-    <div>Product</div>
+    <div>
+      product
+    </div>
   )
 }
 

@@ -1,8 +1,11 @@
 import React from 'react'
+import { Link, Outlet } from 'react-router-dom'
 
 const Shop = () => {
   return (
-    <div>Shop</div>
+    <div>
+      <Link to='product'>Product</Link>
+    </div>
   )
 }
 

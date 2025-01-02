@@ -1,14 +1,15 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, Outlet } from 'react-router-dom'
 
 const Home = () => {
 
   return (
     <div>
-      <span>Home</span>
-      <Link to='/aboutus'> / Aboutus</Link>
-      <Link to='/shop'> / Shop</Link>
-      <Link to='/cart'> / Cart</Link>
+      <span>This is Home Page</span><br />
+      <Link to='shop'>Shop</Link>
+      <Outlet/>
+      <p>{location.pathname}</p>
+      <p>{location.pathname === "/shop" ? <div><Link to='shop'>/ShopPage</Link></div> : <div>Not Found</div>}</p>
     </div>
   )
 }
