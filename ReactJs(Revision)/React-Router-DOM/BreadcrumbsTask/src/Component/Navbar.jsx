@@ -3,8 +3,8 @@ import { Link  , useLocation} from 'react-router-dom'
 
 const Navbar = () => {
 
-  const location = useLocation()
-  console.log(location)
+  // const location = useLocation()
+  // console.log(location)
 
   return (
     <div className='bg-lime-300 p-5 space-x-8 flex justify-center'>
