@@ -6,6 +6,7 @@ const TaskList = ({todo , setTodo}) => {
 
   function DeleteTask(ind) {
     const removeTask = todo.filter((item,index) => index !== ind)
+    console.log(ind)
     setTodo(removeTask);
   } 
 
