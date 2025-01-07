@@ -18,7 +18,7 @@ function App() {
       {/* <FilterBar/> */}
 
       <TaskForm addTask={addTask} />
-      <TaskList todo={todo}/>
+      <TaskList todo={todo} setTodo={setTodo}/>
     </>
   )
 }
