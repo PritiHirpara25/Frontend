@@ -6,23 +6,19 @@ import TaskList from './TaskList'
 
 function App() {
 
-  const[todo , setTodo] = useState([])
+  const [todo, setTodo] = useState([])
+  console.log(todo)
 
   let addTask = (value) => {
-    setTodo([...todo , value])
+    setTodo([...todo, value])
   }
 
   return (
     <>
-     <FilterBar/>
-     <TaskForm addTask={addTask}/>
-     {
-      todo.map((list,index) => {
-        return(
-          <TaskList key={index} item={list}/>
-        )
-      })
-     }
+      {/* <FilterBar/> */}
+
+      <TaskForm addTask={addTask} />
+      <TaskList todo={todo}/>
     </>
   )
 }
