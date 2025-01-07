@@ -8,15 +8,17 @@ const Breadcrumbs = () => {
   const Pathname = location.pathname.split('/').filter((link) => link !== '')
   let PageLink = ''
 
-  const createLink = Pathname.map((link) => {
+  const createLink = Pathname.map((link, index) => {
 
-      PageLink += `/${link}`
-      return (
-        <div className='bg-orange-400'>
-          <Link to={PageLink}><span>/</span>{link}</Link>
-        </div>
-      )
-    })
+    PageLink += `/${link}`
+    return (
+      <div className='bg-orange-400' key={index}>
+        <Link to={PageLink}>
+          {index !== 0 ? <span>/</span> : <></>}{link}
+        </Link>
+      </div>
+    )
+  })
 
 
   console.log(Pathname)

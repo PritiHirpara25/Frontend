@@ -17,7 +17,7 @@ const Navbar = () => {
       </div>
       <main>
         <Breadcrumbs />
-        <Outlet />
+        {/* <Outlet /> */}
       </main>
     </div>
   )

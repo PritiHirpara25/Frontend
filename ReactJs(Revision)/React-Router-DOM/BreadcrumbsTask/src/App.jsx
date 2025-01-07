@@ -7,7 +7,6 @@ import AboutUs from "./Pages/AboutUS"
 import Post from './Pages/Post'
 import Product from './Pages/Product'
 import Navbar from './Component/Navbar'
-import Breadcrumbs from './Component/Breadcrumbs'
 
 
 function App() {
@@ -26,7 +25,6 @@ function App() {
           <Route path='/post' element={<Post />} />
           <Route path='/aboutus' element={<AboutUs />} />
         </Routes>
-        <Breadcrumbs/>
       </BrowserRouter >
     </>
   )
