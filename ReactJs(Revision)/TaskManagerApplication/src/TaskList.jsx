@@ -4,8 +4,8 @@ import { FaEdit } from "react-icons/fa";
 
 const TaskList = ({todo , setTodo}) => {
 
-  function DeleteTask(id) {
-    const removeTask = todo.filter(item => item.id !== id)
+  function DeleteTask(index) {
+    const removeTask = todo.filter(item => item.index !== index)
     setTodo(removeTask);
   }
 
@@ -17,12 +17,11 @@ const TaskList = ({todo , setTodo}) => {
           todo.map((item, index) => {
             return (
               <div key={index} className='flex'>
-                <p>{item.id}</p>
                 <h1>{item.titlevalue}</h1>
                 <div className=''>
                   {item.statusvalue === "pending" ? <button className='bg-yellow-300 p-1 rounded-md px-2 mx-2'>Pending</button> : <button className='bg-green-500 p-1 rounded-md px-2 mx-2'>Completed</button>}
                   <button className='bg-blue-400 rounded-md p-2 mx-2'><FaEdit /></button>
-                  <button className='bg-red-400 rounded-md p-2 mx-2' onClick={() => {DeleteTask(item.id)}}><MdDelete /></button>
+                  <button className='bg-red-400 rounded-md p-2 mx-2' onClick={() => {DeleteTask(item.index)}}><MdDelete /></button>
                 </div>
               </div>
             )
