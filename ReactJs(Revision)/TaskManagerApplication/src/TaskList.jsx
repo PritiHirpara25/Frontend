@@ -4,10 +4,10 @@ import { FaEdit } from "react-icons/fa";
 
 const TaskList = ({todo , setTodo}) => {
 
-  function DeleteTask(index) {
+  function DeleteTask(item , index) {
     const removeTask = todo.filter(item => item.index !== index)
     setTodo(removeTask);
-  }
+  } 
 
   return (
     <div>
