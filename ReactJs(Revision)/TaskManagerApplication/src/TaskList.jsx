@@ -5,7 +5,6 @@ import { FaEdit } from "react-icons/fa";
 const TaskList = ({ todo, setTodo }) => {
 
   function DeleteTask(ind) {
-    console.log(ind)
     const removeTask = todo.filter((item, index) => index !== ind)
     setTodo(removeTask);
   }
