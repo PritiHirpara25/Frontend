@@ -12,6 +12,8 @@ function App() {
   let addTask = (value) => {
     setTodo([...todo, value])
   }
+  
+  console.log("todo:",todo)
 
   return (
     <>

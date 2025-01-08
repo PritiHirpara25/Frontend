@@ -4,12 +4,13 @@ const TaskForm = ({addTask}) => {
 
   const [titlevalue, setTitlevalue] = useState('')
   const [descriptionvalue, setDescriptionvalue] = useState('')
-  const [statusvalue, setStatusvalue] = useState('pending')
+  const [statusvalue, setStatusvalue] = useState('Pending')
 
   const handleSubmit = (e) => {
     e.preventDefault()
     addTask({titlevalue,descriptionvalue,statusvalue})
   }
+  
 
   return (
     <div>
@@ -29,10 +30,10 @@ const TaskForm = ({addTask}) => {
           </div>
 
           <div className='border-2 border-solid border-orange-500 m-2 p-2'>
-            <label htmlFor="" className='m-2'>Status : </label>
-            <select name="" id="" onChange={(e) => setStatusvalue(e.target.value)} className='rounded-md border-2 border-solid border-orange-400 p-0.5'>
-              <option value="" className=''>Pending</option>
-              <option value="" className=''>Completed</option>
+            <label  className='m-2'>Status : </label>
+            <select onChange={(e) => setStatusvalue(e.target.value)} className='rounded-md border-2 border-solid border-orange-400 p-0.5'>
+              <option value="Pending" className=''>Pending</option>
+              <option value="Completed" className=''>Completed</option>
             </select>
           </div>
 
