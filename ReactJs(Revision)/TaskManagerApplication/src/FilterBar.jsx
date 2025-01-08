@@ -1,15 +1,21 @@
 import React, { useState } from 'react'
+import { IoSearch } from "react-icons/io5";
 
-const FilterBar = () => {
+const FilterBar = ({setTodo}) => {
 
-  const [searchdata , setSearchdata] = useState([])
+  const [searchdata, setSearchdata] = useState([])
 
-  
+  const handleSearch = () => {
+    
+  }
 
   return (
     <div>
       <h1>FilterBar</h1>
-      <input type="search" className='bg-teal-200 p-2 text-teal-800 border-2 border-solid border-teal-800 rounded-md w-1/4' onChange={setSearchdata} />
+      <div className='bg-yellow-200 w-1/3 m-2 p-2'>
+        <input type="search" onChange={(e) => {setSearchdata(e.target.value)}} className='w-64 p-0.5'/>
+        <button className='p-3 -mt-1' onClick={handleSearch}><IoSearch /></button>
+      </div>
       {searchdata}
     </div>
   )
