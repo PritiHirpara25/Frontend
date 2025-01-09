@@ -1,14 +1,41 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
-const TaskForm = ({addTask}) => {
+const TaskForm = ({addTask , editTask , setEditTask , setTodo}) => {
 
   const [titlevalue, setTitlevalue] = useState('')
   const [descriptionvalue, setDescriptionvalue] = useState('')
   const [statusvalue, setStatusvalue] = useState('Pending')
 
+  // const UpdateTodo = (addTask) =>{
+  //   const newTodo = todo.map((item) => {
+  //     item.index === index ? {addTask} : item
+  //   })
+  //   setTodo(newTodo)
+  //   setEditTask("")
+  // }
+
+  // useEffect(() => {
+  //   if(UpdateTodo){
+  //     setTitlevalue(UpdateTodo.titlevalue)
+  //   }
+  //   else{
+  //     setTitlevalue("")
+  //   }
+  // })
+
+  // const handleSubmit = (e) => {
+  //   e.preventDefault()
+  //   if(!editTask){
+  //     addTask({titlevalue,descriptionvalue,statusvalue})
+  //   }
+  //   else{
+  //     UpdateTodo(addTask)
+  //   }
+  // }
+
   const handleSubmit = (e) => {
     e.preventDefault()
-    addTask({titlevalue,descriptionvalue,statusvalue})
+      addTask({titlevalue,descriptionvalue,statusvalue})
   }
   
 
