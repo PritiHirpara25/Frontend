@@ -2,7 +2,7 @@ import React from 'react'
 import { MdDelete } from "react-icons/md";
 import { FaEdit } from "react-icons/fa";
 
-const TaskList = ({ todo, setTodo, newFilterData, setNewFilterData, setEditTask }) => {
+const TaskList  = ({ todo, setTodo, newFilterData, setNewFilterData, setEditTask }) => {
 
   // Delete Task
   function DeleteTask(ind) {
