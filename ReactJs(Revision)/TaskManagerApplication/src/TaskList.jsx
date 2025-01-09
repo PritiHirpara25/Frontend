@@ -35,7 +35,7 @@ const TaskList = ({ todo, setTodo, newFilterData, setNewFilterData, setEditTask 
     ))
   }
 
-  //
+  //save Edit Data
   const SaveEditData = (ind, updatedTask) => {
     setTodo((prev) => (
       prev.map((list, index) => (
@@ -111,18 +111,18 @@ const TaskList = ({ todo, setTodo, newFilterData, setNewFilterData, setEditTask 
             //       </div>
             //     </div>
             // }) :
-              todo.map((item, index) => {
-                return (
-                  <div key={index} className='flex'>
-                    <h1>{item.titlevalue}</h1>
-                    <div className=''>
-                      {item.statusvalue === "Pending" ? <button onClick={(e) => handleStatus(index)} className='bg-yellow-300 p-1 rounded-md px-2 mx-2'>Pending</button> : <button onClick={(e) => handleStatus(index)} className='bg-green-500 p-1 rounded-md px-2 mx-2'>Completed</button>}
-                      <button className='bg-blue-400 rounded-md p-2 mx-2' onClick={() => handleEditTask(todo)}><FaEdit /></button>
-                      <button className='bg-red-400 rounded-md p-2 mx-2' onClick={() =>  DeleteTask(index)}><MdDelete /></button>
-                    </div>
+            todo.map((item, index) => {
+              return (
+                <div key={index} className='flex'>
+                  <h1>{item.titlevalue}</h1>
+                  <div className=''>
+                    {item.statusvalue === "Pending" ? <button onClick={(e) => handleStatus(index)} className='bg-yellow-300 p-1 rounded-md px-2 mx-2'>Pending</button> : <button onClick={(e) => handleStatus(index)} className='bg-green-500 p-1 rounded-md px-2 mx-2'>Completed</button>}
+                    <button className='bg-blue-400 rounded-md p-2 mx-2' onClick={() => handleEditTask(todo)}><FaEdit /></button>
+                    <button className='bg-red-400 rounded-md p-2 mx-2' onClick={() => DeleteTask(index)}><MdDelete /></button>
                   </div>
-                )
-              })
+                </div>
+              )
+            })
           }
         </div>
       </div>

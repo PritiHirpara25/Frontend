@@ -7,7 +7,8 @@ import TaskList from './TaskList'
 function App() {
 
   const [todo, setTodo] = useState([])
-  console.log(todo)
+  // console.log(todo)
+  console.log("todo:",todo)
 
   // Add Task
   let addTask = (value) => {
@@ -20,7 +21,7 @@ function App() {
   // seach and filter Data
   const[newFilterData , setNewFilterData] = useState([])
   const[FilterData , setFilterData] = useState({})
-  const {searchdata , selectValue} = FilterData
+  const {searchdata , selectValue} = FilterData;
 
   useEffect(() => {
     if(searchdata && selectValue === ("All" || "Pending" || "Completed")){
@@ -40,10 +41,8 @@ function App() {
     else{
       setNewFilterData(todo)
     }
-  } , [todo , searchdata , selectValue])
 
-  
-  console.log("todo:",todo)
+  } , [todo , searchdata , selectValue]);
 
   return (
     <>
