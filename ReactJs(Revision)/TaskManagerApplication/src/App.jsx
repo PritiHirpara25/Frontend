@@ -7,7 +7,8 @@ import TaskList from './TaskList'
 function App() {
 
   const [todo, setTodo] = useState([])
-  console.log(todo)
+  // console.log(todo)
+  console.log("todo:",todo)
 
   // Add Task
   let addTask = (value) => {
@@ -40,10 +41,10 @@ function App() {
     else{
       setNewFilterData(todo)
     }
+    console.log(newFilterData , 'newfilterdata')
   } , [todo , searchdata , selectValue])
 
   
-  console.log("todo:",todo)
 
   return (
     <>
