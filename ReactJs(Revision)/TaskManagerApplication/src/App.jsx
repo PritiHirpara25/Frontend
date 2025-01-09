@@ -7,7 +7,6 @@ import TaskList from './TaskList'
 function App() {
 
   const [todo, setTodo] = useState([])
-  // console.log(todo)
   console.log("todo:",todo)
 
   // Add Task
@@ -16,7 +15,7 @@ function App() {
   }
 
   // Edit Task
-  const[editTask , setEditTask] = useState(null)
+  // const[editTask , setEditTask] = useState(null)
 
   // seach and filter Data
   const[newFilterData , setNewFilterData] = useState([])
@@ -41,14 +40,13 @@ function App() {
     else{
       setNewFilterData(todo)
     }
-
   } , [todo , searchdata , selectValue]);
 
   return (
     <>
-      <TaskForm addTask={addTask} editTask={editTask} setEditTask={setEditTask} setTodo={setTodo}/>
+      <TaskForm addTask={addTask} setTodo={setTodo}/>
       <FilterBar setFilterData={setFilterData}/>
-      <TaskList todo={todo} setTodo={setTodo} newFilterData={newFilterData} setNewFilterData={setNewFilterData} setEditTask={setEditTask}/>
+      <TaskList todo={todo} setTodo={setTodo} FilterData={FilterData}/>
     </>
   )
 }

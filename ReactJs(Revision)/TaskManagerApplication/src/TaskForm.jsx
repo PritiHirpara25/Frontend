@@ -36,6 +36,9 @@ const TaskForm = ({addTask , editTask , setEditTask , setTodo}) => {
   const handleSubmit = (e) => {
     e.preventDefault()
       addTask({titlevalue,descriptionvalue,statusvalue})
+      setTitlevalue("")
+      setDescriptionvalue('')
+      setStatusvalue('')
   }
   
 
