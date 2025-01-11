@@ -1,15 +1,11 @@
 import './App.css'
-// import Effect from './Effect'
-// import EffectAPI from './EffectAPI'
-import Counter from './Counter'
+import UseMemo from './UseMemo'
 
 function App() {
 
   return (
     <>
-        {/* <Effect/> */}
-        {/* <EffectAPI/> */}
-        <Counter/>
+        <UseMemo/>
     </>
   )
 }
