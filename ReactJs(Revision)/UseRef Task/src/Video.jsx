@@ -5,10 +5,17 @@ const Video = () => {
 
   const refbtn = useRef(null)
 
-  const[play , setPlay] = useState(true)
+  const[isPlay , setIsPlay] = useState(false)
 
   function handleClick() {
-    setPlay(!play)
+    setIsPlay(!isPlay)
+
+    if(!isPlay){
+      refbtn.current.play()
+    }
+    else{
+      refbtn.current.pause()
+    }
   }
 
   return (
@@ -16,7 +23,7 @@ const Video = () => {
       <video width="320" height="240" controls ref={refbtn} className='m-2'>
         <source src={video} />
       </video>
-        <div onClick={handleClick} className='bg-teal-400 w-fit p-1.5 rounded-md m-2'>{play ? <button>Play</button> : <button>Pause</button>}</div>
+        <div onClick={handleClick} className='bg-teal-400 w-fit p-1.5 rounded-md m-2'>{isPlay ? <button>Pause</button> : <button>Play</button>}</div>
     </div>
   )
 }

@@ -1,7 +1,9 @@
 import './App.css'
 import Counter from './Counter'
 import Focus from './Focus'
+import Image from './Image'
 import OwnCom from './OwnCom'
+import StopWatch from './StopWatch'
 import Video from './Video'
 
 function App() {
@@ -14,6 +16,7 @@ function App() {
       </div>
       <div>
         <h1 className='text-2xl font-bold'>2. Scrolling an image into view</h1>
+        <Image/>
       </div>
       <div>
         <h1 className='text-2xl font-bold'>3. Playing and pausing a video</h1>
@@ -29,6 +32,7 @@ function App() {
       </div>
       <div>
         <h1 className='text-2xl font-bold'>6. A stopwatch</h1>
+        <StopWatch/>
       </div>
     </div>
   )
