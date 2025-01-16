@@ -1,4 +1,4 @@
-export const AnimalList = [
+Wexport const AnimalList = [
     {
       id: 1,
       name: "Lion",
