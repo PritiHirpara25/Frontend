@@ -32,6 +32,45 @@ export default Stopwatch;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // const reset = () => {
 //   clearInterval(intervalRef.current);
 //   intervalRef.current = null;
