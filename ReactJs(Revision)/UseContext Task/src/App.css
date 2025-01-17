@@ -1,0 +1,11 @@
+/* const toggleWishlist=(productId)=> {
+    if (wishlist.includes(productId)) {
+        setWishlist(wishlist.filter(id=> id !==productId)); 
+    }
+
+    else {
+        setWishlist([...wishlist, productId]); // Add to wishlist
+    }
+}
+
+; */
