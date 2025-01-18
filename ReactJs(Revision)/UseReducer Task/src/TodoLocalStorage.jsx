@@ -8,4 +8,4 @@ export const getLocalStorageTodoData = () => {
     const rawTodo =  localStorage.getItem(TodoKey)
     if(!rawTodo) return [];
     return JSON.parse(rawTodo)
-}
+}   

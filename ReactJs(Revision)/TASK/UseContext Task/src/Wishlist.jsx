@@ -1,9 +1,10 @@
 import React, { useContext } from 'react'
 import { ProductContext, WishlistContext } from './ShopProvider'
+import { IoIosRemoveCircle } from "react-icons/io";
 
 const Wishlist = () => {
 
-  const { wishlist } = useContext(WishlistContext);
+  const { wishlist , handleRemove} = useContext(WishlistContext);
   const { products } = useContext(ProductContext);
 
   const wishlistItems = products.filter((product) => wishlist.includes(product.id));
@@ -15,6 +16,7 @@ const Wishlist = () => {
           <img src={item.images[0]} alt={item.title} className='h-40 w-40 m-auto' />
           <h3 className='m-2'>{item.title}</h3>
           <p className='m-2'>${item.price}</p>
+          <button onClick={() => handleRemove(item.id)}><IoIosRemoveCircle /></button>
         </div>
       ))}
     </div>

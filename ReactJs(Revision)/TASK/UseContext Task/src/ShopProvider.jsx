@@ -16,6 +16,11 @@ const ShopProvider = ({ children }) => {
     );
   };
 
+  const handleRemove = (id) => {
+    setWishlist((prevWishlist) => prevWishlist.filter((item) => item.id !== id));
+  }
+  // console.log('wishlist' , wishlist)
+
   useEffect(() => {
     const fetchProducts = async () => {
       try {
@@ -34,7 +39,7 @@ const ShopProvider = ({ children }) => {
 
   return (
     <ProductContext.Provider value={{ products, loading }}>
-      <WishlistContext.Provider value={{wishlist , toggleWishlist}}>
+      <WishlistContext.Provider value={{wishlist , toggleWishlist ,handleRemove}}>
       {children}
       </WishlistContext.Provider>
     </ProductContext.Provider>
