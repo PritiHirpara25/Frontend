@@ -1,8 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const ExpenseList = () => {
+
+  const [addExpense , setAddExpense] = useState([])
+
   return (
-    <div>ExpenseList</div>
+    <div>
+      {
+        addExpense.map((item) => {
+          return(
+            <div>
+              <p>{}</p>
+            </div>
+          )
+        })
+      }
+    </div>
   )
 }
 

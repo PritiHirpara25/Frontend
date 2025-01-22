@@ -1,8 +1,16 @@
 import React from 'react'
+import { createContext } from "react";
+
+export const AddExpenseContext = createContext();
+export const ListExpenseContext = createContext();
 
 const ExpenseContext = () => {
   return (
-    <div>ExpenseContext</div>
+    <div>
+      <ExpenseContext.Provider>
+
+      </ExpenseContext.Provider>
+    </div>
   )
 }
 
