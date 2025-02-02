@@ -1,43 +1,38 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
+import smallContext  , { AddExpenseContext} from '../Context/ExpenseProvider'
 
 const AddExpense = () => {
 
-  const [ expense  , setExpense] = useState([])
-  console.log(expense);
+  // const [ expense  , setExpense] = useState([])
+  // console.log("expense",expense);
+  
+  // const {expense , setExpense , addExpense , setAddExpense } = useContext(AddExpenseContext)
+  // console.log(expense)
+
+  const name = useContext(smallContext);
+  console.log(name)
 
   const[addExpense , setAddExpense] = useState({
     addDescription: '',
     addAmount: '',
     addCategory: '',
   });
-
-  const handleSubmitForm = (e) => {
-    e.preventDefault();
-    setAddExpense((prev) => [...prev , addExpense]) 
-    // setAddExpense({addDescription:'' , addAmount:'' , addCategory:''})
-  }
-
-  const handleChange = (e) => {                     
-    console.log(e.target);
-    const { name, value } = e.target;
-    setAddExpense((prev) => ({ ...prev, [name]: value })); 
-  };
-
-  return (
+   
+    
+    return (
     <div>
       <form className='p-2 border-2 border-black w-fit' onClick={handleSubmitForm}>
         <div className='m-2 p-1.5'>
           <label htmlFor="">Description : </label>
-          {/* <input type="text" name="addDescription" id="" className='border-2 border-black' value={addExpense.addDescription} onChange={(e)=>setAddExpense(prev=>{...prev,addDescription:e.target.value})} /> */}
-          <input type="text" name="addDescription" id="" className='border-2 border-black' value={addExpense.addDescription} onChange={handleChange} />
+          <input type="text" name="addDescription" id="" className='border-2 border-black' value={addExpense.addDescription} onChange={(e) => setAddExpense((prev) => ({...prev , name:e.target.value}))} />
         </div>
         <div className='m-2 p-1.5'>
           <label htmlFor="">Amount : </label>
-          <input type="text" name="addAmount" id="" className='border-2 border-black' value={addExpense.addAmount} onChange={handleChange} />
+          <input type="text" name="addAmount" id="" className='border-2 border-black' value={addExpense.addAmount} onChange={(e) => setAddExpense((prev) => ({...prev , name:e.target.value}))} />
         </div>
         <div className='m-2 p-1.5'>
           <label htmlFor="">Category : </label>
-          <input type="text" name="addCategory" id="" className='border-2 border-black' value={addExpense.addCategory} onChange={handleChange} />
+          <input type="text" name="addCategory" id="" className='border-2 border-black' value={addExpense.addCategory} onChange={(e) => setAddExpense((prev) => ({...prev , name:e.target.value}))} />
         </div>
         <div className='flex justify-center' >
           <button type='submit' className='bg-orange-300 p-1.5 rounded-md'>Add Expense</button>
@@ -49,13 +44,14 @@ const AddExpense = () => {
 
 export default AddExpense
 
+
 // import React from 'react';
 
 // const AddExpense = () => {
 //   return (
-//     <div className="bg-gray-100 flex justify-center items-center h-screen">
-//       <div className="bg-white shadow-lg rounded-lg p-6 w-full max-w-2xl">
-//         <h1 className="text-2xl font-bold text-center mb-4">Expense Tracker</h1>
+  //     <div className="bg-gray-100 flex justify-center items-center h-screen">
+  //       <div className="bg-white shadow-lg rounded-lg p-6 w-full max-w-2xl">
+  //         <h1 className="text-2xl font-bold text-center mb-4">Expense Tracker</h1>
 
 //         {/* Input Section */}
 //         <div className="flex gap-2 mb-4">

@@ -23,7 +23,7 @@ const Navbar = () => {
                     <nav className='max-lg:hidden'>
                         <ul className='flex gap-9'>
                             <li><Link to="/">Home
-                            <div class="bg-black h-[2px] w-0 group-hover:w-full transition-all duration-500"></div>
+                                <div class="bg-black h-[2px] w-0 group-hover:w-full transition-all duration-500"></div>
                             </Link></li>
                             <li><Link to="/shop">Shop</Link></li>
                             <li><Link to="/products">Products</Link></li>
@@ -52,7 +52,11 @@ const Navbar = () => {
                 </div>
                 <div className='flex gap-3 text-2xl'>
                     <IoSearch className='max-sm:hidden' />
-                    <RxPerson className='max-md:hidden' />
+                    <div>
+                        <Link to="/login">
+                            <RxPerson className='max-md:hidden' />
+                        </Link>
+                    </div>
                     <FaRegHeart className='max-md:hidden' />
                     <RiShoppingBag2Line className='max-sm:hidden' />
                 </div>

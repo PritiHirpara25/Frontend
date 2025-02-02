@@ -3,7 +3,7 @@ import { ProductContext, WishlistContext } from './ShopProvider'
 import { IoIosRemoveCircle } from "react-icons/io";
 
 const Wishlist = () => {
-
+  
   const { wishlist , handleRemove} = useContext(WishlistContext);
   const { products } = useContext(ProductContext);
 

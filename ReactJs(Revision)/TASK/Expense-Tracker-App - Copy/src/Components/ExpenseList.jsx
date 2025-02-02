@@ -1,14 +1,16 @@
 import React, { useContext } from 'react'
-import { AddExpenseContext } from '../Context/ExpenseProvider'
+import { Context } from '../Context/ExpenseContext'
 
 const ExpenseList = () => {
 
-  const { expense } = useContext(AddExpenseContext)
+  const { expenseList, setExpenseList } = useContext(Context)
+  console.log(expenseList)
+
 
   return (
     <div>
-      {
-        expense.map((item , index) => {
+      {/* {
+        expenseList.map((item , index) => {
           return(
             <div key={index}>
               <p>{item.addDescription}</p>
@@ -17,7 +19,7 @@ const ExpenseList = () => {
             </div>
           )
         })
-      }
+      } */}
     </div>
   )
 }

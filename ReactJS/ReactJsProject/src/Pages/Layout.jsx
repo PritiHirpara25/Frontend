@@ -9,6 +9,7 @@ import FAQ from './FAQ'
 import Contact from './Contact'
 import Checkout from './Checkout'
 import Navbar from '../Components/Navbar'
+import Login from '../Pages/Login'
 import { BrowserRouter , Routes , Route} from 'react-router-dom'
 
 const Layout = () => {
@@ -25,6 +26,7 @@ const Layout = () => {
                 <Route path='/faq' element={<FAQ/>}></Route>
                 <Route path='/contactus' element={<Contact/>}></Route>
                 <Route path='/checkout' element={<Checkout/>}></Route>
+                <Route path='/login' element={<Login/>}></Route>
                 <Route path='/*' element={<Error/>}></Route>
             </Routes>
         </BrowserRouter>

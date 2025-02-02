@@ -154,9 +154,12 @@
 
 /* Blogs Post */
 
-.blogspost .slick-dots{
+.blogsdot .slick-dots{
+    top: 500px;
+    /* bottom: 101px; */
     /* bottom: 101px !important; */
 }
+
 
 
 

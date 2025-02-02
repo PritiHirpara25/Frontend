@@ -1,68 +1,55 @@
-import React from 'react'
-import { GoArrowUpRight } from "react-icons/go";
-
+import React from "react";
 
 const Login = () => {
     return (
-        <div>
-            <div className=" bg-light-gray w-[640px] flex min-h-full flex justify-center px-6 py-12 lg:px-8">
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
+            <div className="bg-white w-screen max-w-lg mx-4 p-8  rounded-lg shadow-lg relative">
+                <button className="absolute top-4 right-4 text-black text-2xl font-bold">
+                    &times;
+                </button>
 
-                <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-                    <form action="#" method="POST" className="space-y-6">
-                        <div className="mt-2 relative">
-                            <input
-                                type="email"
-                                required
-                                autoComplete="email"
-                                className="block w-full rounded-md h-12  border-0 border-solid border-light-gray text-gray-900 shadow-sm  sm:text-sm sm:leading-6"
-                            />
-                            <label className='absolute top-4 left-3 text-light-gray text-xs'>Email*</label>
+                <h2 className="text-2xl font-semibold mb-6">Log in</h2>
+
+                <form>
+                    <div className="mb-4">
+                        <label className="block text-sm font-medium text-gray-700">
+                            Email *
+                        </label>
+                        <input
+                            type="email"
+                            placeholder="Email"
+                            className="w-full border border-gray-300 rounded-md p-2 mt-1 focus:outline-none focus:border-gray-500"
+                        />
+                    </div>
+                    <div className="mb-4">
+                        <label className="block text-sm font-medium text-gray-700">
+                            Password *
+                        </label>
+                        <input
+                            type="password"
+                            placeholder="Password"
+                            className="w-full border border-gray-300 rounded-md p-2 mt-1 focus:outline-none focus:border-gray-500"
+                        />
+                    </div>
+
+                    <div>
+                        <a href="#" className="text-sm text-gray-500 underline hover:text-red-500">
+                            Forgot your password?
+                        </a>
+                    </div>
+
+                    <div className="flex">
+                        <div className="text justify-around">
+                            <button className='bg-gray-800  text-white px-20 py-2 rounded hover:bg-gray-900 mt-6' type="submit">Log In</button>
                         </div>
-
-                        <div>
-
-                            <div className="mt-2 relative">
-                                <input
-                                    type="password"
-                                    required
-                                    autoComplete="current-password"
-                                    className="block w-full rounded-md h-12  border-0 border-solid border-light-gray text-gray-900 shadow-sm  sm:text-sm sm:leading-6 "
-                                />
-                                <label className='absolute top-4 left-3 text-light-gray text-xs'>Password*</label>
-                            </div>
-                            <div className="flex items-center justify-between">
-                                <div className="text-sm mt-8">
-                                    <a href="#" className="underline text-mid-gray font-500 hover:text-light-radium">
-                                        Forgot your password?
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                    <div className='flex gap-7 h-2'>
-                        <div className='w-100%'>
-                            <button
-                                type="submit"
-                                className="flex w-full justify-center rounded-md px-3 py-1.5 font-semibold leading-6 shadow-sm  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                            >
-                                Log in
-                            </button>
-                        </div>
-                        <div className="flex items-center justify-between w-100">
-                            <div className="text-sm mt-8 underline">
-                                <a href="#" className=" text-sm font-semibold hover:text-light-radium flex">
-                                    New customer? Create your account'<div className='pt-1'><GoArrowUpRight /></div>
-                                </a>
-                            </div>
+                        <div className="underline mt-7">
+                            <a href="#" className="ml-2 text-sm text-gray-700  hover:text-red-500">New customer?Create your account</a>
                         </div>
                     </div>
-                    </form>
-
-
-                </div>
+                </form>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default Login
+export default Login;
