@@ -3,11 +3,14 @@ import { NavLink, Outlet } from 'react-router-dom'
 import { FaShoppingCart } from "react-icons/fa";
 import logo from '../assets/react.svg'
 import { useLocation } from 'react-router-dom';
+import { useAuth } from '../../Context/AuthContext';
 
 const Navbar = () => {
 
   const location = useLocation()
-  console.log(location)
+  // console.log(location)
+
+  const {isAuth} = useAuth()
 
   return (
     <div>
@@ -20,6 +23,9 @@ const Navbar = () => {
           <NavLink to='/aboutus'>AboutUs</NavLink>
           <NavLink to='/help'>Help</NavLink>
           <NavLink to='/career'>Career</NavLink>
+        {isAuth ? "" : <NavLink to='/login'>Login</NavLink>}
+        {isAuth ? <NavLink to='/signup'>Signup</NavLink> : ""}
+        {isAuth ? "" : <NavLink to='/profile'>Profile</NavLink> }
         </div>
         <div className='text-2xl pr-5'>
           <NavLink to='/cart'><FaShoppingCart /></NavLink>
