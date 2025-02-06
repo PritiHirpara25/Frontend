@@ -16,7 +16,7 @@ import CareerError from './Pages/CareerError'
 import ProtectedRouter from './Component/ProtectedRouter'
 import Login from './Pages/Login'
 import SignUp from './Pages/SignUp'
-// import Profile from './Pages/Profile'
+import Profile from './Pages/Profile'
 
 function App() {
 
@@ -36,7 +36,7 @@ function App() {
         </Route>
         <Route path='/login' element={<Login/>}/>
         <Route path='/signup' element={<SignUp/>}/>
-        {/* <Route path='/profile' element={<Profile/>}/> */}
+        <Route path='/profile' element={<Profile/>}/>
         <Route path='/cart' element={<Cart/>} />
       </Route>
     )

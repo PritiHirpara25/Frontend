@@ -10,7 +10,7 @@ const Navbar = () => {
   const location = useLocation()
   // console.log(location)
 
-  const {isAuth} = useAuth()
+  const {isAuth} = useAuth();
 
   return (
     <div>
@@ -24,8 +24,8 @@ const Navbar = () => {
           <NavLink to='/help'>Help</NavLink>
           <NavLink to='/career'>Career</NavLink>
         {isAuth ? "" : <NavLink to='/login'>Login</NavLink>}
-        {isAuth ? <NavLink to='/signup'>Signup</NavLink> : ""}
-        {isAuth ? "" : <NavLink to='/profile'>Profile</NavLink> }
+        {isAuth ? "" : <NavLink to='/signup'>Signup</NavLink>}
+        {isAuth ? <NavLink to='/profile'>Profile</NavLink> : "" }
         </div>
         <div className='text-2xl pr-5'>
           <NavLink to='/cart'><FaShoppingCart /></NavLink>

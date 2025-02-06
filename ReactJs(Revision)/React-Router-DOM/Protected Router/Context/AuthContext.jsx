@@ -3,7 +3,7 @@ import React, { createContext, useContext, useState } from 'react'
 export const AuthContext = createContext();
 
 const Context = ({children}) => {
-    const[isAuth , setIsAuth] = useState(true);
+    const[isAuth , setIsAuth] = useState(false);  
     const[isAuthData , setIsAuthData] = useState([]);
     const[currentUser , setCurrentUser] = useState({})
   return (
@@ -13,6 +13,6 @@ const Context = ({children}) => {
   )
 }
 
-export const useAuth = () => useContext(AuthContext)
+export const useAuth = () => useContext(AuthContext) // custom hook
 
 export default Context

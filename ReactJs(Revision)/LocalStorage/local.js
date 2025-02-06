@@ -48,6 +48,14 @@
 
 /* SESSIONSTORAGE */
 
-sessionStorage.setItem("username","Priti");
+// sessionStorage.setItem("username","Priti");
+// sessionStorage.setItem("password",654321);
 
+// sessionStorage.getItem("password");
+
+// sessionStorage.removeItem("password");
+
+// sessionStorage.clear()
+
+// sessionStorage.removeItem("IsThisFirstTime_Log_From_LiveServer");
 
