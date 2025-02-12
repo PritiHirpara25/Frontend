@@ -1,16 +1,18 @@
 import './App.css'
-import Cart from './ShoppingCart/Cart'
-import Shop from './ShoppingCart/Shop'
+import Layout from './Layout'
+// import Navbar from './Navbar'
+// import Cart from './ShoppingCart/Cart'
+// import Shop from './ShoppingCart/Shop'
 import Card from './Theme/Card'
-import ThemeButton from './Theme/ThemeButton'
+// import ThemeButton from './Theme/ThemeButton'
 
 function App() {
 
   return (
-    <>      
-      <Shop />
-      <ThemeButton />
-      <Card />
+    <>
+      <Layout />
+      {/* <Shop /> */}
+      {/* <Card /> */}
     </>
   )
 }

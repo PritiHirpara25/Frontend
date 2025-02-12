@@ -1,11 +1,14 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
+import ThemeButton from './ThemeButton';
 
 function Card() {
 
   const theme = useSelector(state => state.themereducer.theme);
 
   return (
+    <div>
+      <ThemeButton />
     <div className={`max-w-sm ${theme === 'dark' ? "bg-gray-800 text-white" : "bg-white text-black border border-black"}`}>
       <a href="#">
         <img className="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
@@ -27,6 +30,7 @@ function Card() {
           Read more
         </a>
       </div>
+    </div>
     </div>
 
   )
