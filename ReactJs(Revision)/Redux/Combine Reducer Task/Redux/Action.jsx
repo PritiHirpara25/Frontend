@@ -14,9 +14,9 @@ export const light_theme = () => {
     }
 }
 
-export const add_to_cart = (item) => {
+export const add_to_cart = () => {
     return{
-        type:ADD_TO_CART,item,
+        type:ADD_TO_CART,
         info:"Add to Cart"
     }
 }
