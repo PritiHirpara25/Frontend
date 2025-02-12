@@ -7,8 +7,7 @@ import ThemeButton from './Theme/ThemeButton'
 function App() {
 
   return (
-    <>
-      <Cart />
+    <>      
       <Shop />
       <ThemeButton />
       <Card />
