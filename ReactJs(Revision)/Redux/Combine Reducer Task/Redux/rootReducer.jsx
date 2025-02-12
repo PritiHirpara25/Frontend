@@ -1,8 +1,9 @@
 import { combineReducers } from "redux";
-import ThemeReducer from "./Reducer";
+import ThemeReducer, { CartReducer } from "./Reducer";
 
 const rootReducer = combineReducers({
-    themereducer : ThemeReducer
+    themereducer : ThemeReducer,
+    cartreducer:CartReducer
 })
 
 export default rootReducer
