@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Navbar from './Navbar'
 import Card from './Theme/Card'
 import Shop from './ShoppingCart/Shop'
+import Cart from './ShoppingCart/Cart'
 
 const Layout = () => {
 
@@ -17,6 +18,10 @@ const Layout = () => {
             {
                 path: '/shop',
                 element: <Shop />
+            },
+            {
+                path:'/cart',
+                element:<Cart/>
             }
             ]
         }

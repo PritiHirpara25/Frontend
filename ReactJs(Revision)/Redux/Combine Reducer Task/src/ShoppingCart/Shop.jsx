@@ -1,28 +1,41 @@
 import React, { useEffect, useState } from 'react'
-import { FcLikePlaceholder } from "react-icons/fc";
+import { FcLikePlaceholder  , FcLike } from "react-icons/fc";
 import { add_to_cart } from '../../Redux/Action';
 import { useDispatch, useSelector } from 'react-redux';
 
 
 const Shop = () => {
-    
-    // const [shop , setShop] = useState([])
-
-    // const {item} = useDispatch((state) => state.cartreducer)
-
-    // useEffect(()=> {
-    //     // fetch("https://fakestoreapi.com/products").then(res => res.json()).then(data => setShop(data));
-    //     dispatch(fetchShopData)
-    // },[])
 
     const dispatch = useDispatch()
 
-    const data = useSelector(state => state.cartreducer);
+    const cartdata = useSelector(state => state.cartreducer)
+    const iscart = (item) => cartdata.some(cartItem => cartItem.name === item.name)
+
+    const data = [
+        {
+            name: "Priti",
+            age: 24,
+            city: "Surat"
+        }
+    ]
 
 
     return (
         <div className='grid grid-cols-5 gap-5 mx-auto'>
-            {data}
+            {
+                data.map((item, index) => {
+                    return (
+                        <div key={index}>
+                            <h1>{item.name}</h1>
+                            <p>{item.age}</p>
+                            <p>{item.city}</p>
+                            <button onClick={() => { dispatch(add_to_cart(item)) }}>
+                                {iscart(item) ? <FcLike /> : <FcLikePlaceholder /> }
+                            </button>
+                        </div>
+                    )
+                })
+            }
         </div>
     )
 }
