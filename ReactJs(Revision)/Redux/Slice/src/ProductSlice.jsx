@@ -10,6 +10,7 @@ const ProductSlice = createSlice({
         decrement : state => state - 1
     }
 });
+console.log("productslice" , ProductSlice);
 
 export const {increment , decrement} = ProductSlice.actions
 
