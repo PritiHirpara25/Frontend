@@ -1,0 +1,27 @@
+{
+  "Profile": [
+    {
+      "name": "Priti",
+      "email": "priti256@gmail.com",
+      "phone": "7894561230"
+    },
+    {
+      "id": "c499",
+      "name": "Ronak",
+      "email": "R2324@gmail.com",
+      "phone": "7894521360"
+    },
+    {
+      "id": "c09f",
+      "name": "Bansi",
+      "email": "Bansu234@gmail.com",
+      "phone": "4561230789"
+    },
+    {
+      "id": "4c10",
+      "name": "ojas",
+      "email": "ojas345@gmail.com",
+      "phone": 458712369
+    }
+  ]
+}
