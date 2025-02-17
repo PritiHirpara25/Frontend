@@ -3,8 +3,6 @@ import React, { useState } from 'react'
 
 const Postrequest = () => {
 
-
-
     const[name , setName] = useState("")
     const[email , setEmail] = useState("")
     const[phone , setPhone] = useState("")
