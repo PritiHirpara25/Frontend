@@ -2,9 +2,9 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 
 const RecordCrud = () => {
-  
-  const[userData , setUserData] = useState([])
-  console.log(userData)
+
+  const [userData, setUserData] = useState([])
+  console.log(userData);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -12,27 +12,35 @@ const RecordCrud = () => {
     address: ''
   })
 
+  useEffect(() => {
+    fetchData();
+  }, [])
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }))
   }
 
-  const fetchData = async()=>{
+  const fetchData = async () => {
     const usersData = await axios.get('http://localhost:3000/user');
     setUserData(usersData.data);
   };
 
-  useEffect(() => {
-     fetchData();
-  },[])
-
-  const handlleSubmit = (e) => {
+  const handlleSubmit = async (e) => {
     e.preventDefault();
-    axios.post('http://localhost:3000/user' , formData)
+    await axios.post('http://localhost:3000/user', formData)
+    setFormData({
+      name: '',
+      email: '',
+      contact: '',
+      address: ''
+    })
+    fetchData()
   }
 
-  const deleteData = (id) => {
-    axios.delete(`http://localhost:3000/user/${id}`)
+  const deleteData = async (id) => {
+    await axios.delete(`http://localhost:3000/user/${id}`)
+    fetchData()
   }
 
   return (
@@ -90,6 +98,8 @@ const RecordCrud = () => {
           </button>
         </form>
       </div>
+
+      
       <div className="flex  justify-between">
         <div className="mb-4 flex items-center">
           <p className="mr-2">Show</p>
@@ -146,7 +156,7 @@ const RecordCrud = () => {
                 <button className="bg-yellow-400 hover:bg-yellow-500 text-white font-bold py-1 px-2 rounded mr-1">
                   Edit
                 </button>
-                <button className="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-2 rounded" onClick={() => deleteData(user.id) }>
+                <button className="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-2 rounded" onClick={() => deleteData(user.id)}>
                   Delete
                 </button>
               </td>
