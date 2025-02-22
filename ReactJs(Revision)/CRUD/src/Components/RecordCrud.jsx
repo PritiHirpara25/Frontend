@@ -12,6 +12,8 @@ const RecordCrud = () => {
     address: ''
   })
 
+  const[editId,setEditId] = useState(null);
+
   useEffect(() => {
     fetchData();
   }, [])
@@ -28,6 +30,11 @@ const RecordCrud = () => {
 
   const handlleSubmit = async (e) => {
     e.preventDefault();
+
+    if(editId){
+      await axios.put(`http://localhost:3000/user/${editId}`,formData);
+    }
+
     await axios.post('http://localhost:3000/user', formData)
     setFormData({
       name: '',
@@ -35,12 +42,26 @@ const RecordCrud = () => {
       contact: '',
       address: ''
     })
+
     fetchData()
+    setEditId(null)
   }
 
   const deleteData = async (id) => {
     await axios.delete(`http://localhost:3000/user/${id}`)
     fetchData()
+  }
+
+  const handleEdit = async(id) => {
+    const res = await axios.get(`http://localhost:3000/user/${id}`);
+    const data = res.data;
+    setFormData({
+      name:data.name ,
+      email:data.email,
+      contact: data.contact,
+      address: data.address
+    }); 
+    setEditId(id);
   }
 
   return (
@@ -100,7 +121,7 @@ const RecordCrud = () => {
       </div>
 
       
-      <div className="flex  justify-between">
+      <div className="flex justify-between">
         <div className="mb-4 flex items-center">
           <p className="mr-2">Show</p>
           <select
@@ -153,7 +174,7 @@ const RecordCrud = () => {
               <td className="p-2 border">{user.contact}</td>
               <td className="p-2 border">{user.address}</td>
               <td className="p-2 border">
-                <button className="bg-yellow-400 hover:bg-yellow-500 text-white font-bold py-1 px-2 rounded mr-1">
+                <button className="bg-yellow-400 hover:bg-yellow-500 text-white font-bold py-1 px-2 rounded mr-1" onClick={() => handleEdit(user.id)}>
                   Edit
                 </button>
                 <button className="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-2 rounded" onClick={() => deleteData(user.id)}>

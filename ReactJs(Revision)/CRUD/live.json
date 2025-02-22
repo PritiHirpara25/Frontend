@@ -1,38 +1,24 @@
 {
   "user": [
     {
-      "id": "761f",
-      "name": "sds",
-      "email": "arakholiya5@gmail.com",
-      "contact": "1455",
-      "address": "keshavpark"
-    },
-    {
-      "id": "4ef4",
-      "name": "sds",
-      "email": "arakholiya5@gmail.com",
-      "contact": "1455",
-      "address": "keshavpark"
-    },
-    {
-      "id": "31af",
-      "name": "Priti A. Hirpara",
-      "email": "rana@gmail.com",
-      "contact": "7894512388",
-      "address": "keshavpark"
-    },
-    {
-      "id": "ae99",
-      "name": " PRITI HIRAPARA",
-      "email": "pritihirpara256@gmail.com",
-      "contact": "7894512388",
-      "address": "surat"
-    },
-    {
       "id": "fc6a",
       "name": "Electronics",
       "email": "pritihirpara.sq@gmail.com",
       "contact": "7894561231",
+      "address": "keshavpark"
+    },
+    {
+      "id": "f595",
+      "name": "Priti A. Hirpara",
+      "email": "pritihirpara.sq@gmail.com",
+      "contact": "7894561231",
+      "address": "keshavpark"
+    },
+    {
+      "id": "1506",
+      "name": "Electronics",
+      "email": "pritihirpara256@gmail.com",
+      "contact": "7894512388",
       "address": "keshavpark"
     }
   ]
