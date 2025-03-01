@@ -2,6 +2,7 @@ import './App.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Shop from './Pages/Shop'
 import Cart from './Pages/Cart'
+import Navbar from './Component/Navbar'
 
 function App() {
 
