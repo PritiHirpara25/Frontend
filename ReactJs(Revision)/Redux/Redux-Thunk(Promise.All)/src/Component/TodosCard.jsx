@@ -7,8 +7,6 @@ const TodosCard = ({todos}) => {
     <div>
         <ul>
             <li>{todos.title}</li>
-            {/* <li>{todos.age}</li> */}
-            {/* <button onClick={() => useDispatch(addToCart(product))}>Add to Cart</button> */}
         </ul>
     </div>
   )

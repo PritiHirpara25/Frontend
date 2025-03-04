@@ -12,57 +12,61 @@ const Shop = () => {
   const dispatch = useDispatch()
 
   const { status, todos, user, posts, albums, comments } = useSelector((state) => state.product);
+  console.log(todos)
 
   useEffect(() => {
     dispatch(fetchProducts());
   }, [dispatch])
 
-  // console.log("status:",status);
-  // console.log("items",items);
   return (
     <div>
-      <h1>Todos</h1>
+
+      <h1 className='p-3 bg-gray-400 text-lg'>Todos</h1>
       <div>
         {status === "Loading" && <p>Loading...</p>}
-        {status === "successded" &&
-          todos.map((product) => (
-            <TodosCard key={product.id} product={product} />
+        {status === "succeeded" &&
+          todos.map((todos) => (
+            <TodosCard key={todos.id} product={todos} />
           ))}
         {status === "failed" && <p>Failed to load product...</p>}
       </div>
-      <h1>Users</h1>
+
+      <h1 className='p-3 bg-gray-400 text-lg'>Users</h1>
       <div>
         {status === "Loading" && <p>Loading...</p>}
-        {status === "successded" &&
-          user.map((product) => (
-            <UsersCard key={product.id} product={product} />
+        {status === "succeeded" &&
+          user.map((user) => (
+            <UsersCard key={user.id} product={user} />
           ))}
         {status === "failed" && <p>Failed to load product...</p>}
       </div>
-      <h1>Posts</h1>
+
+      <h1 className='p-3 bg-gray-400 text-lg'>Posts</h1>
       <div>
         {status === "Loading" && <p>Loading...</p>}
-        {status === "successded" &&
-          posts.map((product) => (
-            <PostsCard key={product.id} product={product} />
+        {status === "succeeded" &&
+          posts.map((posts) => (
+            <PostsCard key={posts.id} product={posts} />
           ))}
         {status === "failed" && <p>Failed to load product...</p>}
       </div>
-      <h1>Albums</h1>
+
+      <h1 className='p-3 bg-gray-400 text-lg'>Albums</h1>
       <div>
         {status === "Loading" && <p>Loading...</p>}
-        {status === "successded" &&
-          albums.map((product) => (
-            <AlbumsCard key={product.id} product={product} />
+        {status === "succeeded" &&
+          albums.map((albums) => (
+            <AlbumsCard key={albums.id} product={albums} />
           ))}
         {status === "failed" && <p>Failed to load product...</p>}
       </div>
-      <h1>Comments</h1>
+
+      <h1 className='p-3 bg-gray-400 text-lg'>Comments</h1>
       <div>
         {status === "Loading" && <p>Loading...</p>}
-        {status === "successded" &&
-          comments.map((product) => (
-            <CommentsCard key={product.id} product={product} />
+        {status === "succeeded" &&
+          comments.map((comments) => (
+            <CommentsCard key={comments.id} product={comments} />
           ))}
         {status === "failed" && <p>Failed to load product...</p>}
       </div>
