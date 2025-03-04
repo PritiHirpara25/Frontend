@@ -7,10 +7,9 @@ const Navbar = () => {
     const cartItem = useSelector((state) => state.cart)
 
   return (
-    <div>
-        <ul>
+    <div className='bg-gray-300 p-5'>
+        <ul className='flex justify-center space-x-20 text-xl'>
             <li><NavLink to='/'>Shop</NavLink></li>
-            <li><NavLink to='/cart'>Cart({cartItem.length})</NavLink></li>
         </ul>
     </div>
   )
