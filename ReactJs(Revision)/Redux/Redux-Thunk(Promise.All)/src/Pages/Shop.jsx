@@ -12,11 +12,16 @@ const Shop = () => {
   const dispatch = useDispatch()
 
   const { status, todos, user, posts, albums, comments } = useSelector((state) => state.product);
-  console.log(todos)
+  // console.log(todos)
+  // console.log(user)
+  // console.log(posts)
+  // console.log(albums)
+  // console.log(comments)
 
   useEffect(() => {
     dispatch(fetchProducts());
   }, [dispatch])
+  
 
   return (
     <div>
@@ -26,7 +31,7 @@ const Shop = () => {
         {status === "Loading" && <p>Loading...</p>}
         {status === "succeeded" &&
           todos.map((todos) => (
-            <TodosCard key={todos.id} product={todos} />
+            <TodosCard key={todos.id} todos={todos} />
           ))}
         {status === "failed" && <p>Failed to load product...</p>}
       </div>
@@ -36,7 +41,7 @@ const Shop = () => {
         {status === "Loading" && <p>Loading...</p>}
         {status === "succeeded" &&
           user.map((user) => (
-            <UsersCard key={user.id} product={user} />
+            <UsersCard key={user.id} user={user} />
           ))}
         {status === "failed" && <p>Failed to load product...</p>}
       </div>
@@ -46,7 +51,7 @@ const Shop = () => {
         {status === "Loading" && <p>Loading...</p>}
         {status === "succeeded" &&
           posts.map((posts) => (
-            <PostsCard key={posts.id} product={posts} />
+            <PostsCard key={posts.id} posts={posts} />
           ))}
         {status === "failed" && <p>Failed to load product...</p>}
       </div>
@@ -56,7 +61,7 @@ const Shop = () => {
         {status === "Loading" && <p>Loading...</p>}
         {status === "succeeded" &&
           albums.map((albums) => (
-            <AlbumsCard key={albums.id} product={albums} />
+            <AlbumsCard key={albums.id} albums={albums} />
           ))}
         {status === "failed" && <p>Failed to load product...</p>}
       </div>
@@ -66,7 +71,7 @@ const Shop = () => {
         {status === "Loading" && <p>Loading...</p>}
         {status === "succeeded" &&
           comments.map((comments) => (
-            <CommentsCard key={comments.id} product={comments} />
+            <CommentsCard key={comments.id} comments={comments} />
           ))}
         {status === "failed" && <p>Failed to load product...</p>}
       </div>
